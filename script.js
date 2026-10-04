@@ -15,15 +15,16 @@ let spinning = false;
 
 let savedProjects = [];
 
+let spinSession = 0;
+
 
 /* =========================================
    ELEMENTS
 ========================================= */
-const roulettePrompt =
-    document.getElementById("roulettePrompt");
 
-const categoryPrompt =
-    document.getElementById("categoryPrompt");
+const brand =
+    document.getElementById("brand");
+
 const degreeScreen =
     document.getElementById("degreeScreen");
 
@@ -56,6 +57,12 @@ const currentDegreeLabel =
 
 const currentDifficultyLabel =
     document.getElementById("currentDifficultyLabel");
+
+const roulettePrompt =
+    document.getElementById("roulettePrompt");
+
+const categoryPrompt =
+    document.getElementById("categoryPrompt");
 
 const projectWord =
     document.getElementById("projectWord");
@@ -114,6 +121,54 @@ const saveIcon =
 const saveText =
     document.getElementById("saveText");
 
+const exploreButton =
+    document.getElementById("exploreButton");
+
+const exploreScreen =
+    document.getElementById("exploreScreen");
+
+const exploreBackButton =
+    document.getElementById("exploreBackButton");
+
+const exploreTitle =
+    document.getElementById("exploreTitle");
+
+const exploreDescription =
+    document.getElementById("exploreDescription");
+
+const exploreDegree =
+    document.getElementById("exploreDegree");
+
+const exploreCategory =
+    document.getElementById("exploreCategory");
+
+const exploreDifficulty =
+    document.getElementById("exploreDifficulty");
+
+const exploreIdea =
+    document.getElementById("exploreIdea");
+
+const exploreFeatures =
+    document.getElementById("exploreFeatures");
+
+const exploreTechnologies =
+    document.getElementById("exploreTechnologies");
+
+const exploreRoadmap =
+    document.getElementById("exploreRoadmap");
+
+const exploreSkills =
+    document.getElementById("exploreSkills");
+
+const exploreLevel =
+    document.getElementById("exploreLevel");
+
+const exploreSaveButton =
+    document.getElementById("exploreSaveButton");
+
+const exploreAnotherButton =
+    document.getElementById("exploreAnotherButton");
+
 const savedHeaderButton =
     document.getElementById("savedHeaderButton");
 
@@ -149,9 +204,11 @@ async function loadProjects() {
 
 
         if (!response.ok) {
+
             throw new Error(
                 `HTTP ${response.status}`
             );
+
         }
 
 
@@ -163,9 +220,11 @@ async function loadProjects() {
             !Array.isArray(projects) ||
             projects.length === 0
         ) {
+
             throw new Error(
                 "Invalid project database."
             );
+
         }
 
 
@@ -176,6 +235,7 @@ async function loadProjects() {
     catch (error) {
 
         console.error(error);
+
 
         statusText.innerHTML =
             "couldn't load the project database.<br><br>" +
@@ -189,11 +249,17 @@ async function loadProjects() {
 /* =========================================
    INITIALIZE
 ========================================= */
+
 function initializeApp() {
 
     createDegreeButtons();
 
     loadSavedProjects();
+
+    /*
+        During development we always start
+        from the home screen.
+    */
 
     showDegreeScreen();
 
@@ -203,8 +269,9 @@ function initializeApp() {
 
 }
 
+
 /* =========================================
-   DEGREE LIST
+   DEGREES
 ========================================= */
 
 function getDegrees() {
@@ -212,7 +279,8 @@ function getDegrees() {
     return [
         ...new Set(
             projects.map(
-                project => project.degree
+                project =>
+                    project.degree
             )
         )
     ].sort();
@@ -220,53 +288,58 @@ function getDegrees() {
 }
 
 
-/* =========================================
-   CREATE DEGREE BUTTONS
-========================================= */
-
 function createDegreeButtons() {
 
     degreeGrid.innerHTML = "";
 
 
-    getDegrees().forEach(degree => {
+    getDegrees().forEach(
+        degree => {
 
-        const button =
-            document.createElement(
-                "button"
+            const button =
+                document.createElement(
+                    "button"
+                );
+
+
+            button.className =
+                "degree-option";
+
+
+            button.type =
+                "button";
+
+
+            button.textContent =
+                degree;
+
+
+            button.addEventListener(
+                "click",
+                () =>
+                    selectDegree(
+                        degree
+                    )
             );
 
 
-        button.className =
-            "degree-option";
+            degreeGrid.appendChild(
+                button
+            );
 
-        button.type =
-            "button";
-
-        button.textContent =
-            degree;
-
-
-        button.addEventListener(
-            "click",
-            () => selectDegree(degree)
-        );
-
-
-        degreeGrid.appendChild(
-            button
-        );
-
-    });
+        }
+    );
 
 }
 
 
 /* =========================================
-   DEGREE SELECTION
+   DEGREE
 ========================================= */
 
-function selectDegree(degree) {
+function selectDegree(
+    degree
+) {
 
     selectedDegree =
         degree;
@@ -283,10 +356,6 @@ function selectDegree(degree) {
 
 }
 
-
-/* =========================================
-   ANY DEGREE
-========================================= */
 
 function selectAnyDegree() {
 
@@ -326,7 +395,7 @@ function selectDifficulty(
 
 
 /* =========================================
-   SAVE PREFERENCES
+   PREFERENCES
 ========================================= */
 
 function savePreferences() {
@@ -344,107 +413,107 @@ function savePreferences() {
 
     localStorage.setItem(
         "spinspirePreferences",
-        JSON.stringify(preferences)
+        JSON.stringify(
+            preferences
+        )
     );
 
 }
 
 
 /* =========================================
-   RESTORE PREFERENCES
+   SCREEN HELPERS
 ========================================= */
 
-function restorePreferences() {
+function hideExplore() {
 
-    const stored =
-        localStorage.getItem(
-            "spinspirePreferences"
-        );
-
-
-    if (!stored) {
-
-        showDegreeScreen();
-
-        return;
-
-    }
+    exploreScreen.classList.remove(
+        "active"
+    );
 
 
-    try {
-
-        const preferences =
-            JSON.parse(stored);
-
-
-        selectedDegree =
-            preferences.degree ?? null;
-
-
-        selectedDifficulty =
-            preferences.difficulty ?? null;
-
-
-        /*
-            If the saved degree no longer
-            exists, restart onboarding.
-        */
-
-        if (
-            selectedDegree &&
-            !getDegrees().includes(
-                selectedDegree
-            )
-        ) {
-
-            localStorage.removeItem(
-                "spinspirePreferences"
-            );
-
-            showDegreeScreen();
-
-            return;
-
-        }
-
-
-        openRoulette();
-
-    }
-
-    catch {
-
-        localStorage.removeItem(
-            "spinspirePreferences"
-        );
-
-        showDegreeScreen();
-
-    }
+    exploreScreen.setAttribute(
+        "aria-hidden",
+        "true"
+    );
 
 }
 
 
-/* =========================================
-   SCREENS
-========================================= */
+function closeResult() {
 
-function showDegreeScreen() {
+    resultScreen.classList.remove(
+        "active"
+    );
 
-    closeResult();
+
+    resultScreen.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+}
+
+
+function closeSavedProjects() {
 
     savedScreen.classList.remove(
         "active"
     );
 
 
+    savedScreen.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+}
+
+
+/* =========================================
+   HOME
+========================================= */
+
+function showDegreeScreen() {
+
+    /*
+        Incrementing this invalidates any
+        roulette animation currently running.
+    */
+
+    spinSession++;
+
+    spinning = false;
+
+    currentProject = null;
+
+
+    projectWord.classList.remove(
+        "spinning"
+    );
+
+
+    categoryWord.classList.remove(
+        "spinning"
+    );
+
+
+    closeResult();
+
+    hideExplore();
+
+    closeSavedProjects();
+
+
     roulette.classList.add(
         "hidden"
     );
 
+
     difficultyScreen.classList.add(
         "hidden"
     );
+
 
     degreeScreen.classList.remove(
         "hidden"
@@ -455,25 +524,44 @@ function showDegreeScreen() {
         "hidden"
     );
 
+
     difficultyIndicator.classList.add(
         "hidden"
     );
 
+
+    resetRouletteWords();
+
 }
 
 
+/* =========================================
+   DIFFICULTY SCREEN
+========================================= */
+
 function showDifficultyScreen() {
 
+    spinSession++;
+
+    spinning = false;
+
+
     closeResult();
+
+    hideExplore();
+
+    closeSavedProjects();
 
 
     roulette.classList.add(
         "hidden"
     );
 
+
     degreeScreen.classList.add(
         "hidden"
     );
+
 
     difficultyScreen.classList.remove(
         "hidden"
@@ -484,9 +572,34 @@ function showDifficultyScreen() {
         "hidden"
     );
 
+
     difficultyIndicator.classList.add(
         "hidden"
     );
+
+}
+
+
+/* =========================================
+   ROULETTE INITIAL STATE
+========================================= */
+
+function resetRouletteWords() {
+
+    projectWordText.textContent =
+        "Find Your Next Project";
+
+
+    categoryWordText.textContent =
+        "spin to discover";
+
+
+    roulettePrompt.textContent =
+        "ready?";
+
+
+    categoryPrompt.textContent =
+        "your idea is waiting";
 
 }
 
@@ -497,13 +610,22 @@ function showDifficultyScreen() {
 
 function openRoulette() {
 
+    closeResult();
+
+    hideExplore();
+
+    closeSavedProjects();
+
+
     degreeScreen.classList.add(
         "hidden"
     );
 
+
     difficultyScreen.classList.add(
         "hidden"
     );
+
 
     roulette.classList.remove(
         "hidden"
@@ -513,6 +635,7 @@ function openRoulette() {
     degreeIndicator.classList.remove(
         "hidden"
     );
+
 
     difficultyIndicator.classList.remove(
         "hidden"
@@ -530,24 +653,16 @@ function openRoulette() {
 
 
     /*
-        IMPORTANT:
-        Do NOT choose a project yet.
+        No project is selected here.
 
-        The user should spin first.
+        The user MUST spin first.
     */
 
-    currentProject = null;
+    currentProject =
+        null;
 
-    projectWordText.textContent =
-        "Find Your Next Project";
 
-    categoryWordText.textContent =
-        "spin to discover";
-    roulettePrompt.textContent =
-    "ready?";
-
-    categoryPrompt.textContent =
-    "your idea is waiting";
+    resetRouletteWords();
 
 }
 
@@ -588,7 +703,9 @@ function getEligibleProjects() {
    RANDOM PROJECT
 ========================================= */
 
-function randomItem(array) {
+function randomItem(
+    array
+) {
 
     return array[
         Math.floor(
@@ -607,9 +724,8 @@ function getRandomEligibleProject() {
 
 
     /*
-        Fallback in case a future degree
-        doesn't contain the requested
-        difficulty.
+        Fallback if a degree somehow doesn't
+        contain the selected difficulty.
     */
 
     if (
@@ -627,7 +743,9 @@ function getRandomEligibleProject() {
     }
 
 
-    if (eligible.length === 0) {
+    if (
+        eligible.length === 0
+    ) {
 
         eligible =
             projects;
@@ -635,7 +753,9 @@ function getRandomEligibleProject() {
     }
 
 
-    if (eligible.length === 1) {
+    if (
+        eligible.length === 1
+    ) {
 
         return eligible[0];
 
@@ -660,7 +780,7 @@ function getRandomEligibleProject() {
 
 
 /* =========================================
-   ROULETTE DISPLAY
+   ROULETTE WORDS
 ========================================= */
 
 function updateRouletteWords(
@@ -684,17 +804,18 @@ function updateRouletteWords(
 function updateCounter() {
 
     spinCountElement.textContent =
-        String(spinCount)
-            .padStart(
-                3,
-                "0"
-            );
+        String(
+            spinCount
+        ).padStart(
+            3,
+            "0"
+        );
 
 }
 
 
 /* =========================================
-   AUDIO CONTEXT
+   AUDIO
 ========================================= */
 
 let audioContext = null;
@@ -729,7 +850,7 @@ function getAudioContext() {
 
 
 /* =========================================
-   BUBBLE TICK
+   SPIN BUBBLE SOUND
 ========================================= */
 
 function playSpinTick(
@@ -763,6 +884,10 @@ function playSpinTick(
             now
         );
 
+
+    /*
+        Louder than our original version.
+    */
 
     gain.gain
         .setValueAtTime(
@@ -814,7 +939,9 @@ function playFinalTick() {
         ctx.currentTime;
 
 
-    /* Bubble pop */
+    /*
+        POP
+    */
 
     const pop =
         ctx.createOscillator();
@@ -851,7 +978,7 @@ function playFinalTick() {
 
     popGain.gain
         .exponentialRampToValueAtTime(
-            0.20,
+            0.18,
             now + 0.008
         );
 
@@ -883,7 +1010,9 @@ function playFinalTick() {
     );
 
 
-    /* Warm chime */
+    /*
+        CHIME
+    */
 
     const chime =
         ctx.createOscillator();
@@ -913,7 +1042,7 @@ function playFinalTick() {
 
     chimeGain.gain
         .exponentialRampToValueAtTime(
-            0.055,
+            0.085,
             now + 0.065
         );
 
@@ -945,7 +1074,9 @@ function playFinalTick() {
     );
 
 
-    /* Sparkle */
+    /*
+        SPARKLE
+    */
 
     const sparkle =
         ctx.createOscillator();
@@ -975,7 +1106,7 @@ function playFinalTick() {
 
     sparkleGain.gain
         .exponentialRampToValueAtTime(
-            0.025,
+            0.04,
             now + 0.12
         );
 
@@ -1021,16 +1152,26 @@ function animateRoulette() {
             "hidden"
         )
     ) {
+
         return;
+
     }
 
 
-    spinning = true;
+    spinning =
+        true;
+
+
+    const thisSpin =
+        ++spinSession;
+
+
     roulettePrompt.textContent =
-    "how about";
+        "how about";
+
 
     categoryPrompt.textContent =
-    "in";
+        "in";
 
 
     projectWord.classList.add(
@@ -1052,6 +1193,21 @@ function animateRoulette() {
 
 
     function nextTick() {
+
+        /*
+            If the user went home during a
+            spin, cancel the old animation.
+        */
+
+        if (
+            thisSpin !==
+            spinSession
+        ) {
+
+            return;
+
+        }
+
 
         const project =
             getRandomEligibleProject();
@@ -1111,11 +1267,25 @@ function animateRoulette() {
             playFinalTick();
 
 
+            const finishedProject =
+                currentProject;
+
+
             setTimeout(
-                () =>
-                    showProject(
-                        currentProject
-                    ),
+                () => {
+
+                    if (
+                        thisSpin ===
+                        spinSession
+                    ) {
+
+                        showProject(
+                            finishedProject
+                        );
+
+                    }
+
+                },
                 320
             );
 
@@ -1154,6 +1324,11 @@ function showProject(
     project
 ) {
 
+    if (!project) {
+        return;
+    }
+
+
     currentProject =
         project;
 
@@ -1182,7 +1357,10 @@ function showProject(
         "";
 
 
-    project.technologies.forEach(
+    (
+        project.technologies ||
+        []
+    ).forEach(
         technology => {
 
             const tag =
@@ -1223,21 +1401,6 @@ function showProject(
 }
 
 
-function closeResult() {
-
-    resultScreen.classList.remove(
-        "active"
-    );
-
-
-    resultScreen.setAttribute(
-        "aria-hidden",
-        "true"
-    );
-
-}
-
-
 /* =========================================
    SAVED PROJECTS
 ========================================= */
@@ -1252,7 +1415,9 @@ function loadSavedProjects() {
 
     if (!stored) {
 
-        savedProjects = [];
+        savedProjects =
+            [];
+
 
         updateSavedCount();
 
@@ -1264,7 +1429,9 @@ function loadSavedProjects() {
     try {
 
         savedProjects =
-            JSON.parse(stored);
+            JSON.parse(
+                stored
+            );
 
 
         if (
@@ -1272,14 +1439,18 @@ function loadSavedProjects() {
                 savedProjects
             )
         ) {
-            savedProjects = [];
+
+            savedProjects =
+                [];
+
         }
 
     }
 
     catch {
 
-        savedProjects = [];
+        savedProjects =
+            [];
 
     }
 
@@ -1352,6 +1523,8 @@ function toggleCurrentProjectSave() {
 
     updateSaveButton();
 
+    updateExploreSaveButton();
+
 }
 
 
@@ -1388,6 +1561,33 @@ function updateSaveButton() {
 }
 
 
+function updateExploreSaveButton() {
+
+    if (!currentProject) {
+        return;
+    }
+
+
+    const saved =
+        isProjectSaved(
+            currentProject.id
+        );
+
+
+    exploreSaveButton.classList.toggle(
+        "saved",
+        saved
+    );
+
+
+    exploreSaveButton.textContent =
+        saved
+            ? "♥ saved"
+            : "♡ save project";
+
+}
+
+
 function updateSavedCount() {
 
     savedCount.textContent =
@@ -1409,6 +1609,9 @@ function openSavedProjects() {
 
     closeResult();
 
+    hideExplore();
+
+
     renderSavedProjects();
 
 
@@ -1420,21 +1623,6 @@ function openSavedProjects() {
     savedScreen.setAttribute(
         "aria-hidden",
         "false"
-    );
-
-}
-
-
-function closeSavedProjects() {
-
-    savedScreen.classList.remove(
-        "active"
-    );
-
-
-    savedScreen.setAttribute(
-        "aria-hidden",
-        "true"
     );
 
 }
@@ -1564,6 +1752,8 @@ function renderSavedProjects() {
 
                     updateSaveButton();
 
+                    updateExploreSaveButton();
+
                 }
             );
 
@@ -1587,6 +1777,385 @@ function renderSavedProjects() {
 
 
 /* =========================================
+   PROJECT BRIEF
+========================================= */
+
+function createProjectBrief(
+    project
+) {
+
+    const technologies =
+        project.technologies ||
+        [];
+
+
+    /*
+        For now these are created locally.
+
+        Later we can give every project
+        completely custom feature lists
+        inside projects.json.
+    */
+
+    const features = [
+
+        `Build the main ${project.category.toLowerCase()} functionality.`,
+
+        `Create a clean interface for interacting with the project.`,
+
+        `Use suitable real or sample data to test the idea.`,
+
+        `Show useful results, feedback or visual output to the user.`,
+
+        `Polish the final version so it is easy to demonstrate.`
+
+    ];
+
+
+    const roadmap = [
+        "research",
+        "plan",
+        "prototype",
+        "build",
+        "test",
+        "polish"
+    ];
+
+
+    const skills = [
+
+        project.category,
+
+        ...technologies,
+
+        "Problem Solving",
+
+        "Project Design"
+
+    ];
+
+
+    return {
+
+        idea:
+            project.description,
+
+        features:
+            features,
+
+        roadmap:
+            roadmap,
+
+        skills:
+            [...new Set(skills)]
+
+    };
+
+}
+
+
+/* =========================================
+   OPEN EXPLORE
+========================================= */
+
+function openExploreProject() {
+
+    if (!currentProject) {
+        return;
+    }
+
+
+    const project =
+        currentProject;
+
+
+    const brief =
+        createProjectBrief(
+            project
+        );
+
+
+    exploreTitle.textContent =
+        project.title;
+
+
+    exploreDescription.textContent =
+        project.description;
+
+
+    exploreDegree.textContent =
+        project.degree;
+
+
+    exploreCategory.textContent =
+        project.category;
+
+
+    exploreDifficulty.textContent =
+        project.difficulty;
+
+
+    exploreIdea.textContent =
+        brief.idea;
+
+
+    exploreLevel.textContent =
+        project.difficulty;
+
+
+    /*
+        FEATURES
+    */
+
+    exploreFeatures.innerHTML =
+        "";
+
+
+    brief.features.forEach(
+        feature => {
+
+            const item =
+                document.createElement(
+                    "li"
+                );
+
+
+            item.textContent =
+                feature;
+
+
+            exploreFeatures.appendChild(
+                item
+            );
+
+        }
+    );
+
+
+    /*
+        TECHNOLOGIES
+    */
+
+    exploreTechnologies.innerHTML =
+        "";
+
+
+    (
+        project.technologies ||
+        []
+    ).forEach(
+        technology => {
+
+            const tag =
+                document.createElement(
+                    "span"
+                );
+
+
+            tag.className =
+                "explore-tech";
+
+
+            tag.textContent =
+                technology;
+
+
+            exploreTechnologies.appendChild(
+                tag
+            );
+
+        }
+    );
+
+
+    /*
+        ROADMAP
+    */
+
+    exploreRoadmap.innerHTML =
+        "";
+
+
+    brief.roadmap.forEach(
+        (step, index) => {
+
+            const wrapper =
+                document.createElement(
+                    "div"
+                );
+
+
+            wrapper.className =
+                "roadmap-step";
+
+
+            const name =
+                document.createElement(
+                    "span"
+                );
+
+
+            name.className =
+                "roadmap-name";
+
+
+            name.textContent =
+                step;
+
+
+            wrapper.appendChild(
+                name
+            );
+
+
+            if (
+                index <
+                brief.roadmap.length - 1
+            ) {
+
+                const arrow =
+                    document.createElement(
+                        "span"
+                    );
+
+
+                arrow.className =
+                    "roadmap-arrow";
+
+
+                arrow.textContent =
+                    "→";
+
+
+                wrapper.appendChild(
+                    arrow
+                );
+
+            }
+
+
+            exploreRoadmap.appendChild(
+                wrapper
+            );
+
+        }
+    );
+
+
+    /*
+        SKILLS
+    */
+
+    exploreSkills.innerHTML =
+        "";
+
+
+    brief.skills.forEach(
+        skill => {
+
+            const tag =
+                document.createElement(
+                    "span"
+                );
+
+
+            tag.className =
+                "explore-skill";
+
+
+            tag.textContent =
+                skill;
+
+
+            exploreSkills.appendChild(
+                tag
+            );
+
+        }
+    );
+
+
+    updateExploreSaveButton();
+
+
+    /*
+        Hide result behind Explore.
+    */
+
+    resultScreen.classList.remove(
+        "active"
+    );
+
+
+    resultScreen.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+
+    exploreScreen.classList.add(
+        "active"
+    );
+
+
+    exploreScreen.setAttribute(
+        "aria-hidden",
+        "false"
+    );
+
+
+    exploreScreen.scrollTop =
+        0;
+
+}
+
+
+/* =========================================
+   BACK FROM EXPLORE
+========================================= */
+
+function closeExploreToResult() {
+
+    hideExplore();
+
+
+    if (currentProject) {
+
+        resultScreen.classList.add(
+            "active"
+        );
+
+
+        resultScreen.setAttribute(
+            "aria-hidden",
+            "false"
+        );
+
+    }
+
+}
+
+
+/* =========================================
+   ANOTHER PROJECT
+========================================= */
+
+function spinAnotherProject() {
+
+    closeResult();
+
+    hideExplore();
+
+
+    setTimeout(
+        animateRoulette,
+        450
+    );
+
+}
+
+
+/* =========================================
    EVENTS
 ========================================= */
 
@@ -1600,21 +2169,23 @@ document
     .querySelectorAll(
         ".difficulty-option"
     )
-    .forEach(button => {
+    .forEach(
+        button => {
 
-        button.addEventListener(
-            "click",
-            () => {
+            button.addEventListener(
+                "click",
+                () => {
 
-                selectDifficulty(
-                    button.dataset
-                        .difficulty
-                );
+                    selectDifficulty(
+                        button.dataset
+                            .difficulty
+                    );
 
-            }
-        );
+                }
+            );
 
-    });
+        }
+    );
 
 
 anyDifficultyButton.addEventListener(
@@ -1644,6 +2215,12 @@ difficultyIndicator.addEventListener(
 );
 
 
+brand.addEventListener(
+    "click",
+    showDegreeScreen
+);
+
+
 spinButton.addEventListener(
     "click",
     animateRoulette
@@ -1658,11 +2235,7 @@ spaceButton.addEventListener(
 
 backButton.addEventListener(
     "click",
-    event => {
-
-        event.preventDefault();
-
-        event.stopPropagation();
+    () => {
 
         closeResult();
 
@@ -1672,23 +2245,37 @@ backButton.addEventListener(
 
 anotherButton.addEventListener(
     "click",
-    () => {
-
-        closeResult();
-
-
-        setTimeout(
-            animateRoulette,
-            500
-        );
-
-    }
+    spinAnotherProject
 );
 
 
 saveProjectButton.addEventListener(
     "click",
     toggleCurrentProjectSave
+);
+
+
+exploreButton.addEventListener(
+    "click",
+    openExploreProject
+);
+
+
+exploreBackButton.addEventListener(
+    "click",
+    closeExploreToResult
+);
+
+
+exploreSaveButton.addEventListener(
+    "click",
+    toggleCurrentProjectSave
+);
+
+
+exploreAnotherButton.addEventListener(
+    "click",
+    spinAnotherProject
 );
 
 
@@ -1716,18 +2303,26 @@ document.addEventListener(
             event.code !==
             "Space"
         ) {
+
             return;
+
         }
 
 
         if (
-            ["INPUT", "TEXTAREA", "SELECT"]
-                .includes(
-                    document.activeElement
-                        .tagName
-                )
+            [
+                "INPUT",
+                "TEXTAREA",
+                "SELECT",
+                "BUTTON"
+            ].includes(
+                document.activeElement
+                    .tagName
+            )
         ) {
+
             return;
+
         }
 
 
@@ -1736,7 +2331,20 @@ document.addEventListener(
                 "active"
             )
         ) {
+
             return;
+
+        }
+
+
+        if (
+            exploreScreen.classList.contains(
+                "active"
+            )
+        ) {
+
+            return;
+
         }
 
 
@@ -1748,7 +2356,9 @@ document.addEventListener(
                 "hidden"
             )
         ) {
+
             return;
+
         }
 
 
@@ -1761,14 +2371,7 @@ document.addEventListener(
             )
         ) {
 
-            closeResult();
-
-
-            setTimeout(
-                animateRoulette,
-                500
-            );
-
+            spinAnotherProject();
 
             return;
 
@@ -1776,6 +2379,64 @@ document.addEventListener(
 
 
         animateRoulette();
+
+    }
+);
+
+
+/* =========================================
+   ESCAPE KEY
+========================================= */
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            event.key !==
+            "Escape"
+        ) {
+
+            return;
+
+        }
+
+
+        if (
+            exploreScreen.classList.contains(
+                "active"
+            )
+        ) {
+
+            closeExploreToResult();
+
+            return;
+
+        }
+
+
+        if (
+            savedScreen.classList.contains(
+                "active"
+            )
+        ) {
+
+            closeSavedProjects();
+
+            return;
+
+        }
+
+
+        if (
+            resultScreen.classList.contains(
+                "active"
+            )
+        ) {
+
+            closeResult();
+
+        }
 
     }
 );

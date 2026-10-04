@@ -21,9 +21,9 @@
 
 <body>
 
-    <!-- ========================================
+    <!-- =========================
          HEADER
-    ========================================= -->
+    ========================== -->
 
     <header class="topbar">
 
@@ -81,6 +81,7 @@
                 </span>
             </button>
 
+
             <span
                 class="counter"
                 id="spinCount"
@@ -94,9 +95,9 @@
 
 
 
-    <!-- ========================================
-         DEGREE SCREEN / HOME
-    ========================================= -->
+    <!-- =========================
+         HOME / DEGREE
+    ========================== -->
 
     <section
         class="onboarding"
@@ -141,9 +142,9 @@
 
 
 
-    <!-- ========================================
-         DIFFICULTY SCREEN
-    ========================================= -->
+    <!-- =========================
+         DIFFICULTY
+    ========================== -->
 
     <section
         class="onboarding hidden"
@@ -240,9 +241,9 @@
 
 
 
-    <!-- ========================================
+    <!-- =========================
          ROULETTE
-    ========================================= -->
+    ========================== -->
 
     <main
         class="roulette hidden"
@@ -259,15 +260,14 @@
             </p>
 
 
-            <button
+            <div
                 class="roulette-word"
                 id="projectWord"
-                type="button"
             >
                 <span id="projectWordText">
                     Find Your Next Project
                 </span>
-            </button>
+            </div>
 
 
             <p
@@ -278,15 +278,14 @@
             </p>
 
 
-            <button
+            <div
                 class="roulette-word secondary-word"
                 id="categoryWord"
-                type="button"
             >
                 <span id="categoryWordText">
                     spin to discover
                 </span>
-            </button>
+            </div>
 
 
             <button
@@ -309,9 +308,9 @@
 
 
 
-    <!-- ========================================
-         PROJECT RESULT
-    ========================================= -->
+    <!-- =========================
+         RESULT
+    ========================== -->
 
     <section
         class="result-screen"
@@ -398,6 +397,15 @@
 
                 <button
                     class="result-action"
+                    id="exploreButton"
+                    type="button"
+                >
+                    explore ↗
+                </button>
+
+
+                <button
+                    class="result-action"
                     id="anotherButton"
                     type="button"
                 >
@@ -412,9 +420,246 @@
 
 
 
-    <!-- ========================================
+    <!-- =========================
+         EXPLORE PROJECT
+    ========================== -->
+
+    <section
+        class="explore-screen"
+        id="exploreScreen"
+        aria-hidden="true"
+    >
+
+        <button
+            class="explore-back"
+            id="exploreBackButton"
+            type="button"
+        >
+            ← back
+        </button>
+
+
+        <div class="explore-wrapper">
+
+            <div class="explore-hero">
+
+                <p class="explore-eyebrow">
+                    project brief
+                </p>
+
+
+                <h1 id="exploreTitle">
+                    Project Title
+                </h1>
+
+
+                <p
+                    class="explore-intro"
+                    id="exploreDescription"
+                >
+                    Project description.
+                </p>
+
+
+                <div class="explore-meta">
+
+                    <span id="exploreDegree"></span>
+
+                    <span>/</span>
+
+                    <span id="exploreCategory"></span>
+
+                    <span>/</span>
+
+                    <span id="exploreDifficulty"></span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="explore-grid">
+
+                <!-- IDEA -->
+
+                <article class="explore-section">
+
+                    <span class="explore-number">
+                        01
+                    </span>
+
+                    <div>
+
+                        <p class="explore-label">
+                            THE IDEA
+                        </p>
+
+                        <p id="exploreIdea"></p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- FEATURES -->
+
+                <article class="explore-section">
+
+                    <span class="explore-number">
+                        02
+                    </span>
+
+                    <div>
+
+                        <p class="explore-label">
+                            CORE FEATURES
+                        </p>
+
+                        <ul
+                            class="feature-list"
+                            id="exploreFeatures"
+                        ></ul>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- TECH -->
+
+                <article class="explore-section">
+
+                    <span class="explore-number">
+                        03
+                    </span>
+
+                    <div>
+
+                        <p class="explore-label">
+                            BUILD WITH
+                        </p>
+
+                        <div
+                            class="explore-technologies"
+                            id="exploreTechnologies"
+                        ></div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ROADMAP -->
+
+                <article class="explore-section">
+
+                    <span class="explore-number">
+                        04
+                    </span>
+
+                    <div>
+
+                        <p class="explore-label">
+                            BUILD PLAN
+                        </p>
+
+                        <div
+                            class="roadmap"
+                            id="exploreRoadmap"
+                        ></div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- SKILLS -->
+
+                <article class="explore-section">
+
+                    <span class="explore-number">
+                        05
+                    </span>
+
+                    <div>
+
+                        <p class="explore-label">
+                            YOU'LL PRACTICE
+                        </p>
+
+                        <div
+                            class="skills-list"
+                            id="exploreSkills"
+                        ></div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- LEVEL -->
+
+                <article class="explore-section">
+
+                    <span class="explore-number">
+                        06
+                    </span>
+
+                    <div>
+
+                        <p class="explore-label">
+                            LEVEL
+                        </p>
+
+                        <p
+                            class="explore-level"
+                            id="exploreLevel"
+                        ></p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+
+            <div class="explore-actions">
+
+                <button
+                    class="explore-save"
+                    id="exploreSaveButton"
+                    type="button"
+                >
+                    ♡ save project
+                </button>
+
+
+                <button
+                    class="explore-another"
+                    id="exploreAnotherButton"
+                    type="button"
+                >
+                    another one ↻
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
          SAVED PROJECTS
-    ========================================= -->
+    ========================== -->
 
     <section
         class="saved-screen"
@@ -458,9 +703,9 @@
 
 
 
-    <!-- ========================================
-         LOADING / ERROR STATUS
-    ========================================= -->
+    <!-- =========================
+         STATUS
+    ========================== -->
 
     <section
         class="status-screen"
@@ -473,9 +718,9 @@
 
 
 
-    <!-- ========================================
+    <!-- =========================
          FOOTER
-    ========================================= -->
+    ========================== -->
 
     <footer class="bottom-bar">
 
@@ -501,178 +746,7 @@
     </footer>
 
 
-
-    <!-- ========================================
-         SCRIPT
-    ========================================= -->
-
     <script src="script.js"></script>
-
-
-    <!--
-        HOME BUTTON
-
-        Kept here separately so you don't need
-        to edit the big script.js tonight.
-    -->
-
-    <script>
-
-        document
-            .getElementById("brand")
-            .addEventListener("click", function () {
-
-                /*
-                    Close result screen if open
-                */
-
-                if (
-                    typeof closeResult === "function"
-                ) {
-                    closeResult();
-                }
-
-
-                /*
-                    Close saved projects if open
-                */
-
-                const saved =
-                    document.getElementById(
-                        "savedScreen"
-                    );
-
-                if (saved) {
-
-                    saved.classList.remove(
-                        "active"
-                    );
-
-                    saved.setAttribute(
-                        "aria-hidden",
-                        "true"
-                    );
-
-                }
-
-
-                /*
-                    Reset roulette state
-                */
-
-                if (
-                    typeof spinning !== "undefined"
-                ) {
-                    spinning = false;
-                }
-
-
-                if (
-                    typeof currentProject !== "undefined"
-                ) {
-                    currentProject = null;
-                }
-
-
-                /*
-                    Hide difficulty screen
-                */
-
-                document
-                    .getElementById(
-                        "difficultyScreen"
-                    )
-                    .classList.add(
-                        "hidden"
-                    );
-
-
-                /*
-                    Hide roulette
-                */
-
-                document
-                    .getElementById(
-                        "roulette"
-                    )
-                    .classList.add(
-                        "hidden"
-                    );
-
-
-                /*
-                    Hide preference buttons
-                */
-
-                document
-                    .getElementById(
-                        "degreeIndicator"
-                    )
-                    .classList.add(
-                        "hidden"
-                    );
-
-
-                document
-                    .getElementById(
-                        "difficultyIndicator"
-                    )
-                    .classList.add(
-                        "hidden"
-                    );
-
-
-                /*
-                    Reset roulette wording
-                */
-
-                document
-                    .getElementById(
-                        "projectWordText"
-                    )
-                    .textContent =
-                    "Find Your Next Project";
-
-
-                document
-                    .getElementById(
-                        "categoryWordText"
-                    )
-                    .textContent =
-                    "spin to discover";
-
-
-                document
-                    .getElementById(
-                        "roulettePrompt"
-                    )
-                    .textContent =
-                    "ready?";
-
-
-                document
-                    .getElementById(
-                        "categoryPrompt"
-                    )
-                    .textContent =
-                    "your idea is waiting";
-
-
-                /*
-                    HOME SCREEN
-                */
-
-                document
-                    .getElementById(
-                        "degreeScreen"
-                    )
-                    .classList.remove(
-                        "hidden"
-                    );
-
-            });
-
-    </script>
 
 </body>
 

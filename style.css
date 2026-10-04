@@ -2,7 +2,7 @@
 
 
 /* =========================================
-   BASE
+   VARIABLES
 ========================================= */
 
 :root {
@@ -12,6 +12,10 @@
     --line: rgba(17, 17, 17, 0.18);
 }
 
+
+/* =========================================
+   BASE
+========================================= */
 
 * {
     margin: 0;
@@ -70,26 +74,74 @@ button {
 
     padding: 28px 34px;
 
-    z-index: 50;
+    z-index: 120;
 
     font-size: 12px;
+
+    pointer-events: none;
 }
 
+
+.topbar > * {
+    pointer-events: auto;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
 
 .brand {
     justify-self: start;
 
+    appearance: none;
+    -webkit-appearance: none;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+
+    padding: 0;
+    margin: 0;
+
     color: var(--text);
 
-    text-decoration: none;
+    font-family: "DM Mono", monospace;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition:
+        opacity 180ms ease,
+        transform 180ms ease;
 }
 
+
+.brand:hover {
+    opacity: 0.5;
+}
+
+
+.brand:active {
+    transform: scale(0.96);
+}
+
+
+.brand:focus-visible {
+    outline: 1px solid currentColor;
+    outline-offset: 6px;
+}
+
+
+/* =========================================
+   TOP PREFERENCES
+========================================= */
 
 .top-preferences {
     display: flex;
 
     justify-content: center;
-
     align-items: center;
 
     gap: 6px;
@@ -106,7 +158,6 @@ button {
     padding: 7px 10px;
 
     font-family: "DM Mono", monospace;
-
     font-size: 9px;
 
     cursor: pointer;
@@ -156,7 +207,6 @@ button {
     color: var(--muted);
 
     font-family: "DM Mono", monospace;
-
     font-size: 10px;
 
     cursor: pointer;
@@ -272,7 +322,6 @@ button {
     padding: 10px 13px;
 
     font-family: "DM Mono", monospace;
-
     font-size: 10px;
 
     cursor: pointer;
@@ -305,7 +354,6 @@ button {
     padding: 13px 16px;
 
     font-family: "DM Mono", monospace;
-
     font-size: 11px;
 
     cursor: pointer;
@@ -422,7 +470,6 @@ button {
     color: var(--muted);
 
     font-family: "DM Mono", monospace;
-
     font-size: 10px;
 
     cursor: pointer;
@@ -440,7 +487,6 @@ button {
 
 .roulette {
     width: 100%;
-
     height: 100vh;
 
     display: flex;
@@ -479,10 +525,6 @@ button {
 
     max-width: 95vw;
 
-    border: 0;
-
-    background: transparent;
-
     padding: 3px 14px;
 
     color: var(--text);
@@ -497,8 +539,6 @@ button {
 
     line-height: 1.05;
 
-    cursor: pointer;
-
     transition:
         opacity 150ms ease,
         transform 150ms ease;
@@ -507,41 +547,6 @@ button {
 
 .secondary-word {
     font-size: clamp(28px, 4vw, 58px);
-}
-
-
-.roulette-word::after {
-    content: "";
-
-    position: absolute;
-
-    left: 13px;
-    right: 13px;
-
-    bottom: 0;
-
-    height: 2px;
-
-    background: var(--text);
-
-    transform: scaleX(0);
-
-    transition: transform 200ms ease;
-}
-
-
-.roulette-word:hover::after {
-    transform: scaleX(1);
-}
-
-
-.roulette-word:hover {
-    opacity: 0.65;
-}
-
-
-.roulette-word:active {
-    transform: scale(0.97);
 }
 
 
@@ -586,7 +591,6 @@ button {
     padding: 14px 19px;
 
     font-family: "DM Mono", monospace;
-
     font-size: 12px;
 
     display: flex;
@@ -825,7 +829,6 @@ button {
     padding: 10px 0;
 
     font-family: "DM Mono", monospace;
-
     font-size: 11px;
 
     cursor: pointer;
@@ -840,6 +843,362 @@ button {
     color: var(--background);
 
     transform: translateX(-3px);
+}
+
+
+/* =========================================
+   EXPLORE
+========================================= */
+
+.explore-screen {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 140;
+
+    width: 100%;
+    height: 100vh;
+
+    overflow-y: auto;
+
+    background: #111111;
+
+    color: #f2f0ea;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity 350ms ease,
+        transform 500ms cubic-bezier(0.76, 0, 0.24, 1),
+        visibility 350ms;
+}
+
+
+.explore-screen.active {
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    transform: translateY(0);
+}
+
+
+.explore-back {
+    position: fixed;
+
+    top: 28px;
+    left: 34px;
+
+    z-index: 160;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #777;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition:
+        color 180ms ease,
+        transform 180ms ease;
+}
+
+
+.explore-back:hover {
+    color: #f2f0ea;
+
+    transform: translateX(-3px);
+}
+
+
+.explore-wrapper {
+    width: min(1150px, 86%);
+
+    margin: 0 auto;
+
+    padding: 130px 0 100px;
+}
+
+
+.explore-hero {
+    max-width: 950px;
+
+    margin-bottom: 100px;
+}
+
+
+.explore-eyebrow {
+    margin-bottom: 22px;
+
+    color: #777;
+
+    font-size: 11px;
+}
+
+
+.explore-hero h1 {
+    max-width: 1000px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: clamp(55px, 8vw, 120px);
+
+    font-weight: 500;
+
+    line-height: 0.92;
+
+    letter-spacing: -0.07em;
+}
+
+
+.explore-intro {
+    max-width: 650px;
+
+    margin-top: 35px;
+
+    color: #aaa;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+.explore-meta {
+    margin-top: 32px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    color: #666;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.08em;
+}
+
+
+.explore-grid {
+    border-top: 1px solid #292929;
+}
+
+
+.explore-section {
+    display: grid;
+
+    grid-template-columns: 80px 1fr;
+
+    gap: 20px;
+
+    padding: 45px 0;
+
+    border-bottom: 1px solid #292929;
+}
+
+
+.explore-number {
+    color: #555;
+
+    font-size: 10px;
+}
+
+
+.explore-label {
+    margin-bottom: 20px;
+
+    color: #777;
+
+    font-size: 10px;
+
+    letter-spacing: 0.08em;
+}
+
+
+.explore-section p:not(.explore-label) {
+    max-width: 750px;
+
+    color: #c7c5bf;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+.feature-list {
+    list-style: none;
+
+    display: grid;
+
+    gap: 14px;
+}
+
+
+.feature-list li {
+    position: relative;
+
+    padding-left: 20px;
+
+    color: #c7c5bf;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+.feature-list li::before {
+    content: "↳";
+
+    position: absolute;
+
+    left: 0;
+
+    color: #555;
+}
+
+
+.explore-technologies,
+.skills-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.explore-tech,
+.explore-skill {
+    border: 1px solid #333;
+
+    padding: 9px 12px;
+
+    color: #aaa;
+
+    font-size: 9px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.04em;
+}
+
+
+.roadmap {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.roadmap-step {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.roadmap-name {
+    border: 1px solid #333;
+
+    padding: 10px 13px;
+
+    color: #bbb;
+
+    font-size: 10px;
+}
+
+
+.roadmap-arrow {
+    color: #555;
+
+    font-size: 11px;
+}
+
+
+.explore-level {
+    font-size: 24px !important;
+
+    letter-spacing: -0.03em;
+}
+
+
+.explore-actions {
+    padding-top: 55px;
+
+    display: flex;
+
+    gap: 9px;
+
+    flex-wrap: wrap;
+}
+
+
+.explore-save,
+.explore-another {
+    border: 1px solid #444;
+
+    background: transparent;
+
+    color: #f2f0ea;
+
+    padding: 14px 18px;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition:
+        background 180ms ease,
+        color 180ms ease;
+}
+
+
+.explore-save:hover,
+.explore-another:hover {
+    background: #f2f0ea;
+
+    color: #111;
+}
+
+
+.explore-save.saved {
+    background: #f2f0ea;
+
+    color: #111;
 }
 
 
@@ -934,8 +1293,7 @@ button {
     grid-template-columns:
         repeat(2, minmax(0, 1fr));
 
-    border-top:
-        1px solid var(--line);
+    border-top: 1px solid var(--line);
 }
 
 
@@ -944,14 +1302,12 @@ button {
 
     padding: 28px 25px 28px 0;
 
-    border-bottom:
-        1px solid var(--line);
+    border-bottom: 1px solid var(--line);
 }
 
 
 .saved-project:nth-child(odd) {
-    border-right:
-        1px solid var(--line);
+    border-right: 1px solid var(--line);
 
     padding-right: 30px;
 }
@@ -1097,6 +1453,17 @@ button {
 }
 
 
+/* Hide shortcut during onboarding */
+
+body:has(#degreeScreen:not(.hidden))
+.space-hint,
+
+body:has(#difficultyScreen:not(.hidden))
+.space-hint {
+    display: none;
+}
+
+
 /* =========================================
    STATUS
 ========================================= */
@@ -1209,9 +1576,63 @@ button {
     }
 
 
+    .explore-wrapper {
+        width: 88%;
+
+        padding:
+            110px
+            0
+            70px;
+    }
+
+
+    .explore-back {
+        top: 22px;
+        left: 22px;
+    }
+
+
+    .explore-hero {
+        margin-bottom: 70px;
+    }
+
+
+    .explore-hero h1 {
+        font-size: 54px;
+    }
+
+
+    .explore-intro {
+        font-size: 14px;
+    }
+
+
+    .explore-section {
+        grid-template-columns:
+            40px 1fr;
+
+        padding: 35px 0;
+    }
+
+
+    .roadmap {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .roadmap-arrow {
+        transform: rotate(90deg);
+
+        margin-left: 15px;
+    }
+
+
     .saved-screen {
         padding:
-            80px 22px;
+            80px
+            22px;
     }
 
 
@@ -1243,52 +1664,4 @@ button {
         display: none;
     }
 
-}
-/* =========================================
-   CLICKABLE SPINSPIRE LOGO
-========================================= */
-
-.brand {
-    appearance: none;
-    -webkit-appearance: none;
-
-    border: none;
-    outline: none;
-
-    background: transparent;
-
-    padding: 0;
-    margin: 0;
-
-    font-family: "DM Mono", monospace;
-    font-size: 12px;
-
-    color: var(--text);
-
-    cursor: pointer;
-
-    transition:
-        opacity 180ms ease,
-        transform 180ms ease;
-}
-
-
-.brand:hover {
-    opacity: 0.5;
-}
-
-
-.brand:active {
-    transform: scale(0.96);
-}
-
-
-.brand:focus-visible {
-    outline: 1px solid var(--text);
-    outline-offset: 6px;
-}
-/* Hide "space to spin" during onboarding */
-body:has(#degreeScreen:not(.hidden)) .space-hint,
-body:has(#difficultyScreen:not(.hidden)) .space-hint {
-    display: none;
 }
