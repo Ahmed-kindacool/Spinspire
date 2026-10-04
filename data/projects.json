@@ -10,6 +10,29 @@
       "Python",
       "OpenCV",
       "YOLO"
+    ],
+    "features": [
+      "Translate Smart Queue Monitor into a clear set of functional requirements",
+      "Build the core workflow: Estimate queue length from camera footage and visualize busy periods",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Computer Vision",
+      "Python",
+      "OpenCV",
+      "YOLO",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -23,6 +46,31 @@
       "Python",
       "TensorFlow",
       "OpenCV"
+    ],
+    "features": [
+      "Translate Plant Health Scanner into a clear set of functional requirements",
+      "Build the core workflow: Classify visible plant leaf conditions from images using a trained vision model",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Computer Vision",
+      "Python",
+      "TensorFlow",
+      "OpenCV",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -36,6 +84,29 @@
       "Python",
       "Transformers",
       "NLP"
+    ],
+    "features": [
+      "Translate Lecture Notes Summarizer into a clear set of functional requirements",
+      "Build the core workflow: Turn long lecture notes into concise summaries, key concepts and revision points",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Natural Language Processing",
+      "Python",
+      "Transformers",
+      "NLP",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -49,6 +120,29 @@
       "Python",
       "Embeddings",
       "NLP"
+    ],
+    "features": [
+      "Translate Student FAQ Assistant into a clear set of functional requirements",
+      "Build the core workflow: Build a question-answering assistant over a curated set of university FAQs and documents",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Natural Language Processing",
+      "Python",
+      "Embeddings",
+      "NLP",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -62,6 +156,31 @@
       "Python",
       "Pandas",
       "Scikit-learn"
+    ],
+    "features": [
+      "Create a clean input flow for the data the system will analyze",
+      "Build a reproducible preprocessing pipeline for the important features",
+      "Implement a baseline approach and compare it with a stronger model",
+      "Show the prediction together with useful confidence or error information",
+      "Evaluate the system on unseen examples and document its limitations"
+    ],
+    "roadmap": [
+      "define problem",
+      "collect data",
+      "prepare data",
+      "build baseline",
+      "evaluate",
+      "polish demo"
+    ],
+    "skills": [
+      "Machine Learning",
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "Data Analysis",
+      "Data Visualization",
+      "Model Evaluation",
+      "Problem Formulation"
     ]
   },
   {
@@ -75,6 +194,31 @@
       "Python",
       "Pandas",
       "Scikit-learn"
+    ],
+    "features": [
+      "Create a clean input flow for the data the system will analyze",
+      "Build a reproducible preprocessing pipeline for the important features",
+      "Implement a baseline approach and compare it with a stronger model",
+      "Show the prediction together with useful confidence or error information",
+      "Evaluate the system on unseen examples and document its limitations"
+    ],
+    "roadmap": [
+      "define problem",
+      "collect data",
+      "prepare data",
+      "build baseline",
+      "evaluate",
+      "polish demo"
+    ],
+    "skills": [
+      "Machine Learning",
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -88,6 +232,30 @@
       "Python",
       "Pandas",
       "Recommendation Systems"
+    ],
+    "features": [
+      "Collect the preferences or interaction data needed for recommendations",
+      "Build a simple baseline ranking before adding personalization",
+      "Generate ranked suggestions and explain why each one was recommended",
+      "Let users provide feedback that can improve later suggestions",
+      "Evaluate recommendation quality with several representative user profiles"
+    ],
+    "roadmap": [
+      "define problem",
+      "collect data",
+      "prepare data",
+      "build baseline",
+      "evaluate",
+      "polish demo"
+    ],
+    "skills": [
+      "Recommendation Systems",
+      "Python",
+      "Pandas",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -101,6 +269,31 @@
       "Python",
       "A*",
       "Search Algorithms"
+    ],
+    "features": [
+      "Translate Campus Navigation Agent into a clear set of functional requirements",
+      "Build the core workflow: Use search algorithms to find efficient routes through a modeled university campus",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Intelligent Agents",
+      "Python",
+      "A*",
+      "Search Algorithms",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -114,6 +307,29 @@
       "Python",
       "Constraint Solving",
       "Search"
+    ],
+    "features": [
+      "Translate Smart Timetable Agent into a clear set of functional requirements",
+      "Build the core workflow: Create an agent that proposes conflict-free study schedules from subjects and constraints",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Intelligent Agents",
+      "Python",
+      "Constraint Solving",
+      "Search",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -127,6 +343,31 @@
       "Python",
       "Automation",
       "File System"
+    ],
+    "features": [
+      "Design the main records and relationships the application needs",
+      "Create flows for adding, editing, searching, and organizing records",
+      "Add useful filters, tags, categories, or status views",
+      "Validate user input and handle duplicate or invalid records cleanly",
+      "Add an import, export, sharing, or history feature where it improves the workflow"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Automation",
+      "Python",
+      "File System",
+      "Data Analysis",
+      "Data Visualization",
+      "UI Design",
+      "Application Design",
+      "Problem Solving"
     ]
   },
   {
@@ -140,6 +381,29 @@
       "Python",
       "NLP",
       "Speech-to-Text"
+    ],
+    "features": [
+      "Accept and validate the source material the system will process",
+      "Implement the core speech ai processing pipeline",
+      "Organize the generated result into clear, useful sections",
+      "Give users controls that meaningfully change the generated output",
+      "Test varied examples and handle weak or invalid input gracefully"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Speech AI",
+      "Python",
+      "NLP",
+      "Speech-to-Text",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -153,6 +417,29 @@
       "Python",
       "LLM API",
       "Prompt Design"
+    ],
+    "features": [
+      "Accept and validate the source material the system will process",
+      "Implement the core generative ai processing pipeline",
+      "Organize the generated result into clear, useful sections",
+      "Give users controls that meaningfully change the generated output",
+      "Test varied examples and handle weak or invalid input gracefully"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Generative AI",
+      "Python",
+      "LLM API",
+      "Prompt Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -166,6 +453,29 @@
       "JavaScript",
       "HTML",
       "CSS"
+    ],
+    "features": [
+      "Represent the main algorithms concepts visually",
+      "Let users change inputs and immediately see the output update",
+      "Add step-by-step controls for inspecting important states or transitions",
+      "Include labels and explanations that make the visualization understandable",
+      "Provide preset examples that demonstrate the most important cases"
+    ],
+    "roadmap": [
+      "define behavior",
+      "design interface",
+      "build core logic",
+      "add visualization",
+      "test cases",
+      "polish"
+    ],
+    "skills": [
+      "Algorithms",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -179,6 +489,29 @@
       "JavaScript",
       "Node.js",
       "WebSockets"
+    ],
+    "features": [
+      "Design the main records and relationships the application needs",
+      "Create flows for adding, editing, searching, and organizing records",
+      "Add useful filters, tags, categories, or status views",
+      "Validate user input and handle duplicate or invalid records cleanly",
+      "Add an import, export, sharing, or history feature where it improves the workflow"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Node.js",
+      "WebSockets",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -192,6 +525,31 @@
       "SQL",
       "Node.js",
       "JavaScript"
+    ],
+    "features": [
+      "Design the main records and relationships the application needs",
+      "Create flows for adding, editing, searching, and organizing records",
+      "Add useful filters, tags, categories, or status views",
+      "Validate user input and handle duplicate or invalid records cleanly",
+      "Add an import, export, sharing, or history feature where it improves the workflow"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Databases",
+      "SQL",
+      "Node.js",
+      "JavaScript",
+      "Data Analysis",
+      "Data Visualization",
+      "UI Design",
+      "Application Design"
     ]
   },
   {
@@ -205,6 +563,30 @@
       "Python",
       "Networking",
       "Charts"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Networking",
+      "Python",
+      "Charts",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -218,6 +600,29 @@
       "Python",
       "Algorithms",
       "Visualization"
+    ],
+    "features": [
+      "Let users configure the important parameters before a simulation",
+      "Implement the rules and state changes of the operating systems model",
+      "Display the current state and key measurements while it runs",
+      "Support repeated runs so different configurations can be compared",
+      "Summarize each run with metrics, charts, or an event log"
+    ],
+    "roadmap": [
+      "define behavior",
+      "design interface",
+      "build core logic",
+      "add visualization",
+      "test cases",
+      "polish"
+    ],
+    "skills": [
+      "Operating Systems",
+      "Python",
+      "Algorithms",
+      "Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -231,6 +636,28 @@
       "Python",
       "Parsing",
       "Compilers"
+    ],
+    "features": [
+      "Translate Mini Programming Language into a clear set of functional requirements",
+      "Build the core workflow: Design a tiny language with variables, expressions and a simple interpreter",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Compilers",
+      "Python",
+      "Parsing",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -244,6 +671,30 @@
       "JavaScript",
       "Data Structures",
       "Canvas"
+    ],
+    "features": [
+      "Represent the main data structures concepts visually",
+      "Let users change inputs and immediately see the output update",
+      "Add step-by-step controls for inspecting important states or transitions",
+      "Include labels and explanations that make the visualization understandable",
+      "Provide preset examples that demonstrate the most important cases"
+    ],
+    "roadmap": [
+      "define behavior",
+      "design interface",
+      "build core logic",
+      "add visualization",
+      "test cases",
+      "polish"
+    ],
+    "skills": [
+      "Data Structures",
+      "JavaScript",
+      "Canvas",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -257,6 +708,30 @@
       "Python",
       "Queues",
       "Distributed Systems"
+    ],
+    "features": [
+      "Let users configure the important parameters before a simulation",
+      "Implement the rules and state changes of the distributed systems model",
+      "Display the current state and key measurements while it runs",
+      "Support repeated runs so different configurations can be compared",
+      "Summarize each run with metrics, charts, or an event log"
+    ],
+    "roadmap": [
+      "define behavior",
+      "design interface",
+      "build core logic",
+      "add visualization",
+      "test cases",
+      "polish"
+    ],
+    "skills": [
+      "Distributed Systems",
+      "Python",
+      "Queues",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -270,6 +745,31 @@
       "JavaScript",
       "SQLite",
       "Node.js"
+    ],
+    "features": [
+      "Design the main records and relationships the application needs",
+      "Create flows for adding, editing, searching, and organizing records",
+      "Add useful filters, tags, categories, or status views",
+      "Validate user input and handle duplicate or invalid records cleanly",
+      "Add an import, export, sharing, or history feature where it improves the workflow"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "SQLite",
+      "Node.js",
+      "UI Design",
+      "Application Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -283,6 +783,29 @@
       "JavaScript",
       "Automata",
       "SVG"
+    ],
+    "features": [
+      "Translate Finite Automata Designer into a clear set of functional requirements",
+      "Build the core workflow: Draw finite automata and test whether strings are accepted",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Theory",
+      "JavaScript",
+      "Automata",
+      "SVG",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -296,6 +819,29 @@
       "JavaScript",
       "Canvas",
       "Physics"
+    ],
+    "features": [
+      "Represent the main graphics concepts visually",
+      "Let users change inputs and immediately see the output update",
+      "Add step-by-step controls for inspecting important states or transitions",
+      "Include labels and explanations that make the visualization understandable",
+      "Provide preset examples that demonstrate the most important cases"
+    ],
+    "roadmap": [
+      "define behavior",
+      "design interface",
+      "build core logic",
+      "add visualization",
+      "test cases",
+      "polish"
+    ],
+    "skills": [
+      "Graphics",
+      "JavaScript",
+      "Canvas",
+      "Physics",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -309,6 +855,29 @@
       "Python",
       "TF-IDF",
       "Search"
+    ],
+    "features": [
+      "Translate Local Document Search into a clear set of functional requirements",
+      "Build the core workflow: Index a folder of sample text documents and provide ranked keyword search",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Information Retrieval",
+      "Python",
+      "TF-IDF",
+      "Search",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -322,6 +891,31 @@
       "React",
       "Node.js",
       "MongoDB"
+    ],
+    "features": [
+      "Design the main records and relationships the application needs",
+      "Create flows for adding, editing, searching, and organizing records",
+      "Add useful filters, tags, categories, or status views",
+      "Validate user input and handle duplicate or invalid records cleanly",
+      "Add an import, export, sharing, or history feature where it improves the workflow"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Web Applications",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "UI Design",
+      "Application Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -335,6 +929,29 @@
       "JavaScript",
       "Node.js",
       "SQLite"
+    ],
+    "features": [
+      "Design the main records and relationships the application needs",
+      "Create flows for adding, editing, searching, and organizing records",
+      "Add useful filters, tags, categories, or status views",
+      "Validate user input and handle duplicate or invalid records cleanly",
+      "Add an import, export, sharing, or history feature where it improves the workflow"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Developer Tools",
+      "JavaScript",
+      "Node.js",
+      "SQLite",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -348,6 +965,31 @@
       "Flutter",
       "Dart",
       "Firebase"
+    ],
+    "features": [
+      "Design the main records and relationships the application needs",
+      "Create flows for adding, editing, searching, and organizing records",
+      "Add useful filters, tags, categories, or status views",
+      "Validate user input and handle duplicate or invalid records cleanly",
+      "Add an import, export, sharing, or history feature where it improves the workflow"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Mobile Development",
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "UI Design",
+      "Application Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -361,6 +1003,31 @@
       "JavaScript",
       "Node.js",
       "REST APIs"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Testing",
+      "JavaScript",
+      "Node.js",
+      "REST APIs",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -374,6 +1041,29 @@
       "React",
       "SQL",
       "Requirements"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Requirements Engineering",
+      "React",
+      "SQL",
+      "Requirements",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -387,6 +1077,30 @@
       "JavaScript",
       "APIs",
       "DevOps"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "DevOps",
+      "JavaScript",
+      "APIs",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -400,6 +1114,29 @@
       "TypeScript",
       "Node.js",
       "Architecture"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Software Architecture",
+      "TypeScript",
+      "Node.js",
+      "Architecture",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -413,6 +1150,29 @@
       "JavaScript",
       "Git",
       "Charts"
+    ],
+    "features": [
+      "Represent the main developer tools concepts visually",
+      "Let users change inputs and immediately see the output update",
+      "Add step-by-step controls for inspecting important states or transitions",
+      "Include labels and explanations that make the visualization understandable",
+      "Provide preset examples that demonstrate the most important cases"
+    ],
+    "roadmap": [
+      "define behavior",
+      "design interface",
+      "build core logic",
+      "add visualization",
+      "test cases",
+      "polish"
+    ],
+    "skills": [
+      "Developer Tools",
+      "JavaScript",
+      "Git",
+      "Charts",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -426,6 +1186,28 @@
       "React",
       "SQLite",
       "Testing"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Testing",
+      "React",
+      "SQLite",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -439,6 +1221,31 @@
       "Flutter",
       "SQLite",
       "Dart"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Mobile Development",
+      "Flutter",
+      "SQLite",
+      "Dart",
+      "UI Design",
+      "Application Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -452,6 +1259,29 @@
       "JavaScript",
       "Firebase",
       "Agile"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Project Management",
+      "JavaScript",
+      "Firebase",
+      "Agile",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -465,6 +1295,31 @@
       "JavaScript",
       "HTML",
       "WCAG"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Accessibility",
+      "JavaScript",
+      "HTML",
+      "WCAG",
+      "Data Analysis",
+      "Data Visualization",
+      "Research",
+      "Evidence Synthesis"
     ]
   },
   {
@@ -478,6 +1333,30 @@
       "Python",
       "Pandas",
       "Plotly"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Data Visualization",
+      "Python",
+      "Pandas",
+      "Plotly",
+      "Data Analysis",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -491,6 +1370,31 @@
       "Python",
       "Pandas",
       "Scikit-learn"
+    ],
+    "features": [
+      "Create a clean input flow for the data the system will analyze",
+      "Build a reproducible preprocessing pipeline for the important features",
+      "Implement a baseline approach and compare it with a stronger model",
+      "Show the prediction together with useful confidence or error information",
+      "Evaluate the system on unseen examples and document its limitations"
+    ],
+    "roadmap": [
+      "define problem",
+      "collect data",
+      "prepare data",
+      "build baseline",
+      "evaluate",
+      "polish demo"
+    ],
+    "skills": [
+      "Predictive Analytics",
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -504,6 +1408,31 @@
       "Python",
       "Pandas",
       "NLP"
+    ],
+    "features": [
+      "Translate Review Insight Miner into a clear set of functional requirements",
+      "Build the core workflow: Discover recurring topics, patterns and sentiment in customer-review data",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Data Mining",
+      "Python",
+      "Pandas",
+      "NLP",
+      "Data Analysis",
+      "Data Visualization",
+      "Research",
+      "Evidence Synthesis"
     ]
   },
   {
@@ -517,6 +1446,31 @@
       "Python",
       "Pandas",
       "Plotly"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Sports Analytics",
+      "Python",
+      "Pandas",
+      "Plotly",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -530,6 +1484,31 @@
       "Python",
       "Pandas",
       "Visualization"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Urban Analytics",
+      "Python",
+      "Pandas",
+      "Visualization",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -543,6 +1522,31 @@
       "Python",
       "Pandas",
       "Power BI"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Education Analytics",
+      "Python",
+      "Pandas",
+      "Power BI",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -556,6 +1560,31 @@
       "Python",
       "Pandas",
       "Time Series"
+    ],
+    "features": [
+      "Create a clean input flow for the data the system will analyze",
+      "Build a reproducible preprocessing pipeline for the important features",
+      "Implement a baseline approach and compare it with a stronger model",
+      "Show the prediction together with useful confidence or error information",
+      "Evaluate the system on unseen examples and document its limitations"
+    ],
+    "roadmap": [
+      "define problem",
+      "collect data",
+      "prepare data",
+      "build baseline",
+      "evaluate",
+      "polish demo"
+    ],
+    "skills": [
+      "Time Series",
+      "Python",
+      "Pandas",
+      "Data Analysis",
+      "Data Visualization",
+      "Model Evaluation",
+      "Problem Formulation",
+      "UI Design"
     ]
   },
   {
@@ -569,6 +1598,30 @@
       "Python",
       "Pandas",
       "Data Cleaning"
+    ],
+    "features": [
+      "Translate Messy Dataset Repair Lab into a clear set of functional requirements",
+      "Build the core workflow: Build a reproducible pipeline that detects and fixes common data-quality problems",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Data Cleaning",
+      "Python",
+      "Pandas",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -582,6 +1635,31 @@
       "Python",
       "GeoPandas",
       "Folium"
+    ],
+    "features": [
+      "Translate City Service Map into a clear set of functional requirements",
+      "Build the core workflow: Map public geographic data and reveal spatial patterns in services or facilities",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Geospatial",
+      "Python",
+      "GeoPandas",
+      "Folium",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -595,6 +1673,29 @@
       "Python",
       "NLP",
       "Clustering"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Text Analytics",
+      "Python",
+      "NLP",
+      "Clustering",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -608,6 +1709,31 @@
       "Power BI",
       "SQL",
       "Excel"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Business Intelligence",
+      "Power BI",
+      "SQL",
+      "Excel",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -621,6 +1747,29 @@
       "Python",
       "SciPy",
       "Pandas"
+    ],
+    "features": [
+      "Translate Survey Experiment Analyzer into a clear set of functional requirements",
+      "Build the core workflow: Create a reusable notebook for cleaning, testing and visualizing anonymous survey results",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Statistics",
+      "Python",
+      "SciPy",
+      "Pandas",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -634,6 +1783,31 @@
       "JavaScript",
       "Node.js",
       "OWASP"
+    ],
+    "features": [
+      "Translate Secure Coding Trainer into a clear set of functional requirements",
+      "Build the core workflow: Teach developers to recognize and fix common web security mistakes using safe examples",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Security Education",
+      "JavaScript",
+      "Node.js",
+      "OWASP",
+      "UI Design",
+      "Application Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -647,6 +1821,29 @@
       "Python",
       "Networking",
       "Data Analysis"
+    ],
+    "features": [
+      "Translate Network Anomaly Monitor into a clear set of functional requirements",
+      "Build the core workflow: Identify unusual patterns in controlled or sample network traffic",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Network Security",
+      "Python",
+      "Networking",
+      "Data Analysis",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -660,6 +1857,31 @@
       "Python",
       "Metadata",
       "File Analysis"
+    ],
+    "features": [
+      "Translate File Metadata Investigator into a clear set of functional requirements",
+      "Build the core workflow: Extract and organize metadata from sample files for forensic learning",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Digital Forensics",
+      "Python",
+      "Metadata",
+      "File Analysis",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -673,6 +1895,29 @@
       "JavaScript",
       "Security UX",
       "Web"
+    ],
+    "features": [
+      "Translate Password Strength Educator into a clear set of functional requirements",
+      "Build the core workflow: Explain password-strength factors and demonstrate defensive password hygiene locally",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Authentication",
+      "JavaScript",
+      "Security UX",
+      "Web",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -686,6 +1931,29 @@
       "Python",
       "SQL",
       "Visualization"
+    ],
+    "features": [
+      "Translate Incident Timeline Builder into a clear set of functional requirements",
+      "Build the core workflow: Organize fictional security events into a searchable incident timeline",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Security Operations",
+      "Python",
+      "SQL",
+      "Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -699,6 +1967,28 @@
       "JavaScript",
       "UX",
       "Privacy"
+    ],
+    "features": [
+      "Translate Privacy Settings Checklist into a clear set of functional requirements",
+      "Build the core workflow: Build an educational tool that guides users through common privacy settings and concepts",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Privacy",
+      "JavaScript",
+      "UX",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -712,6 +2002,29 @@
       "JavaScript",
       "HTTP",
       "OWASP"
+    ],
+    "features": [
+      "Translate Security Header Inspector into a clear set of functional requirements",
+      "Build the core workflow: Analyze user-supplied or local sample HTTP headers and explain defensive security headers",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Web Security",
+      "JavaScript",
+      "HTTP",
+      "OWASP",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -725,6 +2038,31 @@
       "Python",
       "Pandas",
       "Dash"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Digital Forensics",
+      "Python",
+      "Pandas",
+      "Dash",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -738,6 +2076,29 @@
       "JavaScript",
       "HTML",
       "Security Awareness"
+    ],
+    "features": [
+      "Translate Phishing Awareness Quiz into a clear set of functional requirements",
+      "Build the core workflow: Create a safe educational quiz teaching users how to recognize suspicious message characteristics",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Security Education",
+      "JavaScript",
+      "HTML",
+      "Security Awareness",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -751,6 +2112,28 @@
       "JavaScript",
       "Cryptography",
       "Visualization"
+    ],
+    "features": [
+      "Represent the main cryptography concepts visually",
+      "Let users change inputs and immediately see the output update",
+      "Add step-by-step controls for inspecting important states or transitions",
+      "Include labels and explanations that make the visualization understandable",
+      "Provide preset examples that demonstrate the most important cases"
+    ],
+    "roadmap": [
+      "define behavior",
+      "design interface",
+      "build core logic",
+      "add visualization",
+      "test cases",
+      "polish"
+    ],
+    "skills": [
+      "Cryptography",
+      "JavaScript",
+      "Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -764,6 +2147,28 @@
       "React",
       "SQLite",
       "Risk Management"
+    ],
+    "features": [
+      "Translate Cyber Risk Register into a clear set of functional requirements",
+      "Build the core workflow: Build a tool for recording assets, risks, controls and mitigation status",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Risk Management",
+      "React",
+      "SQLite",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -777,6 +2182,30 @@
       "JavaScript",
       "Security Operations",
       "UX"
+    ],
+    "features": [
+      "Let users configure the important parameters before a simulation",
+      "Implement the rules and state changes of the security operations model",
+      "Display the current state and key measurements while it runs",
+      "Support repeated runs so different configurations can be compared",
+      "Summarize each run with metrics, charts, or an event log"
+    ],
+    "roadmap": [
+      "define behavior",
+      "design interface",
+      "build core logic",
+      "add visualization",
+      "test cases",
+      "polish"
+    ],
+    "skills": [
+      "Security Operations",
+      "JavaScript",
+      "UX",
+      "UI Design",
+      "Application Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -790,6 +2219,31 @@
       "Arduino",
       "C++",
       "Sensors"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Internet of Things",
+      "Arduino",
+      "C++",
+      "Sensors",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -803,6 +2257,29 @@
       "Arduino",
       "RFID",
       "C++"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Embedded Systems",
+      "Arduino",
+      "RFID",
+      "C++",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -816,6 +2293,29 @@
       "Microcontroller",
       "Electronics",
       "C"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Hardware",
+      "Microcontroller",
+      "Electronics",
+      "C",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -829,6 +2329,29 @@
       "ESP32",
       "Sensors",
       "C++"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Embedded Systems",
+      "ESP32",
+      "Sensors",
+      "C++",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -842,6 +2365,29 @@
       "ESP32",
       "Sensors",
       "IoT"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Internet of Things",
+      "ESP32",
+      "Sensors",
+      "IoT",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -855,6 +2401,28 @@
       "Digital Logic",
       "FSM",
       "Simulation"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Digital Logic",
+      "FSM",
+      "Simulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -868,6 +2436,28 @@
       "C++",
       "Computer Architecture",
       "Simulation"
+    ],
+    "features": [
+      "Let users configure the important parameters before a simulation",
+      "Implement the rules and state changes of the computer architecture model",
+      "Display the current state and key measurements while it runs",
+      "Support repeated runs so different configurations can be compared",
+      "Summarize each run with metrics, charts, or an event log"
+    ],
+    "roadmap": [
+      "define behavior",
+      "design interface",
+      "build core logic",
+      "add visualization",
+      "test cases",
+      "polish"
+    ],
+    "skills": [
+      "Computer Architecture",
+      "C++",
+      "Simulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -881,6 +2471,28 @@
       "Arduino",
       "Sensors",
       "Robotics"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Robotics",
+      "Arduino",
+      "Sensors",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -894,6 +2506,29 @@
       "ESP32",
       "Sensors",
       "C++"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Embedded Systems",
+      "ESP32",
+      "Sensors",
+      "C++",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -907,6 +2542,29 @@
       "Digital Logic",
       "7-Segment Display",
       "Electronics"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Hardware",
+      "Digital Logic",
+      "7-Segment Display",
+      "Electronics",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -920,6 +2578,31 @@
       "ESP32",
       "MQTT",
       "Dashboard"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Internet of Things",
+      "ESP32",
+      "MQTT",
+      "Dashboard",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -933,6 +2616,28 @@
       "Verilog",
       "FPGA",
       "Digital Design"
+    ],
+    "features": [
+      "Let users configure the important parameters before a simulation",
+      "Implement the rules and state changes of the fpga model",
+      "Display the current state and key measurements while it runs",
+      "Support repeated runs so different configurations can be compared",
+      "Summarize each run with metrics, charts, or an event log"
+    ],
+    "roadmap": [
+      "define behavior",
+      "design interface",
+      "build core logic",
+      "add visualization",
+      "test cases",
+      "polish"
+    ],
+    "skills": [
+      "FPGA",
+      "Verilog",
+      "Digital Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -946,6 +2651,29 @@
       "Sensors",
       "Arduino",
       "Data Logging"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Energy",
+      "Sensors",
+      "Arduino",
+      "Data Logging",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -959,6 +2687,29 @@
       "Sensors",
       "Relays",
       "Microcontroller"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Automation",
+      "Sensors",
+      "Relays",
+      "Microcontroller",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -972,6 +2723,29 @@
       "LDR",
       "Arduino",
       "LED"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Electronics",
+      "LDR",
+      "Arduino",
+      "LED",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -985,6 +2759,31 @@
       "MATLAB",
       "Power Systems",
       "Visualization"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Power Systems",
+      "MATLAB",
+      "Visualization",
+      "Data Analysis",
+      "Data Visualization",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving"
     ]
   },
   {
@@ -998,6 +2797,29 @@
       "MATLAB",
       "PID",
       "Simulation"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Control Systems",
+      "MATLAB",
+      "PID",
+      "Simulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1011,6 +2833,29 @@
       "Microcontroller",
       "Sensor",
       "Data Logging"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Instrumentation",
+      "Microcontroller",
+      "Sensor",
+      "Data Logging",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1024,6 +2869,29 @@
       "Python",
       "FFT",
       "Signal Processing"
+    ],
+    "features": [
+      "Represent the main signals concepts visually",
+      "Let users change inputs and immediately see the output update",
+      "Add step-by-step controls for inspecting important states or transitions",
+      "Include labels and explanations that make the visualization understandable",
+      "Provide preset examples that demonstrate the most important cases"
+    ],
+    "roadmap": [
+      "define behavior",
+      "design interface",
+      "build core logic",
+      "add visualization",
+      "test cases",
+      "polish"
+    ],
+    "skills": [
+      "Signals",
+      "Python",
+      "FFT",
+      "Signal Processing",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1037,6 +2905,30 @@
       "MATLAB",
       "Modeling",
       "Renewable Energy"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Renewable Energy",
+      "MATLAB",
+      "Modeling",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1050,6 +2942,30 @@
       "Electronics",
       "LED",
       "Simulation"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Electronics",
+      "LED",
+      "Simulation",
+      "UI Design",
+      "Application Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1063,6 +2979,29 @@
       "Arduino",
       "Temperature Sensor",
       "PWM"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Automation",
+      "Arduino",
+      "Temperature Sensor",
+      "PWM",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1076,6 +3015,29 @@
       "Python",
       "SciPy",
       "Signal Processing"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Signals",
+      "Python",
+      "SciPy",
+      "Signal Processing",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1089,6 +3051,30 @@
       "Simulation",
       "Power Electronics",
       "MATLAB"
+    ],
+    "features": [
+      "Let users configure the important parameters before a simulation",
+      "Implement the rules and state changes of the power electronics model",
+      "Display the current state and key measurements while it runs",
+      "Support repeated runs so different configurations can be compared",
+      "Summarize each run with metrics, charts, or an event log"
+    ],
+    "roadmap": [
+      "define behavior",
+      "design interface",
+      "build core logic",
+      "add visualization",
+      "test cases",
+      "polish"
+    ],
+    "skills": [
+      "Power Electronics",
+      "Simulation",
+      "MATLAB",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1102,6 +3088,29 @@
       "CAD",
       "Thermodynamics",
       "Prototyping"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Product Design",
+      "CAD",
+      "Thermodynamics",
+      "Prototyping",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1115,6 +3124,29 @@
       "CAD",
       "Sensors",
       "Mechanisms"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Automation",
+      "CAD",
+      "Sensors",
+      "Mechanisms",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1128,6 +3160,29 @@
       "CAD",
       "Mechanics",
       "Prototyping"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Design",
+      "CAD",
+      "Mechanics",
+      "Prototyping",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1141,6 +3196,31 @@
       "Thermodynamics",
       "Data Analysis",
       "CAD"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Thermal Engineering",
+      "Thermodynamics",
+      "Data Analysis",
+      "CAD",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1154,6 +3234,28 @@
       "Fluid Mechanics",
       "CAD",
       "Simulation"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Fluid Mechanics",
+      "CAD",
+      "Simulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1167,6 +3269,29 @@
       "CAD",
       "3D Printing",
       "Machine Design"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Manufacturing",
+      "CAD",
+      "3D Printing",
+      "Machine Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1180,6 +3305,30 @@
       "CAD",
       "Mechanisms",
       "Prototyping"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Mechanisms",
+      "CAD",
+      "Prototyping",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1193,6 +3342,31 @@
       "MATLAB",
       "Dynamics",
       "Simulation"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Vehicle Engineering",
+      "MATLAB",
+      "Dynamics",
+      "Simulation",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1206,6 +3380,29 @@
       "CAD",
       "Product Design",
       "Prototyping"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Design",
+      "CAD",
+      "Product Design",
+      "Prototyping",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1219,6 +3416,28 @@
       "Python",
       "Thermodynamics",
       "Data Analysis"
+    ],
+    "features": [
+      "Create a clean input flow for the data the system will analyze",
+      "Build a reproducible preprocessing pipeline for the important features",
+      "Implement a baseline approach and compare it with a stronger model",
+      "Show the prediction together with useful confidence or error information",
+      "Evaluate the system on unseen examples and document its limitations"
+    ],
+    "roadmap": [
+      "define problem",
+      "collect data",
+      "prepare data",
+      "build baseline",
+      "evaluate",
+      "polish demo"
+    ],
+    "skills": [
+      "Thermodynamics",
+      "Python",
+      "Data Analysis",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1232,6 +3451,30 @@
       "Simulation",
       "Operations",
       "Manufacturing"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Manufacturing",
+      "Simulation",
+      "Operations",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1245,6 +3488,31 @@
       "CAD",
       "Kinematics",
       "Simulation"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Robotics",
+      "CAD",
+      "Kinematics",
+      "Simulation",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1258,6 +3526,29 @@
       "Data Collection",
       "Simulation",
       "CAD"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Transportation",
+      "Data Collection",
+      "Simulation",
+      "CAD",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1271,6 +3562,31 @@
       "Structural Design",
       "Modeling",
       "Testing"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Structures",
+      "Structural Design",
+      "Modeling",
+      "Testing",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1284,6 +3600,28 @@
       "CAD",
       "Hydrology",
       "Sustainability"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Sustainability",
+      "CAD",
+      "Hydrology",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1297,6 +3635,31 @@
       "Excel",
       "Project Management",
       "Visualization"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Construction",
+      "Excel",
+      "Project Management",
+      "Visualization",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1310,6 +3673,28 @@
       "Python",
       "Geotechnical",
       "Decision Support"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Geotechnical",
+      "Python",
+      "Decision Support",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1323,6 +3708,28 @@
       "Surveying",
       "GIS",
       "Transportation"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Transportation",
+      "Surveying",
+      "GIS",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1336,6 +3743,30 @@
       "Python",
       "Hydrology",
       "Data Analysis"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Water Resources",
+      "Python",
+      "Hydrology",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1349,6 +3780,31 @@
       "Structural Analysis",
       "CAD",
       "Simulation"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Structures",
+      "Structural Analysis",
+      "CAD",
+      "Simulation",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1362,6 +3818,28 @@
       "Sustainability",
       "Excel",
       "Research"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Sustainability",
+      "Excel",
+      "Research",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1375,6 +3853,31 @@
       "GIS",
       "Data Analysis",
       "Mapping"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Urban Planning",
+      "GIS",
+      "Data Analysis",
+      "Mapping",
+      "Data Visualization",
+      "UI Design",
+      "Application Design",
+      "Problem Solving"
     ]
   },
   {
@@ -1388,6 +3891,31 @@
       "Excel",
       "Quantity Surveying",
       "CAD"
+    ],
+    "features": [
+      "Create a clean input flow for the data the system will analyze",
+      "Build a reproducible preprocessing pipeline for the important features",
+      "Implement a baseline approach and compare it with a stronger model",
+      "Show the prediction together with useful confidence or error information",
+      "Evaluate the system on unseen examples and document its limitations"
+    ],
+    "roadmap": [
+      "define problem",
+      "collect data",
+      "prepare data",
+      "build baseline",
+      "evaluate",
+      "polish demo"
+    ],
+    "skills": [
+      "Construction",
+      "Excel",
+      "Quantity Surveying",
+      "CAD",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1401,6 +3929,29 @@
       "Data Analysis",
       "Transportation",
       "Visualization"
+    ],
+    "features": [
+      "Define system requirements, constraints, and performance targets",
+      "Create a model or prototype of the proposed system",
+      "Calculate or simulate the important operating conditions",
+      "Test the design under normal and edge-case scenarios",
+      "Compare the results with the original requirements and refine the design"
+    ],
+    "roadmap": [
+      "requirements",
+      "research",
+      "model",
+      "prototype",
+      "test",
+      "refine"
+    ],
+    "skills": [
+      "Transportation",
+      "Data Analysis",
+      "Visualization",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1414,6 +3965,29 @@
       "Business Model",
       "Market Research",
       "Figma"
+    ],
+    "features": [
+      "Define the target customer, business problem, and measurable success criteria",
+      "Collect realistic market, operations, or financial evidence",
+      "Build the main analysis or decision workflow",
+      "Turn the findings into clear, actionable recommendations",
+      "Test the idea against multiple realistic business scenarios"
+    ],
+    "roadmap": [
+      "define problem",
+      "research market",
+      "collect evidence",
+      "build analysis",
+      "test assumptions",
+      "present"
+    ],
+    "skills": [
+      "Entrepreneurship",
+      "Business Model",
+      "Market Research",
+      "Figma",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1427,6 +4001,28 @@
       "Process Mapping",
       "Data Analysis",
       "Operations"
+    ],
+    "features": [
+      "Define the target customer, business problem, and measurable success criteria",
+      "Collect realistic market, operations, or financial evidence",
+      "Build the main analysis or decision workflow",
+      "Turn the findings into clear, actionable recommendations",
+      "Test the idea against multiple realistic business scenarios"
+    ],
+    "roadmap": [
+      "define problem",
+      "research market",
+      "collect evidence",
+      "build analysis",
+      "test assumptions",
+      "present"
+    ],
+    "skills": [
+      "Operations",
+      "Process Mapping",
+      "Data Analysis",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1440,6 +4036,29 @@
       "Lean Canvas",
       "Market Research",
       "Financial Modeling"
+    ],
+    "features": [
+      "Define the target customer, business problem, and measurable success criteria",
+      "Collect realistic market, operations, or financial evidence",
+      "Build the main analysis or decision workflow",
+      "Turn the findings into clear, actionable recommendations",
+      "Test the idea against multiple realistic business scenarios"
+    ],
+    "roadmap": [
+      "define problem",
+      "research market",
+      "collect evidence",
+      "build analysis",
+      "test assumptions",
+      "present"
+    ],
+    "skills": [
+      "Entrepreneurship",
+      "Lean Canvas",
+      "Market Research",
+      "Financial Modeling",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1453,6 +4072,28 @@
       "SWOT",
       "Market Research",
       "Strategy"
+    ],
+    "features": [
+      "Define the target customer, business problem, and measurable success criteria",
+      "Collect realistic market, operations, or financial evidence",
+      "Build the main analysis or decision workflow",
+      "Turn the findings into clear, actionable recommendations",
+      "Test the idea against multiple realistic business scenarios"
+    ],
+    "roadmap": [
+      "define problem",
+      "research market",
+      "collect evidence",
+      "build analysis",
+      "test assumptions",
+      "present"
+    ],
+    "skills": [
+      "Strategy",
+      "SWOT",
+      "Market Research",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1466,6 +4107,30 @@
       "Excel",
       "Operations",
       "Simulation"
+    ],
+    "features": [
+      "Let users configure the important parameters before a simulation",
+      "Implement the rules and state changes of the operations model",
+      "Display the current state and key measurements while it runs",
+      "Support repeated runs so different configurations can be compared",
+      "Summarize each run with metrics, charts, or an event log"
+    ],
+    "roadmap": [
+      "define behavior",
+      "design interface",
+      "build core logic",
+      "add visualization",
+      "test cases",
+      "polish"
+    ],
+    "skills": [
+      "Operations",
+      "Excel",
+      "Simulation",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1479,6 +4144,29 @@
       "Lean Canvas",
       "Interviews",
       "Pricing"
+    ],
+    "features": [
+      "Define the target customer, business problem, and measurable success criteria",
+      "Collect realistic market, operations, or financial evidence",
+      "Build the main analysis or decision workflow",
+      "Turn the findings into clear, actionable recommendations",
+      "Test the idea against multiple realistic business scenarios"
+    ],
+    "roadmap": [
+      "define problem",
+      "research market",
+      "collect evidence",
+      "build analysis",
+      "test assumptions",
+      "present"
+    ],
+    "skills": [
+      "Entrepreneurship",
+      "Lean Canvas",
+      "Interviews",
+      "Pricing",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1492,6 +4180,30 @@
       "Excel",
       "Power BI",
       "Analytics"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "define problem",
+      "research market",
+      "collect evidence",
+      "build analysis",
+      "test assumptions",
+      "present"
+    ],
+    "skills": [
+      "Analytics",
+      "Excel",
+      "Power BI",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1505,6 +4217,28 @@
       "Excel",
       "Supply Chain",
       "Decision Analysis"
+    ],
+    "features": [
+      "Define the target customer, business problem, and measurable success criteria",
+      "Collect realistic market, operations, or financial evidence",
+      "Build the main analysis or decision workflow",
+      "Turn the findings into clear, actionable recommendations",
+      "Test the idea against multiple realistic business scenarios"
+    ],
+    "roadmap": [
+      "define problem",
+      "research market",
+      "collect evidence",
+      "build analysis",
+      "test assumptions",
+      "present"
+    ],
+    "skills": [
+      "Supply Chain",
+      "Excel",
+      "Decision Analysis",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1518,6 +4252,29 @@
       "Process Design",
       "HR",
       "Figma"
+    ],
+    "features": [
+      "Define the target customer, business problem, and measurable success criteria",
+      "Collect realistic market, operations, or financial evidence",
+      "Build the main analysis or decision workflow",
+      "Turn the findings into clear, actionable recommendations",
+      "Test the idea against multiple realistic business scenarios"
+    ],
+    "roadmap": [
+      "define problem",
+      "research market",
+      "collect evidence",
+      "build analysis",
+      "test assumptions",
+      "present"
+    ],
+    "skills": [
+      "Human Resources",
+      "Process Design",
+      "HR",
+      "Figma",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1531,6 +4288,30 @@
       "Market Research",
       "Strategy",
       "Visualization"
+    ],
+    "features": [
+      "Define the target customer, business problem, and measurable success criteria",
+      "Collect realistic market, operations, or financial evidence",
+      "Build the main analysis or decision workflow",
+      "Turn the findings into clear, actionable recommendations",
+      "Test the idea against multiple realistic business scenarios"
+    ],
+    "roadmap": [
+      "define problem",
+      "research market",
+      "collect evidence",
+      "build analysis",
+      "test assumptions",
+      "present"
+    ],
+    "skills": [
+      "Strategy",
+      "Market Research",
+      "Visualization",
+      "Research",
+      "Evidence Synthesis",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1544,6 +4325,29 @@
       "Lean Startup",
       "Budgeting",
       "Marketing"
+    ],
+    "features": [
+      "Define the target customer, business problem, and measurable success criteria",
+      "Collect realistic market, operations, or financial evidence",
+      "Build the main analysis or decision workflow",
+      "Turn the findings into clear, actionable recommendations",
+      "Test the idea against multiple realistic business scenarios"
+    ],
+    "roadmap": [
+      "define problem",
+      "research market",
+      "collect evidence",
+      "build analysis",
+      "test assumptions",
+      "present"
+    ],
+    "skills": [
+      "Entrepreneurship",
+      "Lean Startup",
+      "Budgeting",
+      "Marketing",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1557,6 +4361,30 @@
       "Excel",
       "Simulation",
       "Operations"
+    ],
+    "features": [
+      "Let users configure the important parameters before a simulation",
+      "Implement the rules and state changes of the operations model",
+      "Display the current state and key measurements while it runs",
+      "Support repeated runs so different configurations can be compared",
+      "Summarize each run with metrics, charts, or an event log"
+    ],
+    "roadmap": [
+      "define behavior",
+      "design interface",
+      "build core logic",
+      "add visualization",
+      "test cases",
+      "polish"
+    ],
+    "skills": [
+      "Operations",
+      "Excel",
+      "Simulation",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1570,6 +4398,29 @@
       "Excel",
       "Financial Modeling",
       "Visualization"
+    ],
+    "features": [
+      "Let users configure the important parameters before a simulation",
+      "Implement the rules and state changes of the personal finance model",
+      "Display the current state and key measurements while it runs",
+      "Support repeated runs so different configurations can be compared",
+      "Summarize each run with metrics, charts, or an event log"
+    ],
+    "roadmap": [
+      "define behavior",
+      "design interface",
+      "build core logic",
+      "add visualization",
+      "test cases",
+      "polish"
+    ],
+    "skills": [
+      "Personal Finance",
+      "Excel",
+      "Financial Modeling",
+      "Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1583,6 +4434,31 @@
       "Python",
       "Pandas",
       "Statistics"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Analytics",
+      "Python",
+      "Pandas",
+      "Statistics",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1596,6 +4472,29 @@
       "Excel",
       "Finance",
       "Modeling"
+    ],
+    "features": [
+      "Translate Capital Budgeting Calculator into a clear set of functional requirements",
+      "Build the core workflow: Compare fictional investment projects using standard capital-budgeting metrics",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Corporate Finance",
+      "Excel",
+      "Finance",
+      "Modeling",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1609,6 +4508,31 @@
       "Python",
       "Pandas",
       "Streamlit"
+    ],
+    "features": [
+      "Translate Expense Categorization App into a clear set of functional requirements",
+      "Build the core workflow: Build a local app that organizes synthetic transactions into spending categories",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "FinTech",
+      "Python",
+      "Pandas",
+      "Streamlit",
+      "UI Design",
+      "Application Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1622,6 +4546,31 @@
       "Excel",
       "Power BI",
       "Finance"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Analytics",
+      "Excel",
+      "Power BI",
+      "Finance",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1635,6 +4584,31 @@
       "JavaScript",
       "Finance",
       "Charts"
+    ],
+    "features": [
+      "Translate Savings Goal Planner into a clear set of functional requirements",
+      "Build the core workflow: Model how contributions and assumptions influence a long-term savings goal",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Personal Finance",
+      "JavaScript",
+      "Finance",
+      "Charts",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1648,6 +4622,31 @@
       "Python",
       "Scikit-learn",
       "Statistics"
+    ],
+    "features": [
+      "Translate Credit Risk Learning Model into a clear set of functional requirements",
+      "Build the core workflow: Use a public educational dataset to explore factors associated with credit-risk labels",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Risk",
+      "Python",
+      "Scikit-learn",
+      "Statistics",
+      "Data Analysis",
+      "Data Visualization",
+      "Model Evaluation",
+      "Problem Formulation"
     ]
   },
   {
@@ -1661,6 +4660,29 @@
       "Excel",
       "Financial Modeling",
       "Charts"
+    ],
+    "features": [
+      "Translate Break-Even Scenario Lab into a clear set of functional requirements",
+      "Build the core workflow: Create an interactive tool for exploring price, cost and volume assumptions",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Corporate Finance",
+      "Excel",
+      "Financial Modeling",
+      "Charts",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1674,6 +4696,31 @@
       "Power BI",
       "Excel",
       "Finance"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Analytics",
+      "Power BI",
+      "Excel",
+      "Finance",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1687,6 +4734,31 @@
       "JavaScript",
       "SQLite",
       "Web"
+    ],
+    "features": [
+      "Translate Shared Expense Splitter into a clear set of functional requirements",
+      "Build the core workflow: Create an app for splitting group expenses and tracking settlements",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "FinTech",
+      "JavaScript",
+      "SQLite",
+      "Web",
+      "UI Design",
+      "Application Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1700,6 +4772,31 @@
       "Python",
       "Pandas",
       "Statistics"
+    ],
+    "features": [
+      "Translate Market Event Study into a clear set of functional requirements",
+      "Build the core workflow: Analyze historical public market data around a selected non-sensitive public event",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Research",
+      "Python",
+      "Pandas",
+      "Statistics",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1713,6 +4810,31 @@
       "Excel",
       "Financial Modeling",
       "Startup Finance"
+    ],
+    "features": [
+      "Translate Startup Runway Calculator into a clear set of functional requirements",
+      "Build the core workflow: Model how expenses, revenue and funding assumptions affect a fictional startup's runway",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Corporate Finance",
+      "Excel",
+      "Financial Modeling",
+      "Startup Finance",
+      "Model Evaluation",
+      "Problem Formulation",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1726,6 +4848,31 @@
       "Surveys",
       "Data Analysis",
       "Visualization"
+    ],
+    "features": [
+      "Translate Gen Z Brand Preference Study into a clear set of functional requirements",
+      "Build the core workflow: Research factors influencing brand preference among university-age consumers",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Consumer Behavior",
+      "Surveys",
+      "Data Analysis",
+      "Visualization",
+      "Research",
+      "Evidence Synthesis",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1739,6 +4886,29 @@
       "Analytics",
       "Content Strategy",
       "A/B Testing"
+    ],
+    "features": [
+      "Translate Campaign Performance Lab into a clear set of functional requirements",
+      "Build the core workflow: Design mock campaigns and compare expected performance using a structured framework",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Digital Marketing",
+      "Analytics",
+      "Content Strategy",
+      "A/B Testing",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1752,6 +4922,30 @@
       "Surveys",
       "Power BI",
       "Branding"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Branding",
+      "Surveys",
+      "Power BI",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1765,6 +4959,29 @@
       "JavaScript",
       "Content Strategy",
       "UX"
+    ],
+    "features": [
+      "Accept and validate the source material the system will process",
+      "Implement the core content marketing processing pipeline",
+      "Organize the generated result into clear, useful sections",
+      "Give users controls that meaningfully change the generated output",
+      "Test varied examples and handle weak or invalid input gracefully"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Content Marketing",
+      "JavaScript",
+      "Content Strategy",
+      "UX",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1778,6 +4995,29 @@
       "Surveys",
       "Statistics",
       "Research"
+    ],
+    "features": [
+      "Translate Student Buying Behavior Study into a clear set of functional requirements",
+      "Build the core workflow: Investigate how students make purchase decisions within a selected product category",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Market Research",
+      "Surveys",
+      "Statistics",
+      "Research",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1791,6 +5031,29 @@
       "Figma",
       "A/B Testing",
       "Analytics"
+    ],
+    "features": [
+      "Translate Landing Page Experiment into a clear set of functional requirements",
+      "Build the core workflow: Design two landing-page variants and define a safe usability or preference test",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Digital Marketing",
+      "Figma",
+      "A/B Testing",
+      "Analytics",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1804,6 +5067,29 @@
       "Brand Strategy",
       "Research",
       "Campaign Planning"
+    ],
+    "features": [
+      "Translate New Product Launch Plan into a clear set of functional requirements",
+      "Build the core workflow: Create a full positioning and launch strategy for a fictional product",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Branding",
+      "Brand Strategy",
+      "Research",
+      "Campaign Planning",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1817,6 +5103,30 @@
       "Power BI",
       "Analytics",
       "Excel"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Analytics",
+      "Power BI",
+      "Excel",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1830,6 +5140,31 @@
       "Python",
       "Pandas",
       "Visualization"
+    ],
+    "features": [
+      "Translate Social Content Performance Study into a clear set of functional requirements",
+      "Build the core workflow: Analyze a public or synthetic content dataset to identify patterns in engagement",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Social Media",
+      "Python",
+      "Pandas",
+      "Visualization",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1843,6 +5178,29 @@
       "Figma",
       "Survey Design",
       "Branding"
+    ],
+    "features": [
+      "Translate Packaging Preference Experiment into a clear set of functional requirements",
+      "Build the core workflow: Design alternative package concepts and conduct a small anonymous preference study",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Consumer Behavior",
+      "Figma",
+      "Survey Design",
+      "Branding",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1856,6 +5214,28 @@
       "Research",
       "Strategy",
       "SWOT"
+    ],
+    "features": [
+      "Translate Local Market Entry Plan into a clear set of functional requirements",
+      "Build the core workflow: Develop a market-entry strategy for a fictional company entering a new city or segment",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Strategy",
+      "Research",
+      "SWOT",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1869,6 +5249,30 @@
       "SEO",
       "Spreadsheets",
       "Content Strategy"
+    ],
+    "features": [
+      "Accept and validate the source material the system will process",
+      "Implement the core seo processing pipeline",
+      "Organize the generated result into clear, useful sections",
+      "Give users controls that meaningfully change the generated output",
+      "Test varied examples and handle weak or invalid input gracefully"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "SEO",
+      "Spreadsheets",
+      "Content Strategy",
+      "UI Design",
+      "Application Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1882,6 +5286,29 @@
       "Illustrator",
       "Photoshop",
       "Brand Strategy"
+    ],
+    "features": [
+      "Translate Rebrand a Local Business into a clear set of functional requirements",
+      "Build the core workflow: Create a visual identity redesign for a fictional or consenting local business",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Branding",
+      "Illustrator",
+      "Photoshop",
+      "Brand Strategy",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1895,6 +5322,30 @@
       "Figma",
       "UX Research",
       "Prototyping"
+    ],
+    "features": [
+      "Design the main records and relationships the application needs",
+      "Create flows for adding, editing, searching, and organizing records",
+      "Add useful filters, tags, categories, or status views",
+      "Validate user input and handle duplicate or invalid records cleanly",
+      "Add an import, export, sharing, or history feature where it improves the workflow"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "UI Design",
+      "Figma",
+      "UX Research",
+      "Prototyping",
+      "Application Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1908,6 +5359,29 @@
       "Figma",
       "Typography",
       "Layout Design"
+    ],
+    "features": [
+      "Translate Interactive Digital Magazine into a clear set of functional requirements",
+      "Build the core workflow: Design a modern digital magazine around a topic you care about",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Editorial Design",
+      "Figma",
+      "Typography",
+      "Layout Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1921,6 +5395,28 @@
       "Illustrator",
       "Typography",
       "Composition"
+    ],
+    "features": [
+      "Translate Experimental Type Poster Series into a clear set of functional requirements",
+      "Build the core workflow: Create a cohesive poster series exploring typography as the main visual element",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Typography",
+      "Illustrator",
+      "Composition",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1934,6 +5430,30 @@
       "Illustrator",
       "Data Visualization",
       "Typography"
+    ],
+    "features": [
+      "Translate Public Data Infographic into a clear set of functional requirements",
+      "Build the core workflow: Turn a public dataset into a clear and visually engaging infographic",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Information Design",
+      "Illustrator",
+      "Data Visualization",
+      "Typography",
+      "Data Analysis",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1947,6 +5467,28 @@
       "Illustrator",
       "Packaging",
       "Branding"
+    ],
+    "features": [
+      "Translate Sustainable Product Packaging into a clear set of functional requirements",
+      "Build the core workflow: Design packaging for a fictional product with sustainability and shelf presence in mind",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Packaging",
+      "Illustrator",
+      "Branding",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1960,6 +5502,29 @@
       "Figma",
       "UI Design",
       "Prototyping"
+    ],
+    "features": [
+      "Translate Music Discovery App Concept into a clear set of functional requirements",
+      "Build the core workflow: Design a mobile interface for discovering and organizing music",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "UI Design",
+      "Figma",
+      "Prototyping",
+      "Application Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1973,6 +5538,28 @@
       "Illustrator",
       "Branding",
       "Typography"
+    ],
+    "features": [
+      "Translate Student Event Identity into a clear set of functional requirements",
+      "Build the core workflow: Create a complete visual system for a fictional university festival or conference",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Branding",
+      "Illustrator",
+      "Typography",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1986,6 +5573,28 @@
       "After Effects",
       "Typography",
       "Motion Design"
+    ],
+    "features": [
+      "Translate Kinetic Typography Short into a clear set of functional requirements",
+      "Build the core workflow: Create a short motion piece where animated typography communicates a message",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Motion Design",
+      "After Effects",
+      "Typography",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -1999,6 +5608,30 @@
       "InDesign",
       "Typography",
       "Editorial Design"
+    ],
+    "features": [
+      "Translate Visual Research Zine into a clear set of functional requirements",
+      "Build the core workflow: Turn research on a chosen topic into a compact experimental publication",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Editorial Design",
+      "InDesign",
+      "Typography",
+      "Research",
+      "Evidence Synthesis",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2012,6 +5645,30 @@
       "Illustrator",
       "Wayfinding",
       "Information Design"
+    ],
+    "features": [
+      "Translate Campus Wayfinding System into a clear set of functional requirements",
+      "Build the core workflow: Design a consistent signage and navigation system for a fictional or mapped campus",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Wayfinding",
+      "Illustrator",
+      "Information Design",
+      "UI Design",
+      "Application Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2025,6 +5682,29 @@
       "Figma",
       "Accessibility",
       "UI Design"
+    ],
+    "features": [
+      "Translate Accessibility-First Website Concept into a clear set of functional requirements",
+      "Build the core workflow: Design a web interface prioritizing readability, hierarchy and accessible interaction patterns",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "UI Design",
+      "Figma",
+      "Accessibility",
+      "Application Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2038,6 +5718,28 @@
       "AutoCAD",
       "SketchUp",
       "Sustainable Design"
+    ],
+    "features": [
+      "Define the site, users, constraints, and design goals",
+      "Develop multiple concept directions before choosing one",
+      "Create the required plans, diagrams, models, or spatial studies",
+      "Evaluate circulation, usability, environmental response, and constraints",
+      "Package the final proposal into a coherent presentation"
+    ],
+    "roadmap": [
+      "site research",
+      "requirements",
+      "concepts",
+      "develop design",
+      "evaluate",
+      "present"
+    ],
+    "skills": [
+      "Sustainable Design",
+      "AutoCAD",
+      "SketchUp",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2051,6 +5753,29 @@
       "AutoCAD",
       "3D Modeling",
       "Rendering"
+    ],
+    "features": [
+      "Define the site, users, constraints, and design goals",
+      "Develop multiple concept directions before choosing one",
+      "Create the required plans, diagrams, models, or spatial studies",
+      "Evaluate circulation, usability, environmental response, and constraints",
+      "Package the final proposal into a coherent presentation"
+    ],
+    "roadmap": [
+      "site research",
+      "requirements",
+      "concepts",
+      "develop design",
+      "evaluate",
+      "present"
+    ],
+    "skills": [
+      "Public Space",
+      "AutoCAD",
+      "3D Modeling",
+      "Rendering",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2064,6 +5789,28 @@
       "AutoCAD",
       "Revit",
       "Adaptive Reuse"
+    ],
+    "features": [
+      "Define the site, users, constraints, and design goals",
+      "Develop multiple concept directions before choosing one",
+      "Create the required plans, diagrams, models, or spatial studies",
+      "Evaluate circulation, usability, environmental response, and constraints",
+      "Package the final proposal into a coherent presentation"
+    ],
+    "roadmap": [
+      "site research",
+      "requirements",
+      "concepts",
+      "develop design",
+      "evaluate",
+      "present"
+    ],
+    "skills": [
+      "Adaptive Reuse",
+      "AutoCAD",
+      "Revit",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2077,6 +5824,29 @@
       "AutoCAD",
       "SketchUp",
       "Space Planning"
+    ],
+    "features": [
+      "Define the site, users, constraints, and design goals",
+      "Develop multiple concept directions before choosing one",
+      "Create the required plans, diagrams, models, or spatial studies",
+      "Evaluate circulation, usability, environmental response, and constraints",
+      "Package the final proposal into a coherent presentation"
+    ],
+    "roadmap": [
+      "site research",
+      "requirements",
+      "concepts",
+      "develop design",
+      "evaluate",
+      "present"
+    ],
+    "skills": [
+      "Residential",
+      "AutoCAD",
+      "SketchUp",
+      "Space Planning",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2090,6 +5860,29 @@
       "SketchUp",
       "Landscape Design",
       "Rendering"
+    ],
+    "features": [
+      "Define the site, users, constraints, and design goals",
+      "Develop multiple concept directions before choosing one",
+      "Create the required plans, diagrams, models, or spatial studies",
+      "Evaluate circulation, usability, environmental response, and constraints",
+      "Package the final proposal into a coherent presentation"
+    ],
+    "roadmap": [
+      "site research",
+      "requirements",
+      "concepts",
+      "develop design",
+      "evaluate",
+      "present"
+    ],
+    "skills": [
+      "Landscape",
+      "SketchUp",
+      "Landscape Design",
+      "Rendering",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2103,6 +5896,29 @@
       "Revit",
       "AutoCAD",
       "Rendering"
+    ],
+    "features": [
+      "Define the site, users, constraints, and design goals",
+      "Develop multiple concept directions before choosing one",
+      "Create the required plans, diagrams, models, or spatial studies",
+      "Evaluate circulation, usability, environmental response, and constraints",
+      "Package the final proposal into a coherent presentation"
+    ],
+    "roadmap": [
+      "site research",
+      "requirements",
+      "concepts",
+      "develop design",
+      "evaluate",
+      "present"
+    ],
+    "skills": [
+      "Public Space",
+      "Revit",
+      "AutoCAD",
+      "Rendering",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2116,6 +5932,29 @@
       "AutoCAD",
       "Climate Analysis",
       "SketchUp"
+    ],
+    "features": [
+      "Define the site, users, constraints, and design goals",
+      "Develop multiple concept directions before choosing one",
+      "Create the required plans, diagrams, models, or spatial studies",
+      "Evaluate circulation, usability, environmental response, and constraints",
+      "Package the final proposal into a coherent presentation"
+    ],
+    "roadmap": [
+      "site research",
+      "requirements",
+      "concepts",
+      "develop design",
+      "evaluate",
+      "present"
+    ],
+    "skills": [
+      "Sustainable Design",
+      "AutoCAD",
+      "Climate Analysis",
+      "SketchUp",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2129,6 +5968,28 @@
       "Urban Design",
       "SketchUp",
       "Mapping"
+    ],
+    "features": [
+      "Define the site, users, constraints, and design goals",
+      "Develop multiple concept directions before choosing one",
+      "Create the required plans, diagrams, models, or spatial studies",
+      "Evaluate circulation, usability, environmental response, and constraints",
+      "Package the final proposal into a coherent presentation"
+    ],
+    "roadmap": [
+      "site research",
+      "requirements",
+      "concepts",
+      "develop design",
+      "evaluate",
+      "present"
+    ],
+    "skills": [
+      "Urban Design",
+      "SketchUp",
+      "Mapping",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2142,6 +6003,29 @@
       "SketchUp",
       "Interior Design",
       "Rendering"
+    ],
+    "features": [
+      "Define the site, users, constraints, and design goals",
+      "Develop multiple concept directions before choosing one",
+      "Create the required plans, diagrams, models, or spatial studies",
+      "Evaluate circulation, usability, environmental response, and constraints",
+      "Package the final proposal into a coherent presentation"
+    ],
+    "roadmap": [
+      "site research",
+      "requirements",
+      "concepts",
+      "develop design",
+      "evaluate",
+      "present"
+    ],
+    "skills": [
+      "Interior Architecture",
+      "SketchUp",
+      "Interior Design",
+      "Rendering",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2155,6 +6039,29 @@
       "CAD",
       "Product Design",
       "Rendering"
+    ],
+    "features": [
+      "Define the site, users, constraints, and design goals",
+      "Develop multiple concept directions before choosing one",
+      "Create the required plans, diagrams, models, or spatial studies",
+      "Evaluate circulation, usability, environmental response, and constraints",
+      "Package the final proposal into a coherent presentation"
+    ],
+    "roadmap": [
+      "site research",
+      "requirements",
+      "concepts",
+      "develop design",
+      "evaluate",
+      "present"
+    ],
+    "skills": [
+      "Public Space",
+      "CAD",
+      "Product Design",
+      "Rendering",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2168,6 +6075,29 @@
       "AutoCAD",
       "Revit",
       "Rendering"
+    ],
+    "features": [
+      "Define the site, users, constraints, and design goals",
+      "Develop multiple concept directions before choosing one",
+      "Create the required plans, diagrams, models, or spatial studies",
+      "Evaluate circulation, usability, environmental response, and constraints",
+      "Package the final proposal into a coherent presentation"
+    ],
+    "roadmap": [
+      "site research",
+      "requirements",
+      "concepts",
+      "develop design",
+      "evaluate",
+      "present"
+    ],
+    "skills": [
+      "Residential",
+      "AutoCAD",
+      "Revit",
+      "Rendering",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2181,6 +6111,29 @@
       "SketchUp",
       "Model Making",
       "Rendering"
+    ],
+    "features": [
+      "Define the site, users, constraints, and design goals",
+      "Develop multiple concept directions before choosing one",
+      "Create the required plans, diagrams, models, or spatial studies",
+      "Evaluate circulation, usability, environmental response, and constraints",
+      "Package the final proposal into a coherent presentation"
+    ],
+    "roadmap": [
+      "site research",
+      "requirements",
+      "concepts",
+      "develop design",
+      "evaluate",
+      "present"
+    ],
+    "skills": [
+      "Exhibition Design",
+      "SketchUp",
+      "Model Making",
+      "Rendering",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2194,6 +6147,29 @@
       "Research Design",
       "Statistics",
       "Survey Tools"
+    ],
+    "features": [
+      "Translate Digital Distraction Study into a clear set of functional requirements",
+      "Build the core workflow: Explore how different digital interruptions affect attention in a controlled, low-risk task",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Cognitive Psychology",
+      "Research Design",
+      "Statistics",
+      "Survey Tools",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2207,6 +6183,31 @@
       "Surveys",
       "Statistics",
       "Visualization"
+    ],
+    "features": [
+      "Translate Study Habit Research Project into a clear set of functional requirements",
+      "Build the core workflow: Investigate relationships between study strategies and self-reported academic outcomes",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Educational Psychology",
+      "Surveys",
+      "Statistics",
+      "Visualization",
+      "Research",
+      "Evidence Synthesis",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2220,6 +6221,29 @@
       "Experimental Design",
       "Statistics",
       "Data Analysis"
+    ],
+    "features": [
+      "Translate Memory Strategy Experiment into a clear set of functional requirements",
+      "Build the core workflow: Compare benign study strategies on recall using a simple voluntary classroom-style task",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Cognitive Psychology",
+      "Experimental Design",
+      "Statistics",
+      "Data Analysis",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2233,6 +6257,29 @@
       "Survey Design",
       "Statistics",
       "Research"
+    ],
+    "features": [
+      "Translate Group Decision Survey into a clear set of functional requirements",
+      "Build the core workflow: Study how people report making decisions individually versus in groups using anonymous surveys",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Social Psychology",
+      "Survey Design",
+      "Statistics",
+      "Research",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2246,6 +6293,29 @@
       "Surveys",
       "Excel",
       "Visualization"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Educational Psychology",
+      "Surveys",
+      "Excel",
+      "Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2259,6 +6329,31 @@
       "Research Design",
       "Figma",
       "Statistics"
+    ],
+    "features": [
+      "Translate Interface Attention Study into a clear set of functional requirements",
+      "Build the core workflow: Compare two benign interface layouts on task completion and self-reported ease of use",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Human Factors",
+      "Research Design",
+      "Figma",
+      "Statistics",
+      "UI Design",
+      "Application Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2272,6 +6367,29 @@
       "Experimental Design",
       "Statistics",
       "Data Analysis"
+    ],
+    "features": [
+      "Translate Color and Recall Study into a clear set of functional requirements",
+      "Build the core workflow: Explore whether benign visual presentation differences correlate with recall in a small voluntary task",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Cognitive Psychology",
+      "Experimental Design",
+      "Statistics",
+      "Data Analysis",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2285,6 +6403,29 @@
       "Surveys",
       "Statistics",
       "Research"
+    ],
+    "features": [
+      "Translate Online Communication Survey into a clear set of functional requirements",
+      "Build the core workflow: Study anonymous attitudes toward different forms of online communication",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Social Psychology",
+      "Surveys",
+      "Statistics",
+      "Research",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2298,6 +6439,29 @@
       "Surveys",
       "Data Analysis",
       "Visualization"
+    ],
+    "features": [
+      "Translate Study Environment Survey into a clear set of functional requirements",
+      "Build the core workflow: Explore associations between self-reported study environments and concentration preferences",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Educational Psychology",
+      "Surveys",
+      "Data Analysis",
+      "Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2311,6 +6475,29 @@
       "Figma",
       "Survey Design",
       "Statistics"
+    ],
+    "features": [
+      "Translate Notification Design Study into a clear set of functional requirements",
+      "Build the core workflow: Compare user preferences for different non-urgent notification designs",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Human Factors",
+      "Figma",
+      "Survey Design",
+      "Statistics",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2324,6 +6511,29 @@
       "JavaScript",
       "Experimental Design",
       "Statistics"
+    ],
+    "features": [
+      "Translate Visual Search Experiment into a clear set of functional requirements",
+      "Build the core workflow: Create a simple visual-search task and analyze response-time patterns",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Cognitive Psychology",
+      "JavaScript",
+      "Experimental Design",
+      "Statistics",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2337,6 +6547,30 @@
       "Python",
       "Pandas",
       "Research Methods"
+    ],
+    "features": [
+      "Translate Survey Quality Analyzer into a clear set of functional requirements",
+      "Build the core workflow: Build a tool that flags missing responses and summarizes anonymous survey data quality",
+      "Create a usable interface or presentation for the main workflow",
+      "Test the project with realistic examples and edge cases",
+      "Polish the final result into a version that can be demonstrated and evaluated"
+    ],
+    "roadmap": [
+      "research",
+      "requirements",
+      "prototype",
+      "build",
+      "test",
+      "polish"
+    ],
+    "skills": [
+      "Research Methods",
+      "Python",
+      "Pandas",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2350,6 +6584,28 @@
       "Python",
       "Bioinformatics",
       "Visualization"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "source data",
+      "prepare data",
+      "analyze",
+      "validate",
+      "document"
+    ],
+    "skills": [
+      "Bioinformatics",
+      "Python",
+      "Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2363,6 +6619,31 @@
       "Literature Review",
       "Experimental Design",
       "Data Analysis"
+    ],
+    "features": [
+      "Choose an appropriate public, educational, or literature-backed biological dataset",
+      "Clean and organize the biological information needed for the project",
+      "Implement the main environmental biotechnology analysis or exploration workflow",
+      "Visualize the biologically meaningful patterns or comparisons",
+      "Document data provenance, assumptions, and limitations clearly"
+    ],
+    "roadmap": [
+      "research",
+      "source data",
+      "prepare data",
+      "analyze",
+      "validate",
+      "document"
+    ],
+    "skills": [
+      "Environmental Biotechnology",
+      "Literature Review",
+      "Experimental Design",
+      "Data Analysis",
+      "Research",
+      "Evidence Synthesis",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2376,6 +6657,28 @@
       "Python",
       "Biopython",
       "Bioinformatics"
+    ],
+    "features": [
+      "Choose an appropriate public, educational, or literature-backed biological dataset",
+      "Clean and organize the biological information needed for the project",
+      "Implement the main bioinformatics analysis or exploration workflow",
+      "Visualize the biologically meaningful patterns or comparisons",
+      "Document data provenance, assumptions, and limitations clearly"
+    ],
+    "roadmap": [
+      "research",
+      "source data",
+      "prepare data",
+      "analyze",
+      "validate",
+      "document"
+    ],
+    "skills": [
+      "Bioinformatics",
+      "Python",
+      "Biopython",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2389,6 +6692,31 @@
       "Python",
       "Biopython",
       "Visualization"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "source data",
+      "prepare data",
+      "analyze",
+      "validate",
+      "document"
+    ],
+    "skills": [
+      "Bioinformatics",
+      "Python",
+      "Biopython",
+      "Visualization",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2402,6 +6730,31 @@
       "Literature Review",
       "Data Organization",
       "Visualization"
+    ],
+    "features": [
+      "Choose an appropriate public, educational, or literature-backed biological dataset",
+      "Clean and organize the biological information needed for the project",
+      "Implement the main agricultural biotechnology analysis or exploration workflow",
+      "Visualize the biologically meaningful patterns or comparisons",
+      "Document data provenance, assumptions, and limitations clearly"
+    ],
+    "roadmap": [
+      "research",
+      "source data",
+      "prepare data",
+      "analyze",
+      "validate",
+      "document"
+    ],
+    "skills": [
+      "Agricultural Biotechnology",
+      "Literature Review",
+      "Data Organization",
+      "Visualization",
+      "Research",
+      "Evidence Synthesis",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2415,6 +6768,31 @@
       "Research",
       "Data Analysis",
       "Visualization"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "source data",
+      "prepare data",
+      "analyze",
+      "validate",
+      "document"
+    ],
+    "skills": [
+      "Environmental Biotechnology",
+      "Research",
+      "Data Analysis",
+      "Visualization",
+      "Data Visualization",
+      "UI Design",
+      "Application Design",
+      "Evidence Synthesis"
     ]
   },
   {
@@ -2428,6 +6806,29 @@
       "Python",
       "Biopython",
       "Web"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "source data",
+      "prepare data",
+      "analyze",
+      "validate",
+      "document"
+    ],
+    "skills": [
+      "Bioinformatics",
+      "Python",
+      "Biopython",
+      "Web",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2441,6 +6842,31 @@
       "Python",
       "Pandas",
       "Statistics"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "source data",
+      "prepare data",
+      "analyze",
+      "validate",
+      "document"
+    ],
+    "skills": [
+      "Biostatistics",
+      "Python",
+      "Pandas",
+      "Statistics",
+      "Data Analysis",
+      "Data Visualization",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2454,6 +6880,31 @@
       "Python",
       "Bioinformatics",
       "Visualization"
+    ],
+    "features": [
+      "Represent the main computational biology concepts visually",
+      "Let users change inputs and immediately see the output update",
+      "Add step-by-step controls for inspecting important states or transitions",
+      "Include labels and explanations that make the visualization understandable",
+      "Provide preset examples that demonstrate the most important cases"
+    ],
+    "roadmap": [
+      "define behavior",
+      "design interface",
+      "build core logic",
+      "add visualization",
+      "test cases",
+      "polish"
+    ],
+    "skills": [
+      "Computational Biology",
+      "Python",
+      "Bioinformatics",
+      "Visualization",
+      "UI Design",
+      "Application Design",
+      "Problem Solving",
+      "Project Design"
     ]
   },
   {
@@ -2467,6 +6918,31 @@
       "Python",
       "NLP",
       "Research"
+    ],
+    "features": [
+      "Accept and validate the source material the system will process",
+      "Implement the core biotechnology research processing pipeline",
+      "Organize the generated result into clear, useful sections",
+      "Give users controls that meaningfully change the generated output",
+      "Test varied examples and handle weak or invalid input gracefully"
+    ],
+    "roadmap": [
+      "research",
+      "source data",
+      "prepare data",
+      "analyze",
+      "validate",
+      "document"
+    ],
+    "skills": [
+      "Biotechnology Research",
+      "Python",
+      "NLP",
+      "Research",
+      "UI Design",
+      "Application Design",
+      "Evidence Synthesis",
+      "Problem Solving"
     ]
   },
   {
@@ -2480,6 +6956,31 @@
       "SQL",
       "Research",
       "Data Modeling"
+    ],
+    "features": [
+      "Design the main records and relationships the application needs",
+      "Create flows for adding, editing, searching, and organizing records",
+      "Add useful filters, tags, categories, or status views",
+      "Validate user input and handle duplicate or invalid records cleanly",
+      "Add an import, export, sharing, or history feature where it improves the workflow"
+    ],
+    "roadmap": [
+      "research",
+      "source data",
+      "prepare data",
+      "analyze",
+      "validate",
+      "document"
+    ],
+    "skills": [
+      "Environmental Biotechnology",
+      "SQL",
+      "Research",
+      "Data Modeling",
+      "Data Analysis",
+      "Data Visualization",
+      "UI Design",
+      "Application Design"
     ]
   },
   {
@@ -2493,6 +6994,30 @@
       "Python",
       "Biopython",
       "Data Visualization"
+    ],
+    "features": [
+      "Load and validate the relevant dataset",
+      "Turn the most important measurements into summary cards and visualizations",
+      "Add filters for the key groups, variables, or time periods",
+      "Highlight trends, comparisons, or unusual values worth investigating",
+      "Provide a clear final view that can be exported or presented"
+    ],
+    "roadmap": [
+      "research",
+      "source data",
+      "prepare data",
+      "analyze",
+      "validate",
+      "document"
+    ],
+    "skills": [
+      "Bioinformatics",
+      "Python",
+      "Biopython",
+      "Data Visualization",
+      "Data Analysis",
+      "Problem Solving",
+      "Project Design"
     ]
   }
 ]
