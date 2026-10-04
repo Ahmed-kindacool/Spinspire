@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Spinspire helps students discover project ideas tailored to their degree."
+    >
+
+    <title>Spinspire — Find Your Next Project</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         Navigation
+    ========================== -->
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span class="logo-icon">✦</span>
+            <span>spinspire</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#how-it-works">How it works</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="saved-button" id="savedButton">
+            Saved
+            <span class="saved-count" id="savedCount">0</span>
+        </button>
+    </header>
+
+
+    <!-- =========================
+         Main
+    ========================== -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-label">
+                <span class="hero-label-dot"></span>
+                PROJECT IDEA GENERATOR
+            </div>
+
+            <h1>
+                Stop wondering.
+                <span>Start building.</span>
+            </h1>
+
+            <p class="hero-description">
+                Choose your degree, pick an area you enjoy,
+                and let Spinspire find your next project.
+            </p>
+
+
+            <!-- Generator -->
+            <div class="generator">
+
+                <!-- Degree -->
+                <div class="selection-group">
+
+                    <label for="degreeSelect">
+                        I'm studying
+                    </label>
+
+                    <select id="degreeSelect">
+                        <option value="" selected disabled>
+                            Choose your degree
+                        </option>
+
+                        <option value="ai">
+                            Artificial Intelligence
+                        </option>
+
+                        <option value="cs">
+                            Computer Science
+                        </option>
+
+                        <option value="se">
+                            Software Engineering
+                        </option>
+
+                        <option value="cyber">
+                            Cyber Security
+                        </option>
+
+                        <option value="ds">
+                            Data Science
+                        </option>
+
+                        <option value="ee">
+                            Electrical Engineering
+                        </option>
+
+                        <option value="business">
+                            Business
+                        </option>
+
+                        <option value="design">
+                            Graphic Design
+                        </option>
+                    </select>
+
+                </div>
+
+
+                <!-- Category -->
+                <div class="selection-group">
+
+                    <label for="categorySelect">
+                        I'm interested in
+                    </label>
+
+                    <select id="categorySelect" disabled>
+                        <option value="">
+                            Choose a degree first
+                        </option>
+                    </select>
+
+                </div>
+
+
+                <!-- Spin -->
+                <button
+                    class="spin-button"
+                    id="spinButton"
+                    disabled
+                >
+                    <span>Spin for a project</span>
+                    <span class="spin-icon">↻</span>
+                </button>
+
+                <p class="keyboard-hint">
+                    or press
+                    <kbd>SPACE</kbd>
+                    to spin
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             Project Result
+        ========================== -->
+        <section
+            class="project-result hidden"
+            id="projectResult"
+        >
+
+            <p class="result-label">
+                YOUR NEXT PROJECT
+            </p>
+
+            <h2 id="projectTitle">
+                Project title
+            </h2>
+
+            <p
+                class="project-description"
+                id="projectDescription"
+            >
+                Project description will appear here.
+            </p>
+
+
+            <div class="project-tags">
+
+                <span
+                    class="tag"
+                    id="difficultyTag"
+                >
+                    Intermediate
+                </span>
+
+                <span
+                    class="tag"
+                    id="categoryTag"
+                >
+                    Artificial Intelligence
+                </span>
+
+            </div>
+
+
+            <div
+                class="tech-stack"
+                id="techStack"
+            ></div>
+
+
+            <div class="result-actions">
+
+                <button
+                    class="secondary-button"
+                    id="spinAgainButton"
+                >
+                    ↻ Spin again
+                </button>
+
+                <button
+                    class="primary-button"
+                    id="saveProjectButton"
+                >
+                    ♡ Save project
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             How It Works
+        ========================== -->
+        <section
+            class="how-it-works"
+            id="how-it-works"
+        >
+
+            <div class="section-heading">
+                <span>HOW IT WORKS</span>
+                <h2>
+                    From stuck to building in seconds.
+                </h2>
+            </div>
+
+
+            <div class="steps">
+
+                <article class="step">
+                    <span class="step-number">01</span>
+
+                    <h3>Choose your degree</h3>
+
+                    <p>
+                        Start with the field you're studying
+                        or want to explore.
+                    </p>
+                </article>
+
+
+                <article class="step">
+                    <span class="step-number">02</span>
+
+                    <h3>Pick an interest</h3>
+
+                    <p>
+                        Narrow things down to an area that
+                        actually sounds interesting to you.
+                    </p>
+                </article>
+
+
+                <article class="step">
+                    <span class="step-number">03</span>
+
+                    <h3>Spin & build</h3>
+
+                    <p>
+                        Get a project idea, its difficulty,
+                        and a suggested technology stack.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             About
+        ========================== -->
+        <section
+            class="about"
+            id="about"
+        >
+
+            <p class="section-label">
+                WHY SPINSPIRE?
+            </p>
+
+            <h2>
+                Because choosing what to build
+                shouldn't be the hardest part.
+            </h2>
+
+            <p>
+                Spinspire helps students move past the
+                "I don't know what project to make" stage
+                by giving them ideas relevant to their
+                degree and interests.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         Saved Projects Drawer
+    ========================== -->
+    <aside
+        class="saved-drawer"
+        id="savedDrawer"
+    >
+
+        <div class="drawer-header">
+
+            <div>
+                <p class="drawer-label">
+                    YOUR COLLECTION
+                </p>
+
+                <h2>Saved projects</h2>
+            </div>
+
+            <button
+                class="close-drawer"
+                id="closeDrawer"
+                aria-label="Close saved projects"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            class="saved-projects"
+            id="savedProjects"
+        >
+
+            <p class="empty-saved">
+                You haven't saved any projects yet.
+            </p>
+
+        </div>
+
+    </aside>
+
+
+    <div
+        class="drawer-overlay"
+        id="drawerOverlay"
+    ></div>
+
+
+    <!-- =========================
+         Footer
+    ========================== -->
+    <footer>
+
+        <a href="#" class="footer-logo">
+            ✦ spinspire
+        </a>
+
+        <p>
+            Find an idea. Make it yours. Build something.
+        </p>
+
+    </footer>
+
+
+    <script src="js/projects.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
