@@ -1,0 +1,2498 @@
+[
+  {
+    "id": 1,
+    "degree": "Artificial Intelligence",
+    "category": "Computer Vision",
+    "title": "Smart Queue Monitor",
+    "description": "Estimate queue length from camera footage and visualize busy periods.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "OpenCV",
+      "YOLO"
+    ]
+  },
+  {
+    "id": 2,
+    "degree": "Artificial Intelligence",
+    "category": "Computer Vision",
+    "title": "Plant Health Scanner",
+    "description": "Classify visible plant leaf conditions from images using a trained vision model.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "TensorFlow",
+      "OpenCV"
+    ]
+  },
+  {
+    "id": 3,
+    "degree": "Artificial Intelligence",
+    "category": "Natural Language Processing",
+    "title": "Lecture Notes Summarizer",
+    "description": "Turn long lecture notes into concise summaries, key concepts and revision points.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Transformers",
+      "NLP"
+    ]
+  },
+  {
+    "id": 4,
+    "degree": "Artificial Intelligence",
+    "category": "Natural Language Processing",
+    "title": "Student FAQ Assistant",
+    "description": "Build a question-answering assistant over a curated set of university FAQs and documents.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Embeddings",
+      "NLP"
+    ]
+  },
+  {
+    "id": 5,
+    "degree": "Artificial Intelligence",
+    "category": "Machine Learning",
+    "title": "Student Performance Predictor",
+    "description": "Explore academic data and predict performance using supervised machine learning.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Scikit-learn"
+    ]
+  },
+  {
+    "id": 6,
+    "degree": "Artificial Intelligence",
+    "category": "Machine Learning",
+    "title": "Used Car Price Estimator",
+    "description": "Train and evaluate a regression model that estimates used-car prices from structured features.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Scikit-learn"
+    ]
+  },
+  {
+    "id": 7,
+    "degree": "Artificial Intelligence",
+    "category": "Recommendation Systems",
+    "title": "Personalized Study Recommender",
+    "description": "Recommend learning resources based on subjects, interests and previous interactions.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Recommendation Systems"
+    ]
+  },
+  {
+    "id": 8,
+    "degree": "Artificial Intelligence",
+    "category": "Intelligent Agents",
+    "title": "Campus Navigation Agent",
+    "description": "Use search algorithms to find efficient routes through a modeled university campus.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "A*",
+      "Search Algorithms"
+    ]
+  },
+  {
+    "id": 9,
+    "degree": "Artificial Intelligence",
+    "category": "Intelligent Agents",
+    "title": "Smart Timetable Agent",
+    "description": "Create an agent that proposes conflict-free study schedules from subjects and constraints.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "Python",
+      "Constraint Solving",
+      "Search"
+    ]
+  },
+  {
+    "id": 10,
+    "degree": "Artificial Intelligence",
+    "category": "Automation",
+    "title": "Smart File Organizer",
+    "description": "Automatically categorize local files using names, metadata and lightweight content classification.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Python",
+      "Automation",
+      "File System"
+    ]
+  },
+  {
+    "id": 11,
+    "degree": "Artificial Intelligence",
+    "category": "Speech AI",
+    "title": "Meeting Topic Extractor",
+    "description": "Analyze meeting transcripts and group discussion into topics, decisions and action items.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "NLP",
+      "Speech-to-Text"
+    ]
+  },
+  {
+    "id": 12,
+    "degree": "Artificial Intelligence",
+    "category": "Generative AI",
+    "title": "Study Question Generator",
+    "description": "Generate revision questions from user-provided notes and organize them by topic and difficulty.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "LLM API",
+      "Prompt Design"
+    ]
+  },
+  {
+    "id": 13,
+    "degree": "Computer Science",
+    "category": "Algorithms",
+    "title": "Algorithm Visualizer",
+    "description": "Visualize sorting, searching and pathfinding algorithms step by step.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "id": 14,
+    "degree": "Computer Science",
+    "category": "Web Development",
+    "title": "Collaborative Study Room",
+    "description": "Create virtual study rooms with shared tasks, notes and real-time presence.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "JavaScript",
+      "Node.js",
+      "WebSockets"
+    ]
+  },
+  {
+    "id": 15,
+    "degree": "Computer Science",
+    "category": "Databases",
+    "title": "Campus Resource Manager",
+    "description": "Manage reservations for classrooms, labs and equipment using a relational database.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "SQL",
+      "Node.js",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": 16,
+    "degree": "Computer Science",
+    "category": "Networking",
+    "title": "Network Traffic Dashboard",
+    "description": "Visualize statistics from a safe sample or local network dataset.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "Python",
+      "Networking",
+      "Charts"
+    ]
+  },
+  {
+    "id": 17,
+    "degree": "Computer Science",
+    "category": "Operating Systems",
+    "title": "CPU Scheduling Simulator",
+    "description": "Compare common CPU scheduling algorithms through an interactive simulation.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Algorithms",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 18,
+    "degree": "Computer Science",
+    "category": "Compilers",
+    "title": "Mini Programming Language",
+    "description": "Design a tiny language with variables, expressions and a simple interpreter.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "Python",
+      "Parsing",
+      "Compilers"
+    ]
+  },
+  {
+    "id": 19,
+    "degree": "Computer Science",
+    "category": "Data Structures",
+    "title": "Interactive Data Structure Playground",
+    "description": "Let users manipulate stacks, queues, trees and graphs while seeing each operation visually.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "JavaScript",
+      "Data Structures",
+      "Canvas"
+    ]
+  },
+  {
+    "id": 20,
+    "degree": "Computer Science",
+    "category": "Distributed Systems",
+    "title": "Distributed Task Queue Simulator",
+    "description": "Model workers, jobs, failures and retries in a small distributed task system.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "Python",
+      "Queues",
+      "Distributed Systems"
+    ]
+  },
+  {
+    "id": 21,
+    "degree": "Computer Science",
+    "category": "Web Development",
+    "title": "Link Collection Organizer",
+    "description": "Build a searchable bookmark manager with tags, collections and import/export.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "JavaScript",
+      "SQLite",
+      "Node.js"
+    ]
+  },
+  {
+    "id": 22,
+    "degree": "Computer Science",
+    "category": "Theory",
+    "title": "Finite Automata Designer",
+    "description": "Draw finite automata and test whether strings are accepted.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "JavaScript",
+      "Automata",
+      "SVG"
+    ]
+  },
+  {
+    "id": 23,
+    "degree": "Computer Science",
+    "category": "Graphics",
+    "title": "2D Physics Playground",
+    "description": "Create a simple browser simulation with moving objects, collisions and gravity.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "JavaScript",
+      "Canvas",
+      "Physics"
+    ]
+  },
+  {
+    "id": 24,
+    "degree": "Computer Science",
+    "category": "Information Retrieval",
+    "title": "Local Document Search",
+    "description": "Index a folder of sample text documents and provide ranked keyword search.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "TF-IDF",
+      "Search"
+    ]
+  },
+  {
+    "id": 25,
+    "degree": "Software Engineering",
+    "category": "Web Applications",
+    "title": "Student Team Project Manager",
+    "description": "Manage milestones, tasks and responsibilities for university group projects.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "React",
+      "Node.js",
+      "MongoDB"
+    ]
+  },
+  {
+    "id": 26,
+    "degree": "Software Engineering",
+    "category": "Developer Tools",
+    "title": "Code Snippet Vault",
+    "description": "Organize, tag and search reusable code snippets.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "JavaScript",
+      "Node.js",
+      "SQLite"
+    ]
+  },
+  {
+    "id": 27,
+    "degree": "Software Engineering",
+    "category": "Mobile Development",
+    "title": "Campus Companion",
+    "description": "Combine schedules, deadlines, announcements and reminders in a student app.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "Firebase"
+    ]
+  },
+  {
+    "id": 28,
+    "degree": "Software Engineering",
+    "category": "Testing",
+    "title": "API Test Dashboard",
+    "description": "Create a tool for defining API checks and viewing test history.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "JavaScript",
+      "Node.js",
+      "REST APIs"
+    ]
+  },
+  {
+    "id": 29,
+    "degree": "Software Engineering",
+    "category": "Requirements Engineering",
+    "title": "Requirements Traceability Tool",
+    "description": "Link requirements to user stories, tests and implementation status.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "React",
+      "SQL",
+      "Requirements"
+    ]
+  },
+  {
+    "id": 30,
+    "degree": "Software Engineering",
+    "category": "DevOps",
+    "title": "Deployment Status Board",
+    "description": "Display build and deployment states from sample CI/CD data.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "JavaScript",
+      "APIs",
+      "DevOps"
+    ]
+  },
+  {
+    "id": 31,
+    "degree": "Software Engineering",
+    "category": "Software Architecture",
+    "title": "Modular E-Commerce Prototype",
+    "description": "Build a small store while documenting clear module boundaries and architecture decisions.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "TypeScript",
+      "Node.js",
+      "Architecture"
+    ]
+  },
+  {
+    "id": 32,
+    "degree": "Software Engineering",
+    "category": "Developer Tools",
+    "title": "Git Activity Visualizer",
+    "description": "Turn repository history into understandable contribution and change visualizations.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "JavaScript",
+      "Git",
+      "Charts"
+    ]
+  },
+  {
+    "id": 33,
+    "degree": "Software Engineering",
+    "category": "Testing",
+    "title": "Bug Reproduction Tracker",
+    "description": "Record reproducible bug steps, environments, evidence and resolution status.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "React",
+      "SQLite",
+      "Testing"
+    ]
+  },
+  {
+    "id": 34,
+    "degree": "Software Engineering",
+    "category": "Mobile Development",
+    "title": "Offline Notes App",
+    "description": "Create a notes application designed around offline-first storage and synchronization concepts.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Flutter",
+      "SQLite",
+      "Dart"
+    ]
+  },
+  {
+    "id": 35,
+    "degree": "Software Engineering",
+    "category": "Project Management",
+    "title": "Sprint Retrospective Board",
+    "description": "Build a lightweight tool for collecting retrospective feedback and action items.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "JavaScript",
+      "Firebase",
+      "Agile"
+    ]
+  },
+  {
+    "id": 36,
+    "degree": "Software Engineering",
+    "category": "Accessibility",
+    "title": "Accessibility Review Assistant",
+    "description": "Create a dashboard that organizes common accessibility checks and remediation tasks.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "JavaScript",
+      "HTML",
+      "WCAG"
+    ]
+  },
+  {
+    "id": 37,
+    "degree": "Data Science",
+    "category": "Data Visualization",
+    "title": "Global Trends Explorer",
+    "description": "Explore patterns and trends across a large public dataset through an interactive dashboard.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Plotly"
+    ]
+  },
+  {
+    "id": 38,
+    "degree": "Data Science",
+    "category": "Predictive Analytics",
+    "title": "Demand Forecast Dashboard",
+    "description": "Analyze historical data and forecast future demand.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Scikit-learn"
+    ]
+  },
+  {
+    "id": 39,
+    "degree": "Data Science",
+    "category": "Data Mining",
+    "title": "Review Insight Miner",
+    "description": "Discover recurring topics, patterns and sentiment in customer-review data.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "NLP"
+    ]
+  },
+  {
+    "id": 40,
+    "degree": "Data Science",
+    "category": "Sports Analytics",
+    "title": "Match Performance Explorer",
+    "description": "Analyze a public sports dataset and build interactive performance comparisons.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Plotly"
+    ]
+  },
+  {
+    "id": 41,
+    "degree": "Data Science",
+    "category": "Urban Analytics",
+    "title": "Public Transport Delay Explorer",
+    "description": "Study patterns in a public transport dataset and identify common delay factors.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 42,
+    "degree": "Data Science",
+    "category": "Education Analytics",
+    "title": "Course Outcome Dashboard",
+    "description": "Explore anonymized or synthetic course data to identify performance patterns.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Power BI"
+    ]
+  },
+  {
+    "id": 43,
+    "degree": "Data Science",
+    "category": "Time Series",
+    "title": "Energy Usage Forecaster",
+    "description": "Model historical energy-consumption data and compare forecasting approaches.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Time Series"
+    ]
+  },
+  {
+    "id": 44,
+    "degree": "Data Science",
+    "category": "Data Cleaning",
+    "title": "Messy Dataset Repair Lab",
+    "description": "Build a reproducible pipeline that detects and fixes common data-quality problems.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Data Cleaning"
+    ]
+  },
+  {
+    "id": 45,
+    "degree": "Data Science",
+    "category": "Geospatial",
+    "title": "City Service Map",
+    "description": "Map public geographic data and reveal spatial patterns in services or facilities.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "GeoPandas",
+      "Folium"
+    ]
+  },
+  {
+    "id": 46,
+    "degree": "Data Science",
+    "category": "Text Analytics",
+    "title": "News Topic Explorer",
+    "description": "Cluster a public collection of article summaries into recurring topics.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "NLP",
+      "Clustering"
+    ]
+  },
+  {
+    "id": 47,
+    "degree": "Data Science",
+    "category": "Business Intelligence",
+    "title": "Retail KPI Dashboard",
+    "description": "Transform a sample retail dataset into an interactive business-performance dashboard.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Power BI",
+      "SQL",
+      "Excel"
+    ]
+  },
+  {
+    "id": 48,
+    "degree": "Data Science",
+    "category": "Statistics",
+    "title": "Survey Experiment Analyzer",
+    "description": "Create a reusable notebook for cleaning, testing and visualizing anonymous survey results.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "SciPy",
+      "Pandas"
+    ]
+  },
+  {
+    "id": 49,
+    "degree": "Cyber Security",
+    "category": "Security Education",
+    "title": "Secure Coding Trainer",
+    "description": "Teach developers to recognize and fix common web security mistakes using safe examples.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "JavaScript",
+      "Node.js",
+      "OWASP"
+    ]
+  },
+  {
+    "id": 50,
+    "degree": "Cyber Security",
+    "category": "Network Security",
+    "title": "Network Anomaly Monitor",
+    "description": "Identify unusual patterns in controlled or sample network traffic.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "Python",
+      "Networking",
+      "Data Analysis"
+    ]
+  },
+  {
+    "id": 51,
+    "degree": "Cyber Security",
+    "category": "Digital Forensics",
+    "title": "File Metadata Investigator",
+    "description": "Extract and organize metadata from sample files for forensic learning.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Metadata",
+      "File Analysis"
+    ]
+  },
+  {
+    "id": 52,
+    "degree": "Cyber Security",
+    "category": "Authentication",
+    "title": "Password Strength Educator",
+    "description": "Explain password-strength factors and demonstrate defensive password hygiene locally.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "JavaScript",
+      "Security UX",
+      "Web"
+    ]
+  },
+  {
+    "id": 53,
+    "degree": "Cyber Security",
+    "category": "Security Operations",
+    "title": "Incident Timeline Builder",
+    "description": "Organize fictional security events into a searchable incident timeline.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "SQL",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 54,
+    "degree": "Cyber Security",
+    "category": "Privacy",
+    "title": "Privacy Settings Checklist",
+    "description": "Build an educational tool that guides users through common privacy settings and concepts.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "JavaScript",
+      "UX",
+      "Privacy"
+    ]
+  },
+  {
+    "id": 55,
+    "degree": "Cyber Security",
+    "category": "Web Security",
+    "title": "Security Header Inspector",
+    "description": "Analyze user-supplied or local sample HTTP headers and explain defensive security headers.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "JavaScript",
+      "HTTP",
+      "OWASP"
+    ]
+  },
+  {
+    "id": 56,
+    "degree": "Cyber Security",
+    "category": "Digital Forensics",
+    "title": "Log Investigation Dashboard",
+    "description": "Explore synthetic security logs and filter events by time, source and severity.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Dash"
+    ]
+  },
+  {
+    "id": 57,
+    "degree": "Cyber Security",
+    "category": "Security Education",
+    "title": "Phishing Awareness Quiz",
+    "description": "Create a safe educational quiz teaching users how to recognize suspicious message characteristics.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "JavaScript",
+      "HTML",
+      "Security Awareness"
+    ]
+  },
+  {
+    "id": 58,
+    "degree": "Cyber Security",
+    "category": "Cryptography",
+    "title": "Classical Cipher Visualizer",
+    "description": "Visualize how historical ciphers transform text for educational purposes.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "JavaScript",
+      "Cryptography",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 59,
+    "degree": "Cyber Security",
+    "category": "Risk Management",
+    "title": "Cyber Risk Register",
+    "description": "Build a tool for recording assets, risks, controls and mitigation status.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "React",
+      "SQLite",
+      "Risk Management"
+    ]
+  },
+  {
+    "id": 60,
+    "degree": "Cyber Security",
+    "category": "Security Operations",
+    "title": "Alert Triage Simulator",
+    "description": "Create a fictional SOC-style interface where learners prioritize safe synthetic alerts.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "JavaScript",
+      "Security Operations",
+      "UX"
+    ]
+  },
+  {
+    "id": 61,
+    "degree": "Computer Engineering",
+    "category": "Internet of Things",
+    "title": "Smart Energy Monitor",
+    "description": "Measure and display electricity-consumption data from a prototype or simulated sensor setup.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "Arduino",
+      "C++",
+      "Sensors"
+    ]
+  },
+  {
+    "id": 62,
+    "degree": "Computer Engineering",
+    "category": "Embedded Systems",
+    "title": "Smart Attendance Terminal",
+    "description": "Create an embedded check-in prototype using test identifiers.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Arduino",
+      "RFID",
+      "C++"
+    ]
+  },
+  {
+    "id": 63,
+    "degree": "Computer Engineering",
+    "category": "Hardware",
+    "title": "Digital Reaction Timer",
+    "description": "Measure how quickly a user responds to a randomly triggered signal.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Microcontroller",
+      "Electronics",
+      "C"
+    ]
+  },
+  {
+    "id": 64,
+    "degree": "Computer Engineering",
+    "category": "Embedded Systems",
+    "title": "Environmental Monitor",
+    "description": "Collect temperature, humidity and light readings and display them locally.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "ESP32",
+      "Sensors",
+      "C++"
+    ]
+  },
+  {
+    "id": 65,
+    "degree": "Computer Engineering",
+    "category": "Internet of Things",
+    "title": "Room Occupancy Indicator",
+    "description": "Create a prototype that estimates whether a room is occupied using safe sensor inputs.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "ESP32",
+      "Sensors",
+      "IoT"
+    ]
+  },
+  {
+    "id": 66,
+    "degree": "Computer Engineering",
+    "category": "Digital Logic",
+    "title": "Traffic Light Controller",
+    "description": "Design and simulate a configurable traffic-light state machine.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Digital Logic",
+      "FSM",
+      "Simulation"
+    ]
+  },
+  {
+    "id": 67,
+    "degree": "Computer Engineering",
+    "category": "Computer Architecture",
+    "title": "Cache Simulator",
+    "description": "Simulate cache hits, misses and replacement strategies for educational traces.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "C++",
+      "Computer Architecture",
+      "Simulation"
+    ]
+  },
+  {
+    "id": 68,
+    "degree": "Computer Engineering",
+    "category": "Robotics",
+    "title": "Line Following Robot",
+    "description": "Build or simulate a robot that follows a marked path using sensors.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Arduino",
+      "Sensors",
+      "Robotics"
+    ]
+  },
+  {
+    "id": 69,
+    "degree": "Computer Engineering",
+    "category": "Embedded Systems",
+    "title": "Smart Plant Monitor",
+    "description": "Track soil moisture and environmental readings for a small plant setup.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "ESP32",
+      "Sensors",
+      "C++"
+    ]
+  },
+  {
+    "id": 70,
+    "degree": "Computer Engineering",
+    "category": "Hardware",
+    "title": "Electronic Dice",
+    "description": "Build a button-triggered digital dice display using basic digital electronics.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Digital Logic",
+      "7-Segment Display",
+      "Electronics"
+    ]
+  },
+  {
+    "id": 71,
+    "degree": "Computer Engineering",
+    "category": "Internet of Things",
+    "title": "Classroom Environment Dashboard",
+    "description": "Collect or simulate classroom environmental readings and visualize trends.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "ESP32",
+      "MQTT",
+      "Dashboard"
+    ]
+  },
+  {
+    "id": 72,
+    "degree": "Computer Engineering",
+    "category": "FPGA",
+    "title": "Digital Stopwatch",
+    "description": "Implement a stopwatch with start, stop and reset controls on an FPGA or simulator.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "Verilog",
+      "FPGA",
+      "Digital Design"
+    ]
+  },
+  {
+    "id": 73,
+    "degree": "Electrical Engineering",
+    "category": "Energy",
+    "title": "Solar Output Monitor",
+    "description": "Record and visualize output from a small or simulated solar-energy setup.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Sensors",
+      "Arduino",
+      "Data Logging"
+    ]
+  },
+  {
+    "id": 74,
+    "degree": "Electrical Engineering",
+    "category": "Automation",
+    "title": "Automatic Water Level Controller",
+    "description": "Monitor tank levels and automatically control a simulated or low-voltage pump setup.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Sensors",
+      "Relays",
+      "Microcontroller"
+    ]
+  },
+  {
+    "id": 75,
+    "degree": "Electrical Engineering",
+    "category": "Electronics",
+    "title": "Adaptive Room Lighting",
+    "description": "Adjust LED brightness based on ambient light readings.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "LDR",
+      "Arduino",
+      "LED"
+    ]
+  },
+  {
+    "id": 76,
+    "degree": "Electrical Engineering",
+    "category": "Power Systems",
+    "title": "Home Load Dashboard",
+    "description": "Model household electrical loads and visualize estimated energy consumption.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "MATLAB",
+      "Power Systems",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 77,
+    "degree": "Electrical Engineering",
+    "category": "Control Systems",
+    "title": "DC Motor Speed Controller",
+    "description": "Design and simulate closed-loop speed control for a DC motor.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "MATLAB",
+      "PID",
+      "Simulation"
+    ]
+  },
+  {
+    "id": 78,
+    "degree": "Electrical Engineering",
+    "category": "Instrumentation",
+    "title": "Digital Temperature Logger",
+    "description": "Record temperature measurements over time and visualize them.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Microcontroller",
+      "Sensor",
+      "Data Logging"
+    ]
+  },
+  {
+    "id": 79,
+    "degree": "Electrical Engineering",
+    "category": "Signals",
+    "title": "Audio Spectrum Visualizer",
+    "description": "Analyze recorded audio and display its frequency spectrum.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "FFT",
+      "Signal Processing"
+    ]
+  },
+  {
+    "id": 80,
+    "degree": "Electrical Engineering",
+    "category": "Renewable Energy",
+    "title": "Solar Panel Angle Study",
+    "description": "Model how panel angle influences expected solar-energy capture.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "MATLAB",
+      "Modeling",
+      "Renewable Energy"
+    ]
+  },
+  {
+    "id": 81,
+    "degree": "Electrical Engineering",
+    "category": "Electronics",
+    "title": "Battery Level Indicator",
+    "description": "Design a low-voltage circuit or simulation that displays approximate battery level.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Electronics",
+      "LED",
+      "Simulation"
+    ]
+  },
+  {
+    "id": 82,
+    "degree": "Electrical Engineering",
+    "category": "Automation",
+    "title": "Smart Fan Controller",
+    "description": "Adjust a low-voltage fan or simulation according to temperature readings.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Arduino",
+      "Temperature Sensor",
+      "PWM"
+    ]
+  },
+  {
+    "id": 83,
+    "degree": "Electrical Engineering",
+    "category": "Signals",
+    "title": "Noise Filter Comparison",
+    "description": "Compare digital filtering methods on recorded or synthetic noisy signals.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "SciPy",
+      "Signal Processing"
+    ]
+  },
+  {
+    "id": 84,
+    "degree": "Electrical Engineering",
+    "category": "Power Electronics",
+    "title": "DC Converter Simulator",
+    "description": "Model and compare basic DC conversion behavior in simulation.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "Simulation",
+      "Power Electronics",
+      "MATLAB"
+    ]
+  },
+  {
+    "id": 85,
+    "degree": "Mechanical Engineering",
+    "category": "Product Design",
+    "title": "Portable Cooling System",
+    "description": "Design a compact cooling concept and evaluate airflow, efficiency and portability.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "CAD",
+      "Thermodynamics",
+      "Prototyping"
+    ]
+  },
+  {
+    "id": 86,
+    "degree": "Mechanical Engineering",
+    "category": "Automation",
+    "title": "Mini Conveyor Sorting System",
+    "description": "Design or simulate a small conveyor mechanism that sorts objects using sensor inputs.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "CAD",
+      "Sensors",
+      "Mechanisms"
+    ]
+  },
+  {
+    "id": 87,
+    "degree": "Mechanical Engineering",
+    "category": "Design",
+    "title": "Adjustable Ergonomic Desk",
+    "description": "Develop an adjustable desk concept and evaluate mechanism, stability and ergonomics.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "CAD",
+      "Mechanics",
+      "Prototyping"
+    ]
+  },
+  {
+    "id": 88,
+    "degree": "Mechanical Engineering",
+    "category": "Thermal Engineering",
+    "title": "Insulated Bottle Study",
+    "description": "Compare design variables that affect heat retention using modeling or safe experiments.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Thermodynamics",
+      "Data Analysis",
+      "CAD"
+    ]
+  },
+  {
+    "id": 89,
+    "degree": "Mechanical Engineering",
+    "category": "Fluid Mechanics",
+    "title": "Water Flow Visualization Rig",
+    "description": "Design a safe small-scale or simulated setup for comparing flow through different geometries.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Fluid Mechanics",
+      "CAD",
+      "Simulation"
+    ]
+  },
+  {
+    "id": 90,
+    "degree": "Mechanical Engineering",
+    "category": "Manufacturing",
+    "title": "3D Printed Gearbox",
+    "description": "Design a compact gearbox suitable for prototyping with additive manufacturing.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "CAD",
+      "3D Printing",
+      "Machine Design"
+    ]
+  },
+  {
+    "id": 91,
+    "degree": "Mechanical Engineering",
+    "category": "Mechanisms",
+    "title": "Automatic Window Opener",
+    "description": "Design a mechanism that opens a small model window based on a simulated temperature input.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "CAD",
+      "Mechanisms",
+      "Prototyping"
+    ]
+  },
+  {
+    "id": 92,
+    "degree": "Mechanical Engineering",
+    "category": "Vehicle Engineering",
+    "title": "Suspension Model Explorer",
+    "description": "Model how basic suspension parameters influence response to road inputs.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "MATLAB",
+      "Dynamics",
+      "Simulation"
+    ]
+  },
+  {
+    "id": 93,
+    "degree": "Mechanical Engineering",
+    "category": "Design",
+    "title": "Foldable Bicycle Stand",
+    "description": "Design a compact stand emphasizing portability, stability and manufacturability.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "CAD",
+      "Product Design",
+      "Prototyping"
+    ]
+  },
+  {
+    "id": 94,
+    "degree": "Mechanical Engineering",
+    "category": "Thermodynamics",
+    "title": "Room Cooling Load Estimator",
+    "description": "Build a calculator that estimates cooling load from simplified room parameters.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Thermodynamics",
+      "Data Analysis"
+    ]
+  },
+  {
+    "id": 95,
+    "degree": "Mechanical Engineering",
+    "category": "Manufacturing",
+    "title": "Production Line Balancer",
+    "description": "Model a small production process and explore ways to reduce bottlenecks.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Simulation",
+      "Operations",
+      "Manufacturing"
+    ]
+  },
+  {
+    "id": 96,
+    "degree": "Mechanical Engineering",
+    "category": "Robotics",
+    "title": "Pick-and-Place Arm Model",
+    "description": "Design or simulate a simple robotic arm for moving lightweight virtual objects.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "CAD",
+      "Kinematics",
+      "Simulation"
+    ]
+  },
+  {
+    "id": 97,
+    "degree": "Civil Engineering",
+    "category": "Transportation",
+    "title": "Campus Traffic Flow Study",
+    "description": "Analyze traffic movement around a campus and propose congestion improvements.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Data Collection",
+      "Simulation",
+      "CAD"
+    ]
+  },
+  {
+    "id": 98,
+    "degree": "Civil Engineering",
+    "category": "Structures",
+    "title": "Earthquake Resistant Model",
+    "description": "Compare scaled structural concepts under safe simulated vibration.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Structural Design",
+      "Modeling",
+      "Testing"
+    ]
+  },
+  {
+    "id": 99,
+    "degree": "Civil Engineering",
+    "category": "Sustainability",
+    "title": "Rainwater Harvesting Design",
+    "description": "Design a rainwater collection and storage proposal for a building.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "CAD",
+      "Hydrology",
+      "Sustainability"
+    ]
+  },
+  {
+    "id": 100,
+    "degree": "Civil Engineering",
+    "category": "Construction",
+    "title": "Construction Progress Dashboard",
+    "description": "Track schedule, milestones and resources for a fictional construction project.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Excel",
+      "Project Management",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 101,
+    "degree": "Civil Engineering",
+    "category": "Geotechnical",
+    "title": "Foundation Selection Assistant",
+    "description": "Create an educational decision tool for comparing foundation options from simplified site conditions.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Geotechnical",
+      "Decision Support"
+    ]
+  },
+  {
+    "id": 102,
+    "degree": "Civil Engineering",
+    "category": "Transportation",
+    "title": "Pedestrian Safety Audit",
+    "description": "Study a public or campus area and propose design improvements for pedestrian movement.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Surveying",
+      "GIS",
+      "Transportation"
+    ]
+  },
+  {
+    "id": 103,
+    "degree": "Civil Engineering",
+    "category": "Water Resources",
+    "title": "Stormwater Runoff Calculator",
+    "description": "Estimate runoff from simplified catchment data and compare mitigation scenarios.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Hydrology",
+      "Data Analysis"
+    ]
+  },
+  {
+    "id": 104,
+    "degree": "Civil Engineering",
+    "category": "Structures",
+    "title": "Bridge Truss Explorer",
+    "description": "Model how different truss configurations respond to simplified loads.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Structural Analysis",
+      "CAD",
+      "Simulation"
+    ]
+  },
+  {
+    "id": 105,
+    "degree": "Civil Engineering",
+    "category": "Sustainability",
+    "title": "Green Building Scorecard",
+    "description": "Build a framework for comparing simplified sustainability features of building designs.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Sustainability",
+      "Excel",
+      "Research"
+    ]
+  },
+  {
+    "id": 106,
+    "degree": "Civil Engineering",
+    "category": "Urban Planning",
+    "title": "Walkability Mapping Study",
+    "description": "Use public mapping data to compare walkability indicators across selected areas.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "GIS",
+      "Data Analysis",
+      "Mapping"
+    ]
+  },
+  {
+    "id": 107,
+    "degree": "Civil Engineering",
+    "category": "Construction",
+    "title": "Material Quantity Estimator",
+    "description": "Estimate quantities for a simplified building model and generate a basic report.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Excel",
+      "Quantity Surveying",
+      "CAD"
+    ]
+  },
+  {
+    "id": 108,
+    "degree": "Civil Engineering",
+    "category": "Transportation",
+    "title": "Parking Demand Study",
+    "description": "Analyze observed or synthetic parking-use data and propose management improvements.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Data Analysis",
+      "Transportation",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 109,
+    "degree": "Business",
+    "category": "Entrepreneurship",
+    "title": "Campus Marketplace",
+    "description": "Design a business that helps university students buy and sell used items locally.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Business Model",
+      "Market Research",
+      "Figma"
+    ]
+  },
+  {
+    "id": 110,
+    "degree": "Business",
+    "category": "Operations",
+    "title": "Queue Reduction Strategy",
+    "description": "Study a service queue and design a process that reduces waiting time.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Process Mapping",
+      "Data Analysis",
+      "Operations"
+    ]
+  },
+  {
+    "id": 111,
+    "degree": "Business",
+    "category": "Entrepreneurship",
+    "title": "Subscription Startup Concept",
+    "description": "Develop and validate a subscription business idea for a specific consumer problem.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Lean Canvas",
+      "Market Research",
+      "Financial Modeling"
+    ]
+  },
+  {
+    "id": 112,
+    "degree": "Business",
+    "category": "Strategy",
+    "title": "Local Business Growth Plan",
+    "description": "Analyze a consenting or fictional local business and develop a practical growth strategy.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "SWOT",
+      "Market Research",
+      "Strategy"
+    ]
+  },
+  {
+    "id": 113,
+    "degree": "Business",
+    "category": "Operations",
+    "title": "Inventory Reorder Simulator",
+    "description": "Model how different reorder rules affect stock levels and shortages.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Excel",
+      "Operations",
+      "Simulation"
+    ]
+  },
+  {
+    "id": 114,
+    "degree": "Business",
+    "category": "Entrepreneurship",
+    "title": "Student Service Startup",
+    "description": "Design and validate a service business aimed at a recurring student problem.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Lean Canvas",
+      "Interviews",
+      "Pricing"
+    ]
+  },
+  {
+    "id": 115,
+    "degree": "Business",
+    "category": "Analytics",
+    "title": "Business KPI Dashboard",
+    "description": "Turn a sample business dataset into a concise management dashboard.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Excel",
+      "Power BI",
+      "Analytics"
+    ]
+  },
+  {
+    "id": 116,
+    "degree": "Business",
+    "category": "Supply Chain",
+    "title": "Supplier Scorecard",
+    "description": "Build a framework for comparing fictional suppliers across cost, quality and reliability.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Excel",
+      "Supply Chain",
+      "Decision Analysis"
+    ]
+  },
+  {
+    "id": 117,
+    "degree": "Business",
+    "category": "Human Resources",
+    "title": "Employee Onboarding Redesign",
+    "description": "Design a structured onboarding journey for a fictional growing company.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Process Design",
+      "HR",
+      "Figma"
+    ]
+  },
+  {
+    "id": 118,
+    "degree": "Business",
+    "category": "Strategy",
+    "title": "Competitor Positioning Map",
+    "description": "Research a consumer market and visualize how major offerings differ.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Market Research",
+      "Strategy",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 119,
+    "degree": "Business",
+    "category": "Entrepreneurship",
+    "title": "Pop-Up Business Experiment",
+    "description": "Design a small temporary business concept and define how its assumptions would be tested.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Lean Startup",
+      "Budgeting",
+      "Marketing"
+    ]
+  },
+  {
+    "id": 120,
+    "degree": "Business",
+    "category": "Operations",
+    "title": "Service Capacity Simulator",
+    "description": "Model demand and staffing for a fictional service operation.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Excel",
+      "Simulation",
+      "Operations"
+    ]
+  },
+  {
+    "id": 121,
+    "degree": "Finance",
+    "category": "Personal Finance",
+    "title": "Student Budget Simulator",
+    "description": "Show how spending choices affect a student's monthly finances.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Excel",
+      "Financial Modeling",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 122,
+    "degree": "Finance",
+    "category": "Analytics",
+    "title": "Portfolio Risk Dashboard",
+    "description": "Demonstrate diversification using historical sample market data.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Statistics"
+    ]
+  },
+  {
+    "id": 123,
+    "degree": "Finance",
+    "category": "Corporate Finance",
+    "title": "Capital Budgeting Calculator",
+    "description": "Compare fictional investment projects using standard capital-budgeting metrics.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Excel",
+      "Finance",
+      "Modeling"
+    ]
+  },
+  {
+    "id": 124,
+    "degree": "Finance",
+    "category": "FinTech",
+    "title": "Expense Categorization App",
+    "description": "Build a local app that organizes synthetic transactions into spending categories.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Streamlit"
+    ]
+  },
+  {
+    "id": 125,
+    "degree": "Finance",
+    "category": "Analytics",
+    "title": "Financial Ratio Explorer",
+    "description": "Compare fictional or public company ratios through an interactive dashboard.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Excel",
+      "Power BI",
+      "Finance"
+    ]
+  },
+  {
+    "id": 126,
+    "degree": "Finance",
+    "category": "Personal Finance",
+    "title": "Savings Goal Planner",
+    "description": "Model how contributions and assumptions influence a long-term savings goal.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "JavaScript",
+      "Finance",
+      "Charts"
+    ]
+  },
+  {
+    "id": 127,
+    "degree": "Finance",
+    "category": "Risk",
+    "title": "Credit Risk Learning Model",
+    "description": "Use a public educational dataset to explore factors associated with credit-risk labels.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Scikit-learn",
+      "Statistics"
+    ]
+  },
+  {
+    "id": 128,
+    "degree": "Finance",
+    "category": "Corporate Finance",
+    "title": "Break-Even Scenario Lab",
+    "description": "Create an interactive tool for exploring price, cost and volume assumptions.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Excel",
+      "Financial Modeling",
+      "Charts"
+    ]
+  },
+  {
+    "id": 129,
+    "degree": "Finance",
+    "category": "Analytics",
+    "title": "Cash Flow Dashboard",
+    "description": "Visualize fictional business cash inflows, outflows and liquidity trends.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Power BI",
+      "Excel",
+      "Finance"
+    ]
+  },
+  {
+    "id": 130,
+    "degree": "Finance",
+    "category": "FinTech",
+    "title": "Shared Expense Splitter",
+    "description": "Create an app for splitting group expenses and tracking settlements.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "JavaScript",
+      "SQLite",
+      "Web"
+    ]
+  },
+  {
+    "id": 131,
+    "degree": "Finance",
+    "category": "Research",
+    "title": "Market Event Study",
+    "description": "Analyze historical public market data around a selected non-sensitive public event.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Statistics"
+    ]
+  },
+  {
+    "id": 132,
+    "degree": "Finance",
+    "category": "Corporate Finance",
+    "title": "Startup Runway Calculator",
+    "description": "Model how expenses, revenue and funding assumptions affect a fictional startup's runway.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Excel",
+      "Financial Modeling",
+      "Startup Finance"
+    ]
+  },
+  {
+    "id": 133,
+    "degree": "Marketing",
+    "category": "Consumer Behavior",
+    "title": "Gen Z Brand Preference Study",
+    "description": "Research factors influencing brand preference among university-age consumers.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Surveys",
+      "Data Analysis",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 134,
+    "degree": "Marketing",
+    "category": "Digital Marketing",
+    "title": "Campaign Performance Lab",
+    "description": "Design mock campaigns and compare expected performance using a structured framework.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Analytics",
+      "Content Strategy",
+      "A/B Testing"
+    ]
+  },
+  {
+    "id": 135,
+    "degree": "Marketing",
+    "category": "Branding",
+    "title": "Brand Perception Dashboard",
+    "description": "Collect anonymous survey data and visualize how respondents perceive a chosen brand category.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Surveys",
+      "Power BI",
+      "Branding"
+    ]
+  },
+  {
+    "id": 136,
+    "degree": "Marketing",
+    "category": "Content Marketing",
+    "title": "Content Calendar Generator",
+    "description": "Build a planning tool for organizing campaign themes, channels and publishing schedules.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "JavaScript",
+      "Content Strategy",
+      "UX"
+    ]
+  },
+  {
+    "id": 137,
+    "degree": "Marketing",
+    "category": "Market Research",
+    "title": "Student Buying Behavior Study",
+    "description": "Investigate how students make purchase decisions within a selected product category.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Surveys",
+      "Statistics",
+      "Research"
+    ]
+  },
+  {
+    "id": 138,
+    "degree": "Marketing",
+    "category": "Digital Marketing",
+    "title": "Landing Page Experiment",
+    "description": "Design two landing-page variants and define a safe usability or preference test.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Figma",
+      "A/B Testing",
+      "Analytics"
+    ]
+  },
+  {
+    "id": 139,
+    "degree": "Marketing",
+    "category": "Branding",
+    "title": "New Product Launch Plan",
+    "description": "Create a full positioning and launch strategy for a fictional product.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Brand Strategy",
+      "Research",
+      "Campaign Planning"
+    ]
+  },
+  {
+    "id": 140,
+    "degree": "Marketing",
+    "category": "Analytics",
+    "title": "Marketing Funnel Dashboard",
+    "description": "Visualize a synthetic customer journey from awareness to conversion.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Power BI",
+      "Analytics",
+      "Excel"
+    ]
+  },
+  {
+    "id": 141,
+    "degree": "Marketing",
+    "category": "Social Media",
+    "title": "Social Content Performance Study",
+    "description": "Analyze a public or synthetic content dataset to identify patterns in engagement.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 142,
+    "degree": "Marketing",
+    "category": "Consumer Behavior",
+    "title": "Packaging Preference Experiment",
+    "description": "Design alternative package concepts and conduct a small anonymous preference study.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Figma",
+      "Survey Design",
+      "Branding"
+    ]
+  },
+  {
+    "id": 143,
+    "degree": "Marketing",
+    "category": "Strategy",
+    "title": "Local Market Entry Plan",
+    "description": "Develop a market-entry strategy for a fictional company entering a new city or segment.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Research",
+      "Strategy",
+      "SWOT"
+    ]
+  },
+  {
+    "id": 144,
+    "degree": "Marketing",
+    "category": "SEO",
+    "title": "Search Intent Content Mapper",
+    "description": "Organize a safe set of public search topics into intent groups and content opportunities.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "SEO",
+      "Spreadsheets",
+      "Content Strategy"
+    ]
+  },
+  {
+    "id": 145,
+    "degree": "Graphic Design",
+    "category": "Branding",
+    "title": "Rebrand a Local Business",
+    "description": "Create a visual identity redesign for a fictional or consenting local business.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Illustrator",
+      "Photoshop",
+      "Brand Strategy"
+    ]
+  },
+  {
+    "id": 146,
+    "degree": "Graphic Design",
+    "category": "UI Design",
+    "title": "University App Redesign",
+    "description": "Redesign the interface and user experience of a student portal or companion app.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Figma",
+      "UX Research",
+      "Prototyping"
+    ]
+  },
+  {
+    "id": 147,
+    "degree": "Graphic Design",
+    "category": "Editorial Design",
+    "title": "Interactive Digital Magazine",
+    "description": "Design a modern digital magazine around a topic you care about.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Figma",
+      "Typography",
+      "Layout Design"
+    ]
+  },
+  {
+    "id": 148,
+    "degree": "Graphic Design",
+    "category": "Typography",
+    "title": "Experimental Type Poster Series",
+    "description": "Create a cohesive poster series exploring typography as the main visual element.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Illustrator",
+      "Typography",
+      "Composition"
+    ]
+  },
+  {
+    "id": 149,
+    "degree": "Graphic Design",
+    "category": "Information Design",
+    "title": "Public Data Infographic",
+    "description": "Turn a public dataset into a clear and visually engaging infographic.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Illustrator",
+      "Data Visualization",
+      "Typography"
+    ]
+  },
+  {
+    "id": 150,
+    "degree": "Graphic Design",
+    "category": "Packaging",
+    "title": "Sustainable Product Packaging",
+    "description": "Design packaging for a fictional product with sustainability and shelf presence in mind.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Illustrator",
+      "Packaging",
+      "Branding"
+    ]
+  },
+  {
+    "id": 151,
+    "degree": "Graphic Design",
+    "category": "UI Design",
+    "title": "Music Discovery App Concept",
+    "description": "Design a mobile interface for discovering and organizing music.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Figma",
+      "UI Design",
+      "Prototyping"
+    ]
+  },
+  {
+    "id": 152,
+    "degree": "Graphic Design",
+    "category": "Branding",
+    "title": "Student Event Identity",
+    "description": "Create a complete visual system for a fictional university festival or conference.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Illustrator",
+      "Branding",
+      "Typography"
+    ]
+  },
+  {
+    "id": 153,
+    "degree": "Graphic Design",
+    "category": "Motion Design",
+    "title": "Kinetic Typography Short",
+    "description": "Create a short motion piece where animated typography communicates a message.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "After Effects",
+      "Typography",
+      "Motion Design"
+    ]
+  },
+  {
+    "id": 154,
+    "degree": "Graphic Design",
+    "category": "Editorial Design",
+    "title": "Visual Research Zine",
+    "description": "Turn research on a chosen topic into a compact experimental publication.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "InDesign",
+      "Typography",
+      "Editorial Design"
+    ]
+  },
+  {
+    "id": 155,
+    "degree": "Graphic Design",
+    "category": "Wayfinding",
+    "title": "Campus Wayfinding System",
+    "description": "Design a consistent signage and navigation system for a fictional or mapped campus.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "Illustrator",
+      "Wayfinding",
+      "Information Design"
+    ]
+  },
+  {
+    "id": 156,
+    "degree": "Graphic Design",
+    "category": "UI Design",
+    "title": "Accessibility-First Website Concept",
+    "description": "Design a web interface prioritizing readability, hierarchy and accessible interaction patterns.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Figma",
+      "Accessibility",
+      "UI Design"
+    ]
+  },
+  {
+    "id": 157,
+    "degree": "Architecture",
+    "category": "Sustainable Design",
+    "title": "Compact Sustainable Student Housing",
+    "description": "Design compact housing focused on space efficiency, natural light and sustainability.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "AutoCAD",
+      "SketchUp",
+      "Sustainable Design"
+    ]
+  },
+  {
+    "id": 158,
+    "degree": "Architecture",
+    "category": "Public Space",
+    "title": "Campus Social Pavilion",
+    "description": "Design a small space encouraging interaction, rest and collaboration.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "AutoCAD",
+      "3D Modeling",
+      "Rendering"
+    ]
+  },
+  {
+    "id": 159,
+    "degree": "Architecture",
+    "category": "Adaptive Reuse",
+    "title": "Warehouse Community Hub",
+    "description": "Reimagine a fictional existing industrial shell as a community-oriented space.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "AutoCAD",
+      "Revit",
+      "Adaptive Reuse"
+    ]
+  },
+  {
+    "id": 160,
+    "degree": "Architecture",
+    "category": "Residential",
+    "title": "Micro Apartment Study",
+    "description": "Explore how a very small apartment can support multiple daily functions.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "AutoCAD",
+      "SketchUp",
+      "Space Planning"
+    ]
+  },
+  {
+    "id": 161,
+    "degree": "Architecture",
+    "category": "Landscape",
+    "title": "Pocket Park Design",
+    "description": "Transform a small underused urban plot into a compact public green space.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "SketchUp",
+      "Landscape Design",
+      "Rendering"
+    ]
+  },
+  {
+    "id": 162,
+    "degree": "Architecture",
+    "category": "Public Space",
+    "title": "Student Library Concept",
+    "description": "Design a contemporary library balancing quiet study, collaboration and circulation.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "Revit",
+      "AutoCAD",
+      "Rendering"
+    ]
+  },
+  {
+    "id": 163,
+    "degree": "Architecture",
+    "category": "Sustainable Design",
+    "title": "Passive Cooling House",
+    "description": "Develop a residential concept emphasizing shading, ventilation and passive cooling strategies.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "AutoCAD",
+      "Climate Analysis",
+      "SketchUp"
+    ]
+  },
+  {
+    "id": 164,
+    "degree": "Architecture",
+    "category": "Urban Design",
+    "title": "Walkable Neighborhood Block",
+    "description": "Design a mixed-use block emphasizing pedestrian movement and public space.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "Urban Design",
+      "SketchUp",
+      "Mapping"
+    ]
+  },
+  {
+    "id": 165,
+    "degree": "Architecture",
+    "category": "Interior Architecture",
+    "title": "Flexible Study Lounge",
+    "description": "Design an interior that can shift between individual study, group work and events.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "SketchUp",
+      "Interior Design",
+      "Rendering"
+    ]
+  },
+  {
+    "id": 166,
+    "degree": "Architecture",
+    "category": "Public Space",
+    "title": "Transit Shelter Redesign",
+    "description": "Design a more comfortable, accessible and climate-aware public transit shelter.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "CAD",
+      "Product Design",
+      "Rendering"
+    ]
+  },
+  {
+    "id": 167,
+    "degree": "Architecture",
+    "category": "Residential",
+    "title": "Courtyard Housing Concept",
+    "description": "Explore a housing layout organized around shared and private courtyard spaces.",
+    "difficulty": "Advanced",
+    "technologies": [
+      "AutoCAD",
+      "Revit",
+      "Rendering"
+    ]
+  },
+  {
+    "id": 168,
+    "degree": "Architecture",
+    "category": "Exhibition Design",
+    "title": "Temporary Exhibition Pavilion",
+    "description": "Design a modular temporary structure for displaying art or student work.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "SketchUp",
+      "Model Making",
+      "Rendering"
+    ]
+  },
+  {
+    "id": 169,
+    "degree": "Psychology",
+    "category": "Cognitive Psychology",
+    "title": "Digital Distraction Study",
+    "description": "Explore how different digital interruptions affect attention in a controlled, low-risk task.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Research Design",
+      "Statistics",
+      "Survey Tools"
+    ]
+  },
+  {
+    "id": 170,
+    "degree": "Psychology",
+    "category": "Educational Psychology",
+    "title": "Study Habit Research Project",
+    "description": "Investigate relationships between study strategies and self-reported academic outcomes.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Surveys",
+      "Statistics",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 171,
+    "degree": "Psychology",
+    "category": "Cognitive Psychology",
+    "title": "Memory Strategy Experiment",
+    "description": "Compare benign study strategies on recall using a simple voluntary classroom-style task.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Experimental Design",
+      "Statistics",
+      "Data Analysis"
+    ]
+  },
+  {
+    "id": 172,
+    "degree": "Psychology",
+    "category": "Social Psychology",
+    "title": "Group Decision Survey",
+    "description": "Study how people report making decisions individually versus in groups using anonymous surveys.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Survey Design",
+      "Statistics",
+      "Research"
+    ]
+  },
+  {
+    "id": 173,
+    "degree": "Psychology",
+    "category": "Educational Psychology",
+    "title": "Revision Preference Explorer",
+    "description": "Analyze anonymous preferences for different revision methods and visualize patterns.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Surveys",
+      "Excel",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 174,
+    "degree": "Psychology",
+    "category": "Human Factors",
+    "title": "Interface Attention Study",
+    "description": "Compare two benign interface layouts on task completion and self-reported ease of use.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Research Design",
+      "Figma",
+      "Statistics"
+    ]
+  },
+  {
+    "id": 175,
+    "degree": "Psychology",
+    "category": "Cognitive Psychology",
+    "title": "Color and Recall Study",
+    "description": "Explore whether benign visual presentation differences correlate with recall in a small voluntary task.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Experimental Design",
+      "Statistics",
+      "Data Analysis"
+    ]
+  },
+  {
+    "id": 176,
+    "degree": "Psychology",
+    "category": "Social Psychology",
+    "title": "Online Communication Survey",
+    "description": "Study anonymous attitudes toward different forms of online communication.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Surveys",
+      "Statistics",
+      "Research"
+    ]
+  },
+  {
+    "id": 177,
+    "degree": "Psychology",
+    "category": "Educational Psychology",
+    "title": "Study Environment Survey",
+    "description": "Explore associations between self-reported study environments and concentration preferences.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Surveys",
+      "Data Analysis",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 178,
+    "degree": "Psychology",
+    "category": "Human Factors",
+    "title": "Notification Design Study",
+    "description": "Compare user preferences for different non-urgent notification designs.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Figma",
+      "Survey Design",
+      "Statistics"
+    ]
+  },
+  {
+    "id": 179,
+    "degree": "Psychology",
+    "category": "Cognitive Psychology",
+    "title": "Visual Search Experiment",
+    "description": "Create a simple visual-search task and analyze response-time patterns.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "JavaScript",
+      "Experimental Design",
+      "Statistics"
+    ]
+  },
+  {
+    "id": 180,
+    "degree": "Psychology",
+    "category": "Research Methods",
+    "title": "Survey Quality Analyzer",
+    "description": "Build a tool that flags missing responses and summarizes anonymous survey data quality.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Research Methods"
+    ]
+  },
+  {
+    "id": 181,
+    "degree": "Biotechnology",
+    "category": "Bioinformatics",
+    "title": "DNA Sequence Explorer",
+    "description": "Analyze sample DNA sequences and visualize basic sequence characteristics.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Bioinformatics",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 182,
+    "degree": "Biotechnology",
+    "category": "Environmental Biotechnology",
+    "title": "Bioremediation Research Proposal",
+    "description": "Develop a literature-based proposal about microorganisms and environmental cleanup.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Literature Review",
+      "Experimental Design",
+      "Data Analysis"
+    ]
+  },
+  {
+    "id": 183,
+    "degree": "Biotechnology",
+    "category": "Bioinformatics",
+    "title": "Protein Sequence Comparator",
+    "description": "Compare public protein sequences and summarize simple similarity measures.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Biopython",
+      "Bioinformatics"
+    ]
+  },
+  {
+    "id": 184,
+    "degree": "Biotechnology",
+    "category": "Bioinformatics",
+    "title": "GC Content Dashboard",
+    "description": "Analyze GC content across a collection of public or sample DNA sequences.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Python",
+      "Biopython",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 185,
+    "degree": "Biotechnology",
+    "category": "Agricultural Biotechnology",
+    "title": "Crop Trait Literature Map",
+    "description": "Organize published research around a selected crop trait into a visual evidence map.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Literature Review",
+      "Data Organization",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 186,
+    "degree": "Biotechnology",
+    "category": "Environmental Biotechnology",
+    "title": "Wastewater Biotechnology Review",
+    "description": "Create a structured evidence dashboard summarizing published biological treatment approaches.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Research",
+      "Data Analysis",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 187,
+    "degree": "Biotechnology",
+    "category": "Bioinformatics",
+    "title": "Sequence Motif Explorer",
+    "description": "Build an educational tool that searches supplied sample sequences for user-defined motifs.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Biopython",
+      "Web"
+    ]
+  },
+  {
+    "id": 188,
+    "degree": "Biotechnology",
+    "category": "Biostatistics",
+    "title": "Biological Dataset Explorer",
+    "description": "Analyze a public educational biological dataset and build reproducible visual summaries.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Statistics"
+    ]
+  },
+  {
+    "id": 189,
+    "degree": "Biotechnology",
+    "category": "Computational Biology",
+    "title": "Phylogenetic Tree Viewer",
+    "description": "Create a simple interface for viewing and annotating precomputed public phylogenetic trees.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Bioinformatics",
+      "Visualization"
+    ]
+  },
+  {
+    "id": 190,
+    "degree": "Biotechnology",
+    "category": "Biotechnology Research",
+    "title": "Research Paper Topic Mapper",
+    "description": "Cluster titles and abstracts from a curated biotechnology bibliography into themes.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "NLP",
+      "Research"
+    ]
+  },
+  {
+    "id": 191,
+    "degree": "Biotechnology",
+    "category": "Environmental Biotechnology",
+    "title": "Microbial Application Database",
+    "description": "Build a literature-backed database of documented beneficial microbial applications.",
+    "difficulty": "Beginner",
+    "technologies": [
+      "SQL",
+      "Research",
+      "Data Modeling"
+    ]
+  },
+  {
+    "id": 192,
+    "degree": "Biotechnology",
+    "category": "Bioinformatics",
+    "title": "Codon Usage Explorer",
+    "description": "Analyze codon-frequency patterns in supplied educational sequence datasets.",
+    "difficulty": "Intermediate",
+    "technologies": [
+      "Python",
+      "Biopython",
+      "Data Visualization"
+    ]
+  }
+]
