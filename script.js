@@ -1,1462 +1,515 @@
+/* ==========================================================
+   SPINSPIRE
+   ========================================================== */
 
-
+/* ---------- State ---------- */
 
 let projects = [];
-
-
-
-let selectedDegree = null;
-
-let selectedDifficulty = null;
-
-
-
-let currentProject = null;
-
-let previousProjectId = null;
-
-
-
-let spinCount = 0;
-
-let spinning = false;
-
-
-
 let savedProjects = [];
 
+let selectedDegree = null;
+let selectedDifficulty = null;
 
+let currentProject = null;
+let previousProjectId = null;
 
+let spinCount = 0;
+let spinning = false;
 let spinSession = 0;
 
-
-
-
-
-
-
-
-const brand =
-
-    document.getElementById("brand");
-
-
-
-const degreeScreen =
-
-    document.getElementById("degreeScreen");
-
-
-
-const difficultyScreen =
-
-    document.getElementById("difficultyScreen");
-
-
-
-const roulette =
-
-    document.getElementById("roulette");
-
-
-
-const degreeGrid =
-
-    document.getElementById("degreeGrid");
-
-
-
-const anythingButton =
-
-    document.getElementById("anythingButton");
-
-
-
-const anyDifficultyButton =
-
-    document.getElementById("anyDifficultyButton");
-
-
-
-const difficultyBackButton =
-
-    document.getElementById("difficultyBackButton");
-
-
-
-const degreeIndicator =
-
-    document.getElementById("degreeIndicator");
-
-
-
-const difficultyIndicator =
-
-    document.getElementById("difficultyIndicator");
-
-
-
-const currentDegreeLabel =
-
-    document.getElementById("currentDegreeLabel");
-
-
-
-const currentDifficultyLabel =
-
-    document.getElementById("currentDifficultyLabel");
-
-
-
-const roulettePrompt =
-
-    document.getElementById("roulettePrompt");
-
-
-
-const categoryPrompt =
-
-    document.getElementById("categoryPrompt");
-
-
-
-const projectWord =
-
-    document.getElementById("projectWord");
-
-
-
-const projectWordText =
-
-    document.getElementById("projectWordText");
-
-
-
-const categoryWord =
-
-    document.getElementById("categoryWord");
-
-
-
-const categoryWordText =
-
-    document.getElementById("categoryWordText");
-
-
-
-const spinButton =
-
-    document.getElementById("spinButton");
-
-
-
-const spaceButton =
-
-    document.getElementById("spaceButton");
-
-
-
-const spinCountElement =
-
-    document.getElementById("spinCount");
-
-
-
-const resultScreen =
-
-    document.getElementById("resultScreen");
-
-
-
-const projectTitle =
-
-    document.getElementById("projectTitle");
-
-
-
-const projectDescription =
-
-    document.getElementById("projectDescription");
-
-
-
-const resultDegree =
-
-    document.getElementById("resultDegree");
-
-
-
-const resultCategory =
-
-    document.getElementById("resultCategory");
-
-
-
-const resultDifficulty =
-
-    document.getElementById("resultDifficulty");
-
-
-
-const technologyList =
-
-    document.getElementById("technologyList");
-
-
-
-const anotherButton =
-
-    document.getElementById("anotherButton");
-
-
-
-const backButton =
-
-    document.getElementById("backButton");
-
-
-
-const saveProjectButton =
-
-    document.getElementById("saveProjectButton");
-
-
-
-const saveIcon =
-
-    document.getElementById("saveIcon");
-
-
-
-const saveText =
-
-    document.getElementById("saveText");
-
-
-
-const exploreButton =
-
-    document.getElementById("exploreButton");
-
-
-
-const exploreScreen =
-
-    document.getElementById("exploreScreen");
-
-
-
-const exploreBackButton =
-
-    document.getElementById("exploreBackButton");
-
-
-
-const exploreTitle =
-
-    document.getElementById("exploreTitle");
-
-
-
-const exploreDescription =
-
-    document.getElementById("exploreDescription");
-
-
-
-const exploreDegree =
-
-    document.getElementById("exploreDegree");
-
-
-
-const exploreCategory =
-
-    document.getElementById("exploreCategory");
-
-
-
-const exploreDifficulty =
-
-    document.getElementById("exploreDifficulty");
-
-
-
-const exploreIdea =
-
-    document.getElementById("exploreIdea");
-
-
-
-const exploreFeatures =
-
-    document.getElementById("exploreFeatures");
-
-
-
-const exploreTechnologies =
-
-    document.getElementById("exploreTechnologies");
-
-
-
-const exploreRoadmap =
-
-    document.getElementById("exploreRoadmap");
-
-
-
-const exploreSkills =
-
-    document.getElementById("exploreSkills");
-
-
-
-const exploreLevel =
-
-    document.getElementById("exploreLevel");
-
-
-
-const exploreSaveButton =
-
-    document.getElementById("exploreSaveButton");
-
-
-
-const exploreAnotherButton =
-
-    document.getElementById("exploreAnotherButton");
-
-
-
-const savedHeaderButton =
-
-    document.getElementById("savedHeaderButton");
-
-
-
-const savedCount =
-
-    document.getElementById("savedCount");
-
-
-
-const savedScreen =
-
-    document.getElementById("savedScreen");
-
-
-
-const savedList =
-
-    document.getElementById("savedList");
-
-
-
-const closeSavedButton =
-
-    document.getElementById("closeSavedButton");
-
-
-
-const statusScreen =
-
-    document.getElementById("statusScreen");
-
-
-
-const statusText =
-
-    document.getElementById("statusText");
-
-
-
-
-
-
-
+/* Delay (ms) before a new spin starts after the result screen closes.
+   Kept small so the spin feels instant. */
+const SPIN_START_DELAY = 120;
+
+
+/* ---------- DOM references ---------- */
+
+const $ = id => document.getElementById(id);
+
+const brand = $("brand");
+
+const degreeScreen = $("degreeScreen");
+const difficultyScreen = $("difficultyScreen");
+const roulette = $("roulette");
+
+const degreeGrid = $("degreeGrid");
+const anythingButton = $("anythingButton");
+const anyDifficultyButton = $("anyDifficultyButton");
+const difficultyBackButton = $("difficultyBackButton");
+
+const degreeIndicator = $("degreeIndicator");
+const difficultyIndicator = $("difficultyIndicator");
+const currentDegreeLabel = $("currentDegreeLabel");
+const currentDifficultyLabel = $("currentDifficultyLabel");
+
+const roulettePrompt = $("roulettePrompt");
+const categoryPrompt = $("categoryPrompt");
+const projectWord = $("projectWord");
+const projectWordText = $("projectWordText");
+const categoryWord = $("categoryWord");
+const categoryWordText = $("categoryWordText");
+
+const spinButton = $("spinButton");
+const spaceButton = $("spaceButton");
+const spinCountElement = $("spinCount");
+
+const resultScreen = $("resultScreen");
+const projectTitle = $("projectTitle");
+const projectDescription = $("projectDescription");
+const resultDegree = $("resultDegree");
+const resultCategory = $("resultCategory");
+const resultDifficulty = $("resultDifficulty");
+const technologyList = $("technologyList");
+
+const anotherButton = $("anotherButton");
+const backButton = $("backButton");
+const saveProjectButton = $("saveProjectButton");
+const saveIcon = $("saveIcon");
+const saveText = $("saveText");
+const exploreButton = $("exploreButton");
+
+const exploreScreen = $("exploreScreen");
+const exploreBackButton = $("exploreBackButton");
+const exploreTitle = $("exploreTitle");
+const exploreDescription = $("exploreDescription");
+const exploreDegree = $("exploreDegree");
+const exploreCategory = $("exploreCategory");
+const exploreDifficulty = $("exploreDifficulty");
+const exploreIdea = $("exploreIdea");
+const exploreFeatures = $("exploreFeatures");
+const exploreTechnologies = $("exploreTechnologies");
+const exploreRoadmap = $("exploreRoadmap");
+const exploreSkills = $("exploreSkills");
+const exploreLevel = $("exploreLevel");
+const exploreSaveButton = $("exploreSaveButton");
+const exploreAnotherButton = $("exploreAnotherButton");
+
+const savedHeaderButton = $("savedHeaderButton");
+const savedCount = $("savedCount");
+const savedScreen = $("savedScreen");
+const savedList = $("savedList");
+const closeSavedButton = $("closeSavedButton");
+
+const statusScreen = $("statusScreen");
+const statusText = $("statusText");
+
+
+/* ==========================================================
+   AUDIO
+   ========================================================== */
+
+let audioContext = null;
+let masterGain = null;
+
+/* Creates the audio context once, routes everything through a
+   master gain + compressor (loud but no clipping), and makes sure
+   the context is running. */
+function getAudioContext() {
+    if (!audioContext) {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+
+        audioContext = new AudioCtx({ latencyHint: "interactive" });
+
+        const compressor = audioContext.createDynamicsCompressor();
+        compressor.threshold.value = -6;
+        compressor.knee.value = 10;
+        compressor.ratio.value = 20;
+        compressor.attack.value = 0.002;
+        compressor.release.value = 0.12;
+
+        masterGain = audioContext.createGain();
+        masterGain.gain.value = 500.2; 
+
+        masterGain.connect(compressor);
+        compressor.connect(audioContext.destination);
+
+        startKeepAlive(audioContext);
+    }
+
+    if (audioContext.state !== "running") {
+        audioContext.resume();
+    }
+
+    return audioContext;
+}
+
+/* Browsers keep audio suspended until the first user gesture.
+   Unlocking on the very first click/key/touch means the audio
+   engine is already warm by the time the user spins, which
+   removes the delay on the first spin sound. */
+function unlockAudio() {
+    const ctx = getAudioContext();
+
+    const buffer = ctx.createBuffer(1, 1, 22050);
+    const source = ctx.createBufferSource();
+
+    source.buffer = buffer;
+    source.connect(ctx.destination);
+    source.start(0);
+}
+
+["pointerdown", "keydown", "touchstart"].forEach(eventName => {
+    document.addEventListener(eventName, unlockAudio, {
+        once: true,
+        passive: true
+    });
+});
+
+/* Plays an inaudible tone forever so the browser/OS never decides
+   the audio output is idle and puts it to sleep. Without this, the
+   audio device can take a few seconds to wake up after ~1-2 minutes
+   of silence, which delays the first spin sounds. */
+function startKeepAlive(ctx) {
+    const oscillator = ctx.createOscillator();
+    const gain = ctx.createGain();
+
+    oscillator.type = "sine";
+    oscillator.frequency.value = 40;
+
+    // About -80dB: inaudible, but not pure digital silence.
+    gain.gain.value = 0.0001;
+
+    oscillator.connect(gain);
+    gain.connect(ctx.destination);
+
+    oscillator.start();
+}
+
+/* If the browser suspends the context while the tab sits idle,
+   bring it back as soon as the user touches the page again
+   (before they even press spin). */
+function wakeAudio() {
+    if (audioContext && audioContext.state !== "running") {
+        audioContext.resume();
+    }
+}
+
+["pointerdown", "pointermove", "keydown", "touchstart", "focus"].forEach(eventName => {
+    window.addEventListener(eventName, wakeAudio, { passive: true });
+});
+
+document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) wakeAudio();
+});
+
+/* Small helper: one sine note with a fast attack and exponential decay. */
+function playNote({
+    type = "sine",
+    startFreq,
+    endFreq = null,
+    startTime,
+    attack = 0.004,
+    duration,
+    volume
+}) {
+    const ctx = getAudioContext();
+
+    const oscillator = ctx.createOscillator();
+    const gain = ctx.createGain();
+
+    oscillator.type = type;
+    oscillator.frequency.setValueAtTime(startFreq, startTime);
+
+    if (endFreq) {
+        oscillator.frequency.exponentialRampToValueAtTime(
+            endFreq,
+            startTime + duration * 0.55
+        );
+    }
+
+    gain.gain.setValueAtTime(0.0001, startTime);
+    gain.gain.exponentialRampToValueAtTime(volume, startTime + attack);
+    gain.gain.exponentialRampToValueAtTime(0.0001, startTime + duration);
+
+    oscillator.connect(gain);
+    gain.connect(masterGain);
+
+    oscillator.start(startTime);
+    oscillator.stop(startTime + duration + 0.02);
+}
+
+function playSpinTick(progress = 0) {
+    const ctx = getAudioContext();
+    const now = ctx.currentTime;
+
+    // Triangle wave + short click on top = louder, punchier tick.
+    playNote({
+        type: "triangle",
+        startFreq: 260 + progress * 170,
+        startTime: now,
+        attack: 0.002,
+        duration: 0.05,
+        volume: 0.7
+    });
+
+    playNote({
+        type: "square",
+        startFreq: 900 + progress * 300,
+        startTime: now,
+        attack: 0.001,
+        duration: 0.012,
+        volume: 0.12
+    });
+}
+
+function playFinalTick() {
+    const ctx = getAudioContext();
+    const now = ctx.currentTime;
+
+    // Pop
+    playNote({
+        type: "sine",
+        startFreq: 220,
+        endFreq: 520,
+        startTime: now,
+        attack: 0.008,
+        duration: 0.14,
+        volume: 0.6
+    });
+
+    // Chime
+    playNote({
+        type: "sine",
+        startFreq: 659.25,
+        startTime: now + 0.055,
+        attack: 0.01,
+        duration: 0.4,
+        volume: 0.35
+    });
+
+    // Sparkle
+    playNote({
+        type: "sine",
+        startFreq: 987.77,
+        startTime: now + 0.11,
+        attack: 0.01,
+        duration: 0.45,
+        volume: 0.2
+    });
+}
+
+
+/* ==========================================================
+   DATA LOADING
+   ========================================================== */
 
 async function loadProjects() {
-
-
-
-    try {
-
-
-
-        const response =
-
-            await fetch("data/projects.json");
-
-
-
-
-
-        if (!response.ok) {
-
-
-
-            throw new Error(
-
-                `HTTP ${response.status}`
-
-            );
-
-
-
-        }
-
-
-
-
-
-        projects =
-
-            await response.json();
-
-
-
-
-
-        if (
-
-            !Array.isArray(projects) ||
-
-            projects.length === 0
-
-        ) {
-
-
-
-            throw new Error(
-
-                "Invalid project database."
-
-            );
-
-
-
-        }
-
-
-
-
-
-        initializeApp();
-
-
-
-    }
-
-
-
-    catch (error) {
-
-
-
-        console.error(error);
-
-
-
-
-
-        statusText.innerHTML =
-
-            "couldn't load the project database.\<br>\<br>" +
-
-            "make sure Spinspire is running with Live Server.";
-
-
-
-    }
-
-
-
+    try {
+        const response = await fetch("data/projects.json");
+
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+
+        projects = await response.json();
+
+        if (!Array.isArray(projects) || projects.length === 0) {
+            throw new Error("Invalid project database.");
+        }
+
+        initializeApp();
+    } catch (error) {
+        console.error(error);
+
+        statusText.innerHTML =
+            "couldn't load the project database.<br><br>" +
+            "make sure Spinspire is running with Live Server.";
+    }
 }
-
-
-
-
-
-
-
 
 function initializeApp() {
+    createDegreeButtons();
+    loadSavedProjects();
+    showDegreeScreen();
 
-
-
-    createDegreeButtons();
-
-
-
-    loadSavedProjects();
-
-
-
-
-
-
-    showDegreeScreen();
-
-
-
-    statusScreen.classList.add(
-
-        "hidden"
-
-    );
-
-
-
+    statusScreen.classList.add("hidden");
 }
 
 
-
-
-
-
-
+/* ==========================================================
+   DEGREE + DIFFICULTY SELECTION
+   ========================================================== */
 
 function getDegrees() {
-
-
-
-    return [
-
-        ...new Set(
-
-            projects.map(
-
-                project =>
-
-                    project.degree
-
-            )
-
-        )
-
-    ].sort();
-
-
-
+    return [...new Set(projects.map(project => project.degree))].sort();
 }
-
-
-
-
 
 function createDegreeButtons() {
+    degreeGrid.innerHTML = "";
 
+    getDegrees().forEach(degree => {
+        const button = document.createElement("button");
 
+        button.className = "degree-option";
+        button.type = "button";
+        button.textContent = degree;
 
-    degreeGrid.innerHTML = "";
+        button.addEventListener("click", () => selectDegree(degree));
 
-
-
-
-
-    getDegrees().forEach(
-
-        degree => {
-
-
-
-            const button =
-
-                document.createElement(
-
-                    "button"
-
-                );
-
-
-
-
-
-            button.className =
-
-                "degree-option";
-
-
-
-
-
-            button.type =
-
-                "button";
-
-
-
-
-
-            button.textContent =
-
-                degree;
-
-
-
-
-
-            button.addEventListener(
-
-                "click",
-
-                () =>
-
-                    selectDegree(
-
-                        degree
-
-                    )
-
-            );
-
-
-
-
-
-            degreeGrid.appendChild(
-
-                button
-
-            );
-
-
-
-        }
-
-    );
-
-
-
+        degreeGrid.appendChild(button);
+    });
 }
 
+function selectDegree(degree) {
+    selectedDegree = degree;
 
-
-
-
-
-
-
-function selectDegree(
-
-    degree
-
-) {
-
-
-
-    selectedDegree =
-
-        degree;
-
-
-
-
-
-    degreeScreen.classList.add(
-
-        "hidden"
-
-    );
-
-
-
-
-
-    difficultyScreen.classList.remove(
-
-        "hidden"
-
-    );
-
-
-
+    degreeScreen.classList.add("hidden");
+    difficultyScreen.classList.remove("hidden");
 }
-
-
-
-
 
 function selectAnyDegree() {
+    selectedDegree = null;
 
-
-
-    selectedDegree =
-
-        null;
-
-
-
-
-
-    degreeScreen.classList.add(
-
-        "hidden"
-
-    );
-
-
-
-
-
-    difficultyScreen.classList.remove(
-
-        "hidden"
-
-    );
-
-
-
+    degreeScreen.classList.add("hidden");
+    difficultyScreen.classList.remove("hidden");
 }
 
+function selectDifficulty(difficulty) {
+    selectedDifficulty = difficulty;
 
-
-
-
-
-
-
-function selectDifficulty(
-
-    difficulty
-
-) {
-
-
-
-    selectedDifficulty =
-
-        difficulty;
-
-
-
-
-
-    savePreferences();
-
-
-
-    openRoulette();
-
-
-
+    savePreferences();
+    openRoulette();
 }
-
-
-
-
-
-
-
 
 function savePreferences() {
+    const preferences = {
+        degree: selectedDegree,
+        difficulty: selectedDifficulty
+    };
 
-
-
-    const preferences = {
-
-
-
-        degree:
-
-            selectedDegree,
-
-
-
-        difficulty:
-
-            selectedDifficulty
-
-
-
-    };
-
-
-
-
-
-    localStorage.setItem(
-
-        "spinspirePreferences",
-
-        JSON.stringify(
-
-            preferences
-
-        )
-
-    );
-
-
-
+    localStorage.setItem("spinspirePreferences", JSON.stringify(preferences));
 }
 
 
+/* ==========================================================
+   SCREEN HELPERS
+   ========================================================== */
 
-
-
-
-
+function setOverlay(element, active) {
+    element.classList.toggle("active", active);
+    element.setAttribute("aria-hidden", active ? "false" : "true");
+}
 
 function hideExplore() {
-
-
-
-    exploreScreen.classList.remove(
-
-        "active"
-
-    );
-
-
-
-
-
-    exploreScreen.setAttribute(
-
-        "aria-hidden",
-
-        "true"
-
-    );
-
-
-
+    setOverlay(exploreScreen, false);
 }
-
-
-
-
 
 function closeResult() {
-
-
-
-    resultScreen.classList.remove(
-
-        "active"
-
-    );
-
-
-
-
-
-    resultScreen.setAttribute(
-
-        "aria-hidden",
-
-        "true"
-
-    );
-
-
-
+    setOverlay(resultScreen, false);
 }
-
-
-
-
 
 function closeSavedProjects() {
-
-
-
-    savedScreen.classList.remove(
-
-        "active"
-
-    );
-
-
-
-
-
-    savedScreen.setAttribute(
-
-        "aria-hidden",
-
-        "true"
-
-    );
-
-
-
+    setOverlay(savedScreen, false);
 }
-
-
-
-
-
-
-
 
 function showDegreeScreen() {
+    spinSession++;
+    spinning = false;
+    currentProject = null;
 
+    projectWord.classList.remove("spinning");
+    categoryWord.classList.remove("spinning");
 
+    closeResult();
+    hideExplore();
+    closeSavedProjects();
 
+    roulette.classList.add("hidden");
+    difficultyScreen.classList.add("hidden");
+    degreeScreen.classList.remove("hidden");
 
+    degreeIndicator.classList.add("hidden");
+    difficultyIndicator.classList.add("hidden");
 
-
-    spinSession++;
-
-
-
-    spinning = false;
-
-
-
-    currentProject = null;
-
-
-
-
-
-    projectWord.classList.remove(
-
-        "spinning"
-
-    );
-
-
-
-
-
-    categoryWord.classList.remove(
-
-        "spinning"
-
-    );
-
-
-
-
-
-    closeResult();
-
-
-
-    hideExplore();
-
-
-
-    closeSavedProjects();
-
-
-
-
-
-    roulette.classList.add(
-
-        "hidden"
-
-    );
-
-
-
-
-
-    difficultyScreen.classList.add(
-
-        "hidden"
-
-    );
-
-
-
-
-
-    degreeScreen.classList.remove(
-
-        "hidden"
-
-    );
-
-
-
-
-
-    degreeIndicator.classList.add(
-
-        "hidden"
-
-    );
-
-
-
-
-
-    difficultyIndicator.classList.add(
-
-        "hidden"
-
-    );
-
-
-
-
-
-    resetRouletteWords();
-
-
-
+    resetRouletteWords();
 }
-
-
-
-
-
-
-
 
 function showDifficultyScreen() {
+    spinSession++;
+    spinning = false;
 
+    closeResult();
+    hideExplore();
+    closeSavedProjects();
 
+    roulette.classList.add("hidden");
+    degreeScreen.classList.add("hidden");
+    difficultyScreen.classList.remove("hidden");
 
-    spinSession++;
-
-
-
-    spinning = false;
-
-
-
-
-
-    closeResult();
-
-
-
-    hideExplore();
-
-
-
-    closeSavedProjects();
-
-
-
-
-
-    roulette.classList.add(
-
-        "hidden"
-
-    );
-
-
-
-
-
-    degreeScreen.classList.add(
-
-        "hidden"
-
-    );
-
-
-
-
-
-    difficultyScreen.classList.remove(
-
-        "hidden"
-
-    );
-
-
-
-
-
-    degreeIndicator.classList.add(
-
-        "hidden"
-
-    );
-
-
-
-
-
-    difficultyIndicator.classList.add(
-
-        "hidden"
-
-    );
-
-
-
+    degreeIndicator.classList.add("hidden");
+    difficultyIndicator.classList.add("hidden");
 }
-
-
-
-
-
-
-
 
 function resetRouletteWords() {
+    projectWordText.textContent = "Find Your Next Project";
+    categoryWordText.textContent = "spin to discover";
 
-
-
-    projectWordText.textContent =
-
-        "Find Your Next Project";
-
-
-
-
-
-    categoryWordText.textContent =
-
-        "spin to discover";
-
-
-
-
-
-    roulettePrompt.textContent =
-
-        "ready?";
-
-
-
-
-
-    categoryPrompt.textContent =
-
-        "your idea is waiting";
-
-
-
+    roulettePrompt.textContent = "ready?";
+    categoryPrompt.textContent = "your idea is waiting";
 }
-
-
-
-
-
-
-
 
 function openRoulette() {
+    closeResult();
+    hideExplore();
+    closeSavedProjects();
 
+    degreeScreen.classList.add("hidden");
+    difficultyScreen.classList.add("hidden");
+    roulette.classList.remove("hidden");
 
+    degreeIndicator.classList.remove("hidden");
+    difficultyIndicator.classList.remove("hidden");
 
-    closeResult();
+    currentDegreeLabel.textContent = selectedDegree || "anything";
+    currentDifficultyLabel.textContent = selectedDifficulty || "any difficulty";
 
+    currentProject = null;
 
-
-    hideExplore();
-
-
-
-    closeSavedProjects();
-
-
-
-
-
-    degreeScreen.classList.add(
-
-        "hidden"
-
-    );
-
-
-
-
-
-    difficultyScreen.classList.add(
-
-        "hidden"
-
-    );
-
-
-
-
-
-    roulette.classList.remove(
-
-        "hidden"
-
-    );
-
-
-
-
-
-    degreeIndicator.classList.remove(
-
-        "hidden"
-
-    );
-
-
-
-
-
-    difficultyIndicator.classList.remove(
-
-        "hidden"
-
-    );
-
-
-
-
-
-    currentDegreeLabel.textContent =
-
-        selectedDegree ||
-
-        "anything";
-
-
-
-
-
-    currentDifficultyLabel.textContent =
-
-        selectedDifficulty ||
-
-        "any difficulty";
-
-
-
-
-
-
-
-
-    currentProject =
-
-        null;
-
-
-
-
-
-    resetRouletteWords();
-
-
-
+    resetRouletteWords();
 }
 
 
-
-
-
-
-
+/* ==========================================================
+   PROJECT SELECTION
+   ========================================================== */
 
 function getEligibleProjects() {
+    return projects.filter(project => {
+        const degreeMatch =
+            !selectedDegree || project.degree === selectedDegree;
 
+        const difficultyMatch =
+            !selectedDifficulty || project.difficulty === selectedDifficulty;
 
-
-    return projects.filter(
-
-        project => {
-
-
-
-            const degreeMatch =
-
-                !selectedDegree ||
-
-                project.degree ===
-
-                    selectedDegree;
-
-
-
-
-
-            const difficultyMatch =
-
-                !selectedDifficulty ||
-
-                project.difficulty ===
-
-                    selectedDifficulty;
-
-
-
-
-
-            return (
-
-                degreeMatch &&
-
-                difficultyMatch
-
-            );
-
-
-
-        }
-
-    );
-
-
-
+        return degreeMatch && difficultyMatch;
+    });
 }
 
-
-
-
-
-
-
-
-function randomItem(
-
-    array
-
-) {
-
-
-
-    return array[
-
-        Math.floor(
-
-            Math.random() *
-
-            array.length
-
-        )
-
-    ];
-
-
-
+function randomItem(array) {
+    return array[Math.floor(Math.random() * array.length)];
 }
-
-
-
-
 
 function getRandomEligibleProject() {
+    let eligible = getEligibleProjects();
 
+    if (eligible.length === 0 && selectedDegree) {
+        eligible = projects.filter(project => project.degree === selectedDegree);
+    }
 
+    if (eligible.length === 0) {
+        eligible = projects;
+    }
 
-    let eligible =
+    if (eligible.length === 1) {
+        return eligible[0];
+    }
 
-        getEligibleProjects();
+    const withoutPrevious = eligible.filter(
+        project => project.id !== previousProjectId
+    );
 
-
-
-
-
-
-
-
-    if (
-
-        eligible.length === 0 &&
-
-        selectedDegree
-
-    ) {
-
-
-
-        eligible =
-
-            projects.filter(
-
-                project =>
-
-                    project.degree ===
-
-                    selectedDegree
-
-            );
-
-
-
-    }
-
-
-
-
-
-    if (
-
-        eligible.length === 0
-
-    ) {
-
-
-
-        eligible =
-
-            projects;
-
-
-
-    }
-
-
-
-
-
-    if (
-
-        eligible.length === 1
-
-    ) {
-
-
-
-        return eligible[0];
-
-
-
-    }
-
-
-
-
-
-    const withoutPrevious =
-
-        eligible.filter(
-
-            project =>
-
-                project.id !==
-
-                previousProjectId
-
-        );
-
-
-
-
-
-    return randomItem(
-
-        withoutPrevious.length
-
-            ? withoutPrevious
-
-            : eligible
-
-    );
-
-
-
+    return randomItem(withoutPrevious.length ? withoutPrevious : eligible);
 }
-
-
-
-
-
-
-
 
 function getProjectTechnologies(project) {
     return (project?.technologies || []).map(technology =>
@@ -1469,8 +522,8 @@ function getSimilarProject(referenceProject) {
         return getRandomEligibleProject();
     }
 
-    let eligible = getEligibleProjects().filter(project =>
-        project.id !== referenceProject.id
+    const eligible = getEligibleProjects().filter(
+        project => project.id !== referenceProject.id
     );
 
     if (eligible.length === 0) {
@@ -1485,22 +538,15 @@ function getSimilarProject(referenceProject) {
 
         let score = sharedTech * 3;
 
-        if (project.category === referenceProject.category) {
-            score += 7;
-        }
-
-        if (project.degree === referenceProject.degree) {
-            score += 2;
-        }
-
-        if (project.difficulty === referenceProject.difficulty) {
-            score += 1;
-        }
+        if (project.category === referenceProject.category) score += 7;
+        if (project.degree === referenceProject.degree) score += 2;
+        if (project.difficulty === referenceProject.difficulty) score += 1;
 
         return { project, score };
     });
 
     const bestScore = Math.max(...scored.map(item => item.score));
+
     const strongestMatches = scored
         .filter(item => item.score === bestScore)
         .map(item => item.project);
@@ -1513,8 +559,8 @@ function getDifferentProject(referenceProject) {
         return getRandomEligibleProject();
     }
 
-    let eligible = getEligibleProjects().filter(project =>
-        project.id !== referenceProject.id
+    const eligible = getEligibleProjects().filter(
+        project => project.id !== referenceProject.id
     );
 
     if (eligible.length === 0) {
@@ -1547,6 +593,7 @@ function getDifferentProject(referenceProject) {
     });
 
     const bestScore = Math.max(...scored.map(item => item.differenceScore));
+
     const strongestDifferences = scored
         .filter(item => item.differenceScore === bestScore)
         .map(item => item.project);
@@ -1555,1634 +602,231 @@ function getDifferentProject(referenceProject) {
 }
 
 function chooseProjectForSpin(mode, referenceProject) {
-    if (mode === "similar") {
-        return getSimilarProject(referenceProject);
-    }
-
-    if (mode === "different") {
-        return getDifferentProject(referenceProject);
-    }
+    if (mode === "similar") return getSimilarProject(referenceProject);
+    if (mode === "different") return getDifferentProject(referenceProject);
 
     return getRandomEligibleProject();
 }
 
-function updateRouletteWords(
 
-    project
+/* ==========================================================
+   SPIN ANIMATION
+   ========================================================== */
 
-) {
-
-
-
-    projectWordText.textContent =
-
-        project.title;
-
-
-
-
-
-    categoryWordText.textContent =
-
-        project.category;
-
-
-
+function updateRouletteWords(project) {
+    projectWordText.textContent = project.title;
+    categoryWordText.textContent = project.category;
 }
 
 function updateCounter() {
-
-
-
-    spinCountElement.textContent =
-
-        String(
-
-            spinCount
-
-        ).padStart(
-
-            3,
-
-            "0"
-
-        );
-
-
-
+    spinCountElement.textContent = String(spinCount).padStart(3, "0");
 }
-
-
-
-
-
-
-
-
-let audioContext = null;
-
-
-
-
-
-function getAudioContext() {
-
-
-
-    if (!audioContext) {
-
-
-
-        audioContext =
-
-            new (
-
-                window.AudioContext ||
-
-                window.webkitAudioContext
-
-            )();
-
-
-
-    }
-
-
-
-
-
-    if (
-
-        audioContext.state ===
-
-        "suspended"
-
-    ) {
-
-
-
-        audioContext.resume();
-
-
-
-    }
-
-
-
-
-
-    return audioContext;
-
-
-
-}
-
-
-
-
-
-
-
-
-function playSpinTick(
-
-    progress = 0
-
-) {
-
-
-
-    const ctx =
-
-        getAudioContext();
-
-
-
-
-
-    const now =
-
-        ctx.currentTime;
-
-
-
-
-
-    const oscillator =
-
-        ctx.createOscillator();
-
-
-
-
-
-    const gain =
-
-        ctx.createGain();
-
-
-
-
-
-    oscillator.type =
-
-        "sine";
-
-
-
-
-
-    oscillator.frequency
-
-        .setValueAtTime(
-
-            260 +
-
-            progress * 170,
-
-            now
-
-        );
-
-
-
-
-
-
-
-
-    gain.gain
-
-        .setValueAtTime(
-
-            0.085,
-
-            now
-
-        );
-
-
-
-
-
-    gain.gain
-
-        .exponentialRampToValueAtTime(
-
-            0.001,
-
-            now + 0.035
-
-        );
-
-
-
-
-
-    oscillator.connect(
-
-        gain
-
-    );
-
-
-
-
-
-    gain.connect(
-
-        ctx.destination
-
-    );
-
-
-
-
-
-    oscillator.start(
-
-        now
-
-    );
-
-
-
-
-
-    oscillator.stop(
-
-        now + 0.04
-
-    );
-
-
-
-}
-
-
-
-
-
-
-
-
-function playFinalTick() {
-
-
-
-    const ctx =
-
-        getAudioContext();
-
-
-
-
-
-    const now =
-
-        ctx.currentTime;
-
-
-
-
-
-
-
-
-    const pop =
-
-        ctx.createOscillator();
-
-
-
-
-
-    const popGain =
-
-        ctx.createGain();
-
-
-
-
-
-    pop.type =
-
-        "sine";
-
-
-
-
-
-    pop.frequency
-
-        .setValueAtTime(
-
-            220,
-
-            now
-
-        );
-
-
-
-
-
-    pop.frequency
-
-        .exponentialRampToValueAtTime(
-
-            520,
-
-            now + 0.07
-
-        );
-
-
-
-
-
-    popGain.gain
-
-        .setValueAtTime(
-
-            0.0001,
-
-            now
-
-        );
-
-
-
-
-
-    popGain.gain
-
-        .exponentialRampToValueAtTime(
-
-            0.18,
-
-            now + 0.008
-
-        );
-
-
-
-
-
-    popGain.gain
-
-        .exponentialRampToValueAtTime(
-
-            0.001,
-
-            now + 0.13
-
-        );
-
-
-
-
-
-    pop.connect(
-
-        popGain
-
-    );
-
-
-
-
-
-    popGain.connect(
-
-        ctx.destination
-
-    );
-
-
-
-
-
-    pop.start(
-
-        now
-
-    );
-
-
-
-
-
-    pop.stop(
-
-        now + 0.14
-
-    );
-
-
-
-
-
-
-
-
-    const chime =
-
-        ctx.createOscillator();
-
-
-
-
-
-    const chimeGain =
-
-        ctx.createGain();
-
-
-
-
-
-    chime.type =
-
-        "sine";
-
-
-
-
-
-    chime.frequency
-
-        .setValueAtTime(
-
-            659.25,
-
-            now + 0.055
-
-        );
-
-
-
-
-
-    chimeGain.gain
-
-        .setValueAtTime(
-
-            0.0001,
-
-            now
-
-        );
-
-
-
-
-
-    chimeGain.gain
-
-        .exponentialRampToValueAtTime(
-
-            0.085,
-
-            now + 0.065
-
-        );
-
-
-
-
-
-    chimeGain.gain
-
-        .exponentialRampToValueAtTime(
-
-            0.001,
-
-            now + 0.38
-
-        );
-
-
-
-
-
-    chime.connect(
-
-        chimeGain
-
-    );
-
-
-
-
-
-    chimeGain.connect(
-
-        ctx.destination
-
-    );
-
-
-
-
-
-    chime.start(
-
-        now + 0.055
-
-    );
-
-
-
-
-
-    chime.stop(
-
-        now + 0.4
-
-    );
-
-
-
-
-
-
-
-
-    const sparkle =
-
-        ctx.createOscillator();
-
-
-
-
-
-    const sparkleGain =
-
-        ctx.createGain();
-
-
-
-
-
-    sparkle.type =
-
-        "sine";
-
-
-
-
-
-    sparkle.frequency
-
-        .setValueAtTime(
-
-            987.77,
-
-            now + 0.11
-
-        );
-
-
-
-
-
-    sparkleGain.gain
-
-        .setValueAtTime(
-
-            0.0001,
-
-            now
-
-        );
-
-
-
-
-
-    sparkleGain.gain
-
-        .exponentialRampToValueAtTime(
-
-            0.04,
-
-            now + 0.12
-
-        );
-
-
-
-
-
-    sparkleGain.gain
-
-        .exponentialRampToValueAtTime(
-
-            0.001,
-
-            now + 0.45
-
-        );
-
-
-
-
-
-    sparkle.connect(
-
-        sparkleGain
-
-    );
-
-
-
-
-
-    sparkleGain.connect(
-
-        ctx.destination
-
-    );
-
-
-
-
-
-    sparkle.start(
-
-        now + 0.11
-
-    );
-
-
-
-
-
-    sparkle.stop(
-
-        now + 0.46
-
-    );
-
-
-
-}
-
-
-
-
-
-
-
 
 function animateRoulette(mode = "normal", referenceProject = currentProject) {
+    if (spinning || roulette.classList.contains("hidden")) {
+        return;
+    }
 
+    // Make sure audio is running *before* the first tick fires.
+    getAudioContext();
 
+    spinning = true;
 
-    if (
+    const thisSpin = ++spinSession;
 
-        spinning ||
+    roulettePrompt.textContent = "how about";
+    categoryPrompt.textContent = "in";
 
-        roulette.classList.contains(
+    projectWord.classList.add("spinning");
+    categoryWord.classList.add("spinning");
 
-            "hidden"
+    const totalChanges = 16;
+    let currentChange = 0;
 
-        )
+    function nextTick() {
+        if (thisSpin !== spinSession) {
+            return;
+        }
 
-    ) {
+        const isFinalChoice = currentChange === totalChanges - 1;
 
+        const project = isFinalChoice
+            ? chooseProjectForSpin(mode, referenceProject)
+            : getRandomEligibleProject();
 
+        currentProject = project;
+        updateRouletteWords(project);
 
-        return;
+        const progress = currentChange / totalChanges;
 
+        playSpinTick(progress);
 
+        currentChange++;
 
-    }
+        if (currentChange >= totalChanges) {
+            previousProjectId = currentProject.id;
 
+            projectWord.classList.remove("spinning");
+            categoryWord.classList.remove("spinning");
 
+            spinning = false;
+            spinCount++;
 
+            updateCounter();
+            playFinalTick();
 
+            const finishedProject = currentProject;
 
-    spinning =
+            setTimeout(() => {
+                if (thisSpin === spinSession) {
+                    showProject(finishedProject);
+                }
+            }, 320);
 
-        true;
+            return;
+        }
 
+        const delay = 55 + Math.pow(progress, 2.2) * 210;
 
+        setTimeout(nextTick, delay);
+    }
 
+    nextTick();
+}
 
+function spinAnotherProject(mode = "normal") {
+    const referenceProject = currentProject;
 
-    const thisSpin =
+    closeResult();
+    hideExplore();
 
-        ++spinSession;
-
-
-
-
-
-    roulettePrompt.textContent =
-
-        "how about";
-
-
-
-
-
-    categoryPrompt.textContent =
-
-        "in";
-
-
-
-
-
-    projectWord.classList.add(
-
-        "spinning"
-
-    );
-
-
-
-
-
-    categoryWord.classList.add(
-
-        "spinning"
-
-    );
-
-
-
-
-
-    const totalChanges =
-
-        16;
-
-
-
-
-
-    let currentChange =
-
-        0;
-
-
-
-
-
-    function nextTick() {
-
-
-
-
-
-
-        if (
-
-            thisSpin !==
-
-            spinSession
-
-        ) {
-
-
-
-            return;
-
-
-
-        }
-
-
-
-
-
-        const isFinalChoice = currentChange === totalChanges - 1;
-
-            const project = isFinalChoice
-                ? chooseProjectForSpin(mode, referenceProject)
-                : getRandomEligibleProject();
-
-
-
-
-
-        currentProject =
-
-            project;
-
-
-
-
-
-        updateRouletteWords(
-
-            project
-
-        );
-
-
-
-
-
-        const progress =
-
-            currentChange /
-
-            totalChanges;
-
-
-
-
-
-        playSpinTick(
-
-            progress
-
-        );
-
-
-
-
-
-        currentChange++;
-
-
-
-
-
-        if (
-
-            currentChange >=
-
-            totalChanges
-
-        ) {
-
-
-
-            previousProjectId =
-
-                currentProject.id;
-
-
-
-
-
-            projectWord.classList.remove(
-
-                "spinning"
-
-            );
-
-
-
-
-
-            categoryWord.classList.remove(
-
-                "spinning"
-
-            );
-
-
-
-
-
-            spinning =
-
-                false;
-
-
-
-
-
-            spinCount++;
-
-
-
-
-
-            updateCounter();
-
-
-
-
-
-            playFinalTick();
-
-
-
-
-
-            const finishedProject =
-
-                currentProject;
-
-
-
-
-
-            setTimeout(
-
-                () => {
-
-
-
-                    if (
-
-                        thisSpin ===
-
-                        spinSession
-
-                    ) {
-
-
-
-                        showProject(
-
-                            finishedProject
-
-                        );
-
-
-
-                    }
-
-
-
-                },
-
-                320
-
-            );
-
-
-
-
-
-            return;
-
-
-
-        }
-
-
-
-
-
-        const delay =
-
-            55 +
-
-            Math.pow(
-
-                progress,
-
-                2.2
-
-            ) * 210;
-
-
-
-
-
-        setTimeout(
-
-            nextTick,
-
-            delay
-
-        );
-
-
-
-    }
-
-
-
-
-
-    nextTick();
-
-
-
+    setTimeout(() => {
+        animateRoulette(mode, referenceProject);
+    }, SPIN_START_DELAY);
 }
 
 
+/* ==========================================================
+   RESULT SCREEN
+   ========================================================== */
 
+function showProject(project) {
+    if (!project) return;
 
+    currentProject = project;
 
+    projectTitle.textContent = project.title;
+    projectDescription.textContent = project.description;
 
+    resultDegree.textContent = project.degree;
+    resultCategory.textContent = project.category;
+    resultDifficulty.textContent = project.difficulty;
 
+    technologyList.innerHTML = "";
 
-function showProject(
+    (project.technologies || []).forEach(technology => {
+        const tag = document.createElement("span");
 
-    project
+        tag.className = "technology";
+        tag.textContent = technology;
 
-) {
+        technologyList.appendChild(tag);
+    });
 
+    updateSaveButton();
 
-
-    if (!project) {
-
-        return;
-
-    }
-
-
-
-
-
-    currentProject =
-
-        project;
-
-
-
-
-
-    projectTitle.textContent =
-
-        project.title;
-
-
-
-
-
-    projectDescription.textContent =
-
-        project.description;
-
-
-
-
-
-    resultDegree.textContent =
-
-        project.degree;
-
-
-
-
-
-    resultCategory.textContent =
-
-        project.category;
-
-
-
-
-
-    resultDifficulty.textContent =
-
-        project.difficulty;
-
-
-
-
-
-    technologyList.innerHTML =
-
-        "";
-
-
-
-
-
-    (
-
-        project.technologies ||
-
-        []
-
-    ).forEach(
-
-        technology => {
-
-
-
-            const tag =
-
-                document.createElement(
-
-                    "span"
-
-                );
-
-
-
-
-
-            tag.className =
-
-                "technology";
-
-
-
-
-
-            tag.textContent =
-
-                technology;
-
-
-
-
-
-            technologyList.appendChild(
-
-                tag
-
-            );
-
-
-
-        }
-
-    );
-
-
-
-
-
-    updateSaveButton();
-
-
-
-
-
-    resultScreen.classList.add(
-
-        "active"
-
-    );
-
-
-
-
-
-    resultScreen.setAttribute(
-
-        "aria-hidden",
-
-        "false"
-
-    );
-
-
-
+    setOverlay(resultScreen, true);
 }
 
 
-
-
-
-
-
+/* ==========================================================
+   SAVED PROJECTS
+   ========================================================== */
 
 function loadSavedProjects() {
-
-
-
-    const stored =
-
-        localStorage.getItem(
-
-            "spinspireSavedProjects"
-
-        );
-
-
-
-
-
-    if (!stored) {
-
-
-
-        savedProjects =
-
-            [];
-
-
-
-
-
-        updateSavedCount();
-
-
-
-        return;
-
-
-
-    }
-
-
-
-
-
-    try {
-
-
-
-        savedProjects =
-
-            JSON.parse(
-
-                stored
-
-            );
-
-
-
-
-
-        if (
-
-            !Array.isArray(
-
-                savedProjects
-
-            )
-
-        ) {
-
-
-
-            savedProjects =
-
-                [];
-
-
-
-        }
-
-
-
-    }
-
-
-
-    catch {
-
-
-
-        savedProjects =
-
-            [];
-
-
-
-    }
-
-
-
-
-
-    updateSavedCount();
-
-
-
+    const stored = localStorage.getItem("spinspireSavedProjects");
+
+    if (!stored) {
+        savedProjects = [];
+        updateSavedCount();
+        return;
+    }
+
+    try {
+        savedProjects = JSON.parse(stored);
+
+        if (!Array.isArray(savedProjects)) {
+            savedProjects = [];
+        }
+    } catch {
+        savedProjects = [];
+    }
+
+    updateSavedCount();
 }
-
-
-
-
 
 function persistSavedProjects() {
+    localStorage.setItem(
+        "spinspireSavedProjects",
+        JSON.stringify(savedProjects)
+    );
 
-
-
-    localStorage.setItem(
-
-        "spinspireSavedProjects",
-
-        JSON.stringify(
-
-            savedProjects
-
-        )
-
-    );
-
-
-
-
-
-    updateSavedCount();
-
-
-
+    updateSavedCount();
 }
 
-
-
-
-
-function isProjectSaved(
-
-    projectId
-
-) {
-
-
-
-    return savedProjects.some(
-
-        project =>
-
-            project.id ===
-
-            projectId
-
-    );
-
-
-
+function isProjectSaved(projectId) {
+    return savedProjects.some(project => project.id === projectId);
 }
-
-
-
-
 
 function toggleCurrentProjectSave() {
+    if (!currentProject) return;
 
+    if (isProjectSaved(currentProject.id)) {
+        savedProjects = savedProjects.filter(
+            project => project.id !== currentProject.id
+        );
+    } else {
+        savedProjects.unshift(currentProject);
+    }
 
-
-    if (!currentProject) {
-
-        return;
-
-    }
-
-
-
-
-
-    if (
-
-        isProjectSaved(
-
-            currentProject.id
-
-        )
-
-    ) {
-
-
-
-        savedProjects =
-
-            savedProjects.filter(
-
-                project =>
-
-                    project.id !==
-
-                    currentProject.id
-
-            );
-
-
-
-    }
-
-
-
-    else {
-
-
-
-        savedProjects.unshift(
-
-            currentProject
-
-        );
-
-
-
-    }
-
-
-
-
-
-    persistSavedProjects();
-
-
-
-    updateSaveButton();
-
-
-
-    updateExploreSaveButton();
-
-
-
+    persistSavedProjects();
+    updateSaveButton();
+    updateExploreSaveButton();
 }
-
-
-
-
 
 function updateSaveButton() {
+    if (!currentProject) return;
 
+    const saved = isProjectSaved(currentProject.id);
 
+    saveProjectButton.classList.toggle("saved", saved);
 
-    if (!currentProject) {
-
-        return;
-
-    }
-
-
-
-
-
-    const saved =
-
-        isProjectSaved(
-
-            currentProject.id
-
-        );
-
-
-
-
-
-    saveProjectButton.classList.toggle(
-
-        "saved",
-
-        saved
-
-    );
-
-
-
-
-
-    saveIcon.textContent =
-
-        saved
-
-            ? "♥"
-
-            : "♡";
-
-
-
-
-
-    saveText.textContent =
-
-        saved
-
-            ? "saved"
-
-            : "save project";
-
-
-
+    saveIcon.textContent = saved ? "♥" : "♡";
+    saveText.textContent = saved ? "saved" : "save project";
 }
-
-
-
-
 
 function updateExploreSaveButton() {
+    if (!currentProject) return;
 
+    const saved = isProjectSaved(currentProject.id);
 
+    exploreSaveButton.classList.toggle("saved", saved);
 
-    if (!currentProject) {
-
-        return;
-
-    }
-
-
-
-
-
-    const saved =
-
-        isProjectSaved(
-
-            currentProject.id
-
-        );
-
-
-
-
-
-    exploreSaveButton.classList.toggle(
-
-        "saved",
-
-        saved
-
-    );
-
-
-
-
-
-    exploreSaveButton.textContent =
-
-        saved
-
-            ? "♥ saved"
-
-            : "♡ save project";
-
-
-
+    exploreSaveButton.textContent = saved ? "♥ saved" : "♡ save project";
 }
-
-
-
-
 
 function updateSavedCount() {
-
-
-
-    savedCount.textContent =
-
-        String(
-
-            savedProjects.length
-
-        ).padStart(
-
-            2,
-
-            "0"
-
-        );
-
-
-
+    savedCount.textContent = String(savedProjects.length).padStart(2, "0");
 }
-
-
-
-
-
-
-
 
 function openSavedProjects() {
+    closeResult();
+    hideExplore();
 
+    renderSavedProjects();
 
-
-    closeResult();
-
-
-
-    hideExplore();
-
-
-
-
-
-    renderSavedProjects();
-
-
-
-
-
-    savedScreen.classList.add(
-
-        "active"
-
-    );
-
-
-
-
-
-    savedScreen.setAttribute(
-
-        "aria-hidden",
-
-        "false"
-
-    );
-
-
-
+    setOverlay(savedScreen, true);
 }
-
-
-
-
 
 function openSavedProject(project) {
     if (!project) return;
@@ -3199,14 +843,17 @@ function renderSavedProjects() {
 
     if (savedProjects.length === 0) {
         const empty = document.createElement("p");
+
         empty.className = "saved-empty";
         empty.textContent = "nothing saved yet — go spin something worth building.";
+
         savedList.appendChild(empty);
         return;
     }
 
     savedProjects.forEach(project => {
         const card = document.createElement("article");
+
         card.className = "saved-project saved-project-clickable";
         card.tabIndex = 0;
         card.setAttribute("role", "button");
@@ -3214,7 +861,8 @@ function renderSavedProjects() {
 
         const degree = document.createElement("p");
         degree.className = "saved-project-degree";
-        degree.textContent = `${project.degree} / ${project.category} / ${project.difficulty}`;
+        degree.textContent =
+            `${project.degree} / ${project.category} / ${project.difficulty}`;
 
         const title = document.createElement("h3");
         title.textContent = project.title;
@@ -3235,6 +883,7 @@ function renderSavedProjects() {
         const openCard = () => openSavedProject(project);
 
         card.addEventListener("click", openCard);
+
         card.addEventListener("keydown", event => {
             if (event.key === "Enter" || event.key === " ") {
                 event.preventDefault();
@@ -3244,7 +893,9 @@ function renderSavedProjects() {
 
         remove.addEventListener("click", event => {
             event.stopPropagation();
+
             savedProjects = savedProjects.filter(saved => saved.id !== project.id);
+
             persistSavedProjects();
             renderSavedProjects();
             updateSaveButton();
@@ -3259,6 +910,11 @@ function renderSavedProjects() {
         savedList.appendChild(card);
     });
 }
+
+
+/* ==========================================================
+   EXPLORE SCREEN
+   ========================================================== */
 
 function createProjectBrief(project) {
     const technologies = project.technologies || [];
@@ -3297,545 +953,93 @@ function createProjectBrief(project) {
     };
 }
 
-function openExploreProject() {
+function fillTags(container, items, className) {
+    container.innerHTML = "";
 
+    items.forEach(item => {
+        const tag = document.createElement("span");
 
+        tag.className = className;
+        tag.textContent = item;
 
-    if (!currentProject) {
-
-        return;
-
-    }
-
-
-
-
-
-    const project =
-
-        currentProject;
-
-
-
-
-
-    const brief =
-
-        createProjectBrief(
-
-            project
-
-        );
-
-
-
-
-
-    exploreTitle.textContent =
-
-        project.title;
-
-
-
-
-
-    exploreDescription.textContent =
-
-        project.description;
-
-
-
-
-
-    exploreDegree.textContent =
-
-        project.degree;
-
-
-
-
-
-    exploreCategory.textContent =
-
-        project.category;
-
-
-
-
-
-    exploreDifficulty.textContent =
-
-        project.difficulty;
-
-
-
-
-
-    exploreIdea.textContent =
-
-        brief.idea;
-
-
-
-
-
-    exploreLevel.textContent =
-
-        project.difficulty;
-
-
-
-
-
-
-
-
-    exploreFeatures.innerHTML =
-
-        "";
-
-
-
-
-
-    brief.features.forEach(
-
-        feature => {
-
-
-
-            const item =
-
-                document.createElement(
-
-                    "li"
-
-                );
-
-
-
-
-
-            item.textContent =
-
-                feature;
-
-
-
-
-
-            exploreFeatures.appendChild(
-
-                item
-
-            );
-
-
-
-        }
-
-    );
-
-
-
-
-
-
-
-
-    exploreTechnologies.innerHTML =
-
-        "";
-
-
-
-
-
-    (
-
-        project.technologies ||
-
-        []
-
-    ).forEach(
-
-        technology => {
-
-
-
-            const tag =
-
-                document.createElement(
-
-                    "span"
-
-                );
-
-
-
-
-
-            tag.className =
-
-                "explore-tech";
-
-
-
-
-
-            tag.textContent =
-
-                technology;
-
-
-
-
-
-            exploreTechnologies.appendChild(
-
-                tag
-
-            );
-
-
-
-        }
-
-    );
-
-
-
-
-
-
-
-
-    exploreRoadmap.innerHTML =
-
-        "";
-
-
-
-
-
-    brief.roadmap.forEach(
-
-        (step, index) => {
-
-
-
-            const wrapper =
-
-                document.createElement(
-
-                    "div"
-
-                );
-
-
-
-
-
-            wrapper.className =
-
-                "roadmap-step";
-
-
-
-
-
-            const name =
-
-                document.createElement(
-
-                    "span"
-
-                );
-
-
-
-
-
-            name.className =
-
-                "roadmap-name";
-
-
-
-
-
-            name.textContent =
-
-                step;
-
-
-
-
-
-            wrapper.appendChild(
-
-                name
-
-            );
-
-
-
-
-
-            if (
-
-                index <
-
-                brief.roadmap.length - 1
-
-            ) {
-
-
-
-                const arrow =
-
-                    document.createElement(
-
-                        "span"
-
-                    );
-
-
-
-
-
-                arrow.className =
-
-                    "roadmap-arrow";
-
-
-
-
-
-                arrow.textContent =
-
-                    "→";
-
-
-
-
-
-                wrapper.appendChild(
-
-                    arrow
-
-                );
-
-
-
-            }
-
-
-
-
-
-            exploreRoadmap.appendChild(
-
-                wrapper
-
-            );
-
-
-
-        }
-
-    );
-
-
-
-
-
-
-
-
-    exploreSkills.innerHTML =
-
-        "";
-
-
-
-
-
-    brief.skills.forEach(
-
-        skill => {
-
-
-
-            const tag =
-
-                document.createElement(
-
-                    "span"
-
-                );
-
-
-
-
-
-            tag.className =
-
-                "explore-skill";
-
-
-
-
-
-            tag.textContent =
-
-                skill;
-
-
-
-
-
-            exploreSkills.appendChild(
-
-                tag
-
-            );
-
-
-
-        }
-
-    );
-
-
-
-
-
-    updateExploreSaveButton();
-
-
-
-
-
-
-
-
-    resultScreen.classList.remove(
-
-        "active"
-
-    );
-
-
-
-
-
-    resultScreen.setAttribute(
-
-        "aria-hidden",
-
-        "true"
-
-    );
-
-
-
-
-
-    exploreScreen.classList.add(
-
-        "active"
-
-    );
-
-
-
-
-
-    exploreScreen.setAttribute(
-
-        "aria-hidden",
-
-        "false"
-
-    );
-
-
-
-
-
-    exploreScreen.scrollTop =
-
-        0;
-
-
-
+        container.appendChild(tag);
+    });
 }
 
+function openExploreProject() {
+    if (!currentProject) return;
 
+    const project = currentProject;
+    const brief = createProjectBrief(project);
 
+    exploreTitle.textContent = project.title;
+    exploreDescription.textContent = project.description;
 
+    exploreDegree.textContent = project.degree;
+    exploreCategory.textContent = project.category;
+    exploreDifficulty.textContent = project.difficulty;
 
+    exploreIdea.textContent = brief.idea;
+    exploreLevel.textContent = project.difficulty;
 
+    exploreFeatures.innerHTML = "";
 
+    brief.features.forEach(feature => {
+        const item = document.createElement("li");
+
+        item.textContent = feature;
+
+        exploreFeatures.appendChild(item);
+    });
+
+    fillTags(exploreTechnologies, project.technologies || [], "explore-tech");
+
+    exploreRoadmap.innerHTML = "";
+
+    brief.roadmap.forEach((step, index) => {
+        const wrapper = document.createElement("div");
+        wrapper.className = "roadmap-step";
+
+        const name = document.createElement("span");
+        name.className = "roadmap-name";
+        name.textContent = step;
+
+        wrapper.appendChild(name);
+
+        if (index < brief.roadmap.length - 1) {
+            const arrow = document.createElement("span");
+
+            arrow.className = "roadmap-arrow";
+            arrow.textContent = "→";
+
+            wrapper.appendChild(arrow);
+        }
+
+        exploreRoadmap.appendChild(wrapper);
+    });
+
+    fillTags(exploreSkills, brief.skills, "explore-skill");
+
+    updateExploreSaveButton();
+
+    setOverlay(resultScreen, false);
+    setOverlay(exploreScreen, true);
+
+    exploreScreen.scrollTop = 0;
+}
 
 function closeExploreToResult() {
-
-
-
-    hideExplore();
-
-
-
-
-
-    if (currentProject) {
-
-
-
-        resultScreen.classList.add(
-
-            "active"
-
-        );
-
-
-
-
-
-        resultScreen.setAttribute(
-
-            "aria-hidden",
-
-            "false"
-
-        );
-
-
-
-    }
-
-
-
-}
-
-
-
-
-
-
-
-
-function spinAnotherProject(mode = "normal") {
-    const referenceProject = currentProject;
-
-    closeResult();
     hideExplore();
 
-    setTimeout(() => {
-        animateRoulette(mode, referenceProject);
-    }, 450);
+    if (currentProject) {
+        setOverlay(resultScreen, true);
+    }
 }
+
+
+/* ==========================================================
+   SMART SPIN CONTROLS (similar / different)
+   ========================================================== */
 
 function createSmartSpinControls() {
     if (!anotherButton || document.getElementById("similarButton")) {
@@ -3844,9 +1048,7 @@ function createSmartSpinControls() {
 
     const parent = anotherButton.parentElement;
 
-    if (!parent) {
-        return;
-    }
+    if (!parent) return;
 
     const similarButton = document.createElement("button");
     similarButton.id = "similarButton";
@@ -3866,6 +1068,7 @@ function createSmartSpinControls() {
     parent.append(similarButton, differentButton);
 
     const style = document.createElement("style");
+
     style.textContent = `
         #similarButton,
         #differentButton {
@@ -3880,574 +1083,17 @@ function createSmartSpinControls() {
             }
         }
     `;
+
     document.head.appendChild(style);
 }
-
-anythingButton.addEventListener(
-
-    "click",
-
-    selectAnyDegree
-
-);
-
-
-
-
-
-document
-
-    .querySelectorAll(
-
-        ".difficulty-option"
-
-    )
-
-    .forEach(
-
-        button => {
-
-
-
-            button.addEventListener(
-
-                "click",
-
-                () => {
-
-
-
-                    selectDifficulty(
-
-                        button.dataset
-
-                            .difficulty
-
-                    );
-
-
-
-                }
-
-            );
-
-
-
-        }
-
-    );
-
-
-
-
-
-anyDifficultyButton.addEventListener(
-
-    "click",
-
-    () =>
-
-        selectDifficulty(
-
-            null
-
-        )
-
-);
-
-
-
-
-
-difficultyBackButton.addEventListener(
-
-    "click",
-
-    showDegreeScreen
-
-);
-
-
-
-
-
-degreeIndicator.addEventListener(
-
-    "click",
-
-    showDegreeScreen
-
-);
-
-
-
-
-
-difficultyIndicator.addEventListener(
-
-    "click",
-
-    showDifficultyScreen
-
-);
-
-
-
-
-
-brand.addEventListener(
-
-    "click",
-
-    showDegreeScreen
-
-);
-
-
-
-
-
-spinButton.addEventListener(
-
-    "click",
-
-    animateRoulette
-
-);
-
-
-
-
-
-spaceButton.addEventListener(
-
-    "click",
-
-    animateRoulette
-
-);
-
-
-
-
-
-backButton.addEventListener(
-
-    "click",
-
-    () => {
-
-
-
-        closeResult();
-
-
-
-    }
-
-);
-
-
-
-
-
-anotherButton.addEventListener(
-
-    "click",
-
-    spinAnotherProject
-
-);
-
-
-
-
-
-saveProjectButton.addEventListener(
-
-    "click",
-
-    toggleCurrentProjectSave
-
-);
-
-
-
-
-
-exploreButton.addEventListener(
-
-    "click",
-
-    openExploreProject
-
-);
-
-
-
-
-
-exploreBackButton.addEventListener(
-
-    "click",
-
-    closeExploreToResult
-
-);
-
-
-
-
-
-exploreSaveButton.addEventListener(
-
-    "click",
-
-    toggleCurrentProjectSave
-
-);
-
-
-
-
-
-exploreAnotherButton.addEventListener(
-
-    "click",
-
-    spinAnotherProject
-
-);
-
-
-
-
-
-savedHeaderButton.addEventListener(
-
-    "click",
-
-    openSavedProjects
-
-);
-
-
-
-
-
-closeSavedButton.addEventListener(
-
-    "click",
-
-    closeSavedProjects
-
-);
-
-
-
-
-
-
-
-
-document.addEventListener(
-
-    "keydown",
-
-    event => {
-
-
-
-        if (
-
-            event.code !==
-
-            "Space"
-
-        ) {
-
-
-
-            return;
-
-
-
-        }
-
-
-
-
-
-        if (
-
-            [
-
-                "INPUT",
-
-                "TEXTAREA",
-
-                "SELECT",
-
-                "BUTTON"
-
-            ].includes(
-
-                document.activeElement
-
-                    .tagName
-
-            )
-
-        ) {
-
-
-
-            return;
-
-
-
-        }
-
-
-
-
-
-        if (
-
-            savedScreen.classList.contains(
-
-                "active"
-
-            )
-
-        ) {
-
-
-
-            return;
-
-
-
-        }
-
-
-
-
-
-        if (
-
-            exploreScreen.classList.contains(
-
-                "active"
-
-            )
-
-        ) {
-
-
-
-            return;
-
-
-
-        }
-
-
-
-
-
-        if (
-
-            !degreeScreen.classList.contains(
-
-                "hidden"
-
-            ) ||
-
-            !difficultyScreen.classList.contains(
-
-                "hidden"
-
-            )
-
-        ) {
-
-
-
-            return;
-
-
-
-        }
-
-
-
-
-
-        event.preventDefault();
-
-
-
-
-
-        if (
-
-            resultScreen.classList.contains(
-
-                "active"
-
-            )
-
-        ) {
-
-
-
-            spinAnotherProject("normal");
-
-
-
-            return;
-
-
-
-        }
-
-
-
-
-
-        animateRoulette();
-
-
-
-    }
-
-);
-
-
-
-
-
-
-
-
-document.addEventListener(
-
-    "keydown",
-
-    event => {
-
-
-
-        if (
-
-            event.key !==
-
-            "Escape"
-
-        ) {
-
-
-
-            return;
-
-
-
-        }
-
-
-
-
-
-        if (
-
-            exploreScreen.classList.contains(
-
-                "active"
-
-            )
-
-        ) {
-
-
-
-            closeExploreToResult();
-
-
-
-            return;
-
-
-
-        }
-
-
-
-
-
-        if (
-
-            savedScreen.classList.contains(
-
-                "active"
-
-            )
-
-        ) {
-
-
-
-            closeSavedProjects();
-
-
-
-            return;
-
-
-
-        }
-
-
-
-
-
-        if (
-
-            resultScreen.classList.contains(
-
-                "active"
-
-            )
-
-        ) {
-
-
-
-            closeResult();
-
-
-
-        }
-
-
-
-    }
-
-);
-
-
-
-
-
-
-
-
 
 function addSavedProjectsUpgradeStyles() {
     if (document.getElementById("savedProjectsUpgradeStyles")) return;
 
     const style = document.createElement("style");
+
     style.id = "savedProjectsUpgradeStyles";
+
     style.textContent = `
         .saved-project-clickable {
             cursor: pointer;
@@ -4501,10 +1147,101 @@ function addSavedProjectsUpgradeStyles() {
     document.head.appendChild(style);
 }
 
+
+/* ==========================================================
+   EVENT LISTENERS
+   ========================================================== */
+
+anythingButton.addEventListener("click", selectAnyDegree);
+
+document.querySelectorAll(".difficulty-option").forEach(button => {
+    button.addEventListener("click", () => {
+        selectDifficulty(button.dataset.difficulty);
+    });
+});
+
+anyDifficultyButton.addEventListener("click", () => selectDifficulty(null));
+
+difficultyBackButton.addEventListener("click", showDegreeScreen);
+degreeIndicator.addEventListener("click", showDegreeScreen);
+difficultyIndicator.addEventListener("click", showDifficultyScreen);
+brand.addEventListener("click", showDegreeScreen);
+
+// Wrapped in arrow functions so the click event isn't passed in as `mode`.
+spinButton.addEventListener("click", () => animateRoulette("normal"));
+spaceButton.addEventListener("click", () => animateRoulette("normal"));
+
+backButton.addEventListener("click", closeResult);
+
+anotherButton.addEventListener("click", () => spinAnotherProject("normal"));
+
+saveProjectButton.addEventListener("click", toggleCurrentProjectSave);
+
+exploreButton.addEventListener("click", openExploreProject);
+exploreBackButton.addEventListener("click", closeExploreToResult);
+exploreSaveButton.addEventListener("click", toggleCurrentProjectSave);
+exploreAnotherButton.addEventListener("click", () => spinAnotherProject("normal"));
+
+savedHeaderButton.addEventListener("click", openSavedProjects);
+closeSavedButton.addEventListener("click", closeSavedProjects);
+
+
+/* ---------- Keyboard: Space = spin ---------- */
+
+document.addEventListener("keydown", event => {
+    if (event.code !== "Space") return;
+
+    const activeTag = document.activeElement.tagName;
+
+    if (["INPUT", "TEXTAREA", "SELECT", "BUTTON"].includes(activeTag)) return;
+
+    if (savedScreen.classList.contains("active")) return;
+    if (exploreScreen.classList.contains("active")) return;
+
+    if (
+        !degreeScreen.classList.contains("hidden") ||
+        !difficultyScreen.classList.contains("hidden")
+    ) {
+        return;
+    }
+
+    event.preventDefault();
+
+    if (resultScreen.classList.contains("active")) {
+        spinAnotherProject("normal");
+        return;
+    }
+
+    animateRoulette("normal");
+});
+
+
+/* ---------- Keyboard: Escape = go back ---------- */
+
+document.addEventListener("keydown", event => {
+    if (event.key !== "Escape") return;
+
+    if (exploreScreen.classList.contains("active")) {
+        closeExploreToResult();
+        return;
+    }
+
+    if (savedScreen.classList.contains("active")) {
+        closeSavedProjects();
+        return;
+    }
+
+    if (resultScreen.classList.contains("active")) {
+        closeResult();
+    }
+});
+
+
+/* ==========================================================
+   START
+   ========================================================== */
+
 addSavedProjectsUpgradeStyles();
-
 updateCounter();
-
 createSmartSpinControls();
-
 loadProjects();
