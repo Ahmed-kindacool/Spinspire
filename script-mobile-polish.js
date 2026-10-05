@@ -1590,6 +1590,13 @@ function updateRouletteWords(
 
 }
 
+
+
+
+
+
+
+
 function updateCounter() {
 
 

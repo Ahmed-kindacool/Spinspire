@@ -1,0 +1,175 @@
+/* Spinspire mobile + UI polish overrides */
+
+html { -webkit-text-size-adjust: 100%; }
+button { touch-action: manipulation; }
+
+@media (max-width: 900px) {
+  .topbar { padding: 22px 24px; }
+  .result-content { width: min(90%, 760px); }
+  .result-content h1 { font-size: clamp(42px, 10vw, 76px); overflow-wrap: anywhere; }
+  .explore-wrapper { width: min(90%, 900px); }
+  .explore-hero h1 { font-size: clamp(48px, 11vw, 88px); overflow-wrap: anywhere; }
+  .saved-screen { padding-left: 5vw; padding-right: 5vw; }
+}
+
+@media (max-width: 700px) {
+  body { min-height: 100dvh; }
+
+  .topbar {
+    padding: 18px 18px;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+  }
+  .brand { font-size: 11px; padding: 4px 0; }
+  .header-right { gap: 12px; }
+  .saved-header-button { font-size: 9px; padding: 4px 0; }
+  .counter { display: none; }
+
+  .top-preferences {
+    position: fixed;
+    top: 58px;
+    left: 18px;
+    right: 18px;
+    width: auto;
+    transform: none;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .top-preferences::-webkit-scrollbar { display: none; }
+  .preference-indicator { flex: 0 0 auto; min-height: 34px; }
+
+  .onboarding {
+    min-height: 100dvh;
+    height: 100dvh;
+    align-items: flex-start;
+    padding: 108px 18px 42px;
+  }
+  .onboarding-content { width: 100%; }
+  .onboarding h1 { font-size: clamp(42px, 13vw, 58px); line-height: .96; }
+  .onboarding-description { margin: 18px auto 28px; font-size: 10px; }
+  .degree-grid { gap: 7px; }
+  .degree-option { padding: 11px 12px; min-height: 42px; }
+  .difficulty-grid { grid-template-columns: 1fr; gap: 8px; }
+  .difficulty-option { min-height: 74px; padding: 15px 18px; }
+  .anything-button { min-height: 46px; margin-top: 22px; }
+
+  .roulette {
+    min-height: 100dvh;
+    height: 100dvh;
+    padding: 118px 18px 88px;
+  }
+  .roulette-content { width: 100%; transform: none; }
+  .small-text { margin: 8px 0; font-size: 11px; }
+  .roulette-word { max-width: 100%; font-size: clamp(34px, 11vw, 52px); overflow-wrap: anywhere; }
+  .secondary-word { font-size: clamp(25px, 8vw, 38px); }
+  .main-action { margin-top: 34px; min-height: 48px; padding: 14px 20px; }
+
+  .result-screen {
+    height: 100dvh;
+    min-height: 100dvh;
+    align-items: flex-start;
+    overflow-y: auto;
+  }
+  .result-content {
+    width: 88%;
+    margin: auto;
+    padding: 105px 0 72px;
+  }
+  .result-overline { margin-bottom: 18px; }
+  .result-content h1 {
+    font-size: clamp(42px, 13vw, 62px);
+    line-height: .96;
+    margin-bottom: 22px;
+    overflow-wrap: anywhere;
+  }
+  .result-description { font-size: 13px; line-height: 1.6; }
+  .result-meta { margin-top: 26px; gap: 7px; font-size: 8px; }
+  .technology-list { margin-top: 18px; }
+  .result-buttons {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 7px;
+  }
+  .result-action,
+  #similarButton,
+  #differentButton {
+    width: 100%;
+    min-height: 46px;
+    margin: 0 !important;
+    padding: 12px 10px;
+    font-size: 9px;
+  }
+  #similarButton,
+  #differentButton { grid-column: span 1; }
+  .back-button { top: 18px; left: 18px; min-height: 40px; }
+
+  .explore-screen { height: 100dvh; }
+  .explore-wrapper { width: 88%; padding: 98px 0 60px; }
+  .explore-back { top: 18px; left: 18px; min-height: 40px; }
+  .explore-hero { margin-bottom: 54px; }
+  .explore-eyebrow { margin-bottom: 16px; }
+  .explore-hero h1 { font-size: clamp(44px, 13vw, 64px); line-height: .94; overflow-wrap: anywhere; }
+  .explore-intro { margin-top: 24px; font-size: 14px; line-height: 1.6; }
+  .explore-meta { margin-top: 24px; gap: 7px; font-size: 8px; }
+  .explore-section { grid-template-columns: 34px minmax(0, 1fr); gap: 10px; padding: 30px 0; }
+  .explore-section p:not(.explore-label) { font-size: 14px; }
+  .feature-list li { font-size: 14px; }
+  .roadmap { flex-direction: column; align-items: flex-start; gap: 7px; }
+  .roadmap-step { width: 100%; flex-direction: column; align-items: flex-start; gap: 7px; }
+  .roadmap-name { width: 100%; }
+  .roadmap-arrow { transform: rotate(90deg); margin-left: 13px; }
+  .explore-actions { display: grid; grid-template-columns: 1fr; padding-top: 38px; }
+  .explore-save, .explore-another { width: 100%; min-height: 46px; }
+
+  .saved-screen { height: 100dvh; padding: 76px 18px 50px; }
+  .saved-screen-header { margin-bottom: 34px; }
+  .saved-screen-header h2 { font-size: clamp(42px, 12vw, 58px); }
+  .saved-close-button { min-width: 44px; min-height: 44px; }
+  .saved-list { grid-template-columns: 1fr; }
+  .saved-project,
+  .saved-project:nth-child(odd),
+  .saved-project:nth-child(even) {
+    border-right: 0;
+    padding: 24px 44px 24px 0;
+  }
+  .saved-project h3 { max-width: 100%; font-size: 22px; padding-right: 6px; }
+  .saved-project p { font-size: 12px; }
+  .remove-saved { top: 18px; right: 0; min-width: 40px; min-height: 40px; font-size: 18px; }
+
+  .bottom-bar { padding: 16px 18px; justify-content: flex-end; }
+  .bottom-bar > span, .space-hint { display: none !important; }
+}
+
+@media (max-width: 420px) {
+  .onboarding h1 { font-size: 42px; }
+  .degree-option { font-size: 9px; }
+  .result-content { width: 90%; }
+  .result-content h1 { font-size: clamp(38px, 12.5vw, 52px); }
+  .result-buttons { grid-template-columns: 1fr; }
+  #similarButton, #differentButton { grid-column: auto; }
+  .explore-wrapper { width: 90%; }
+  .explore-hero h1 { font-size: clamp(40px, 12vw, 54px); }
+  .explore-section { grid-template-columns: 28px minmax(0, 1fr); }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .degree-option:hover,
+  .difficulty-option:hover,
+  .result-action:hover,
+  .explore-save:hover,
+  .explore-another:hover,
+  .saved-project-clickable:hover { transform: translateY(-2px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}

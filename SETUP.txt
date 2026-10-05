@@ -1,0 +1,16 @@
+SPINSPIRE — BRANDING + DEPLOYMENT
+
+1. Copy the assets folder into the root of your Spinspire repository.
+2. Replace your current README.md with the included README.md.
+3. Paste the contents of ADD-TO-INDEX-HEAD.txt anywhere inside <head>...</head> in index.html.
+4. Save and test with Live Server. The pink Spinspire icon should appear in the browser tab.
+
+Commit:
+git add .
+git commit -m "Add Spinspire branding and deployment setup"
+git push origin main
+
+Deploy:
+GitHub repository → Settings → Pages → Deploy from a branch → main → / (root) → Save.
+
+Keep data/projects.json in the repository because Spinspire fetches it at runtime.
